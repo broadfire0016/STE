@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+	<Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+	<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+	<ProductVersion>10.0.20506</ProductVersion>
+	<SchemaVersion>2.0</SchemaVersion>
+	<ProjectGuid>{FA141BF5-E946-4DFE-E1C0-247F146132EC}</ProjectGuid>
+	<OutputType>Library</OutputType>
+	<AppDesignerFolder>Properties</AppDesignerFolder>
+	<RootNamespace></RootNamespace>
+	<AssemblyName>Assembly-UnityScript</AssemblyName>
+	<TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+	<FileAlignment>512</FileAlignment>
+	<BaseDirectory>Assets</BaseDirectory>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+	<DebugSymbols>true</DebugSymbols>
+	<DebugType>full</DebugType>
+	<Optimize>false</Optimize>
+	<OutputPath>Temp\bin\Debug\</OutputPath>
+	<DefineConstants>DEBUG;TRACE;UNITY_IPHONE;ENABLE_MICROPHONE;ENABLE_TEXTUREID_MAP;ENABLE_AUDIO_FMOD;ENABLE_MONO;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_GENERICS;ENABLE_SUBSTANCE;INCLUDE_WP8SUPPORT;ENABLE_WWW;ENABLE_IMAGEEFFECTS;UNITY_IPHONE_API;ENABLE_WEBCAM;INCLUDE_METROSUPPORT;ENABLE_NETWORK;ENABLE_PHYSICS;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_2D_PHYSICS;ENABLE_GAMECENTER;UNITY_IOS;ENABLE_SHADOWS;ENABLE_AUDIO;ENABLE_NAVMESH_CARVING;ENABLE_SINGLE_INSTANCE_BUILD_SETTING;UNITY_4_3_4;UNITY_4_3;ENABLE_PROFILER;UNITY_EDITOR;UNITY_EDITOR_WIN</DefineConstants>
+	<ErrorReport>prompt</ErrorReport>
+	<WarningLevel>4</WarningLevel>
+	<NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+	<DebugType>pdbonly</DebugType>
+	<Optimize>true</Optimize>
+	<OutputPath>Temp\bin\Release\</OutputPath>
+	<DefineConstants>TRACE</DefineConstants>
+	<ErrorReport>prompt</ErrorReport>
+	<WarningLevel>4</WarningLevel>
+	<NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+	<Reference Include="System" />
+    <Reference Include="System.XML" />
+	<Reference Include="System.Core" />
+	<Reference Include="System.Xml.Linq" />
+	<Reference Include="UnityEngine">
+	  <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine.dll</HintPath>
+	</Reference>
+	<Reference Include="UnityEditor">
+	  <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEditor.dll</HintPath>
+	</Reference>
+  </ItemGroup>
+  <ItemGroup>
+     <Compile Include="Assets\Scripts\Dragger.js" />
+     <None Include="Assets\DemoAssets\Resources\Textures\backCredits1x1.txt" />
+     <None Include="Assets\DemoAssets\Resources\gameButtons2.txt" />
+     <None Include="Assets\DemoAssets\Resources\ArialBold_63.txt" />
+     <None Include="Assets\DemoAssets\Resources\buttons.txt" />
+     <None Include="Assets\DemoAssets\Resources\mainMenu4x.txt" />
+     <None Include="Assets\DemoAssets\Resources\backCredits2.txt" />
+     <None Include="Assets\TexturePackerSources\GameTexture\menu\1x\finalMenu1.txt" />
+     <None Include="Assets\DemoAssets\Resources\kitchenSinkSheet2x.txt" />
+     <None Include="Assets\DemoAssets\Resources\textDemoSheet.txt" />
+     <None Include="Assets\DemoAssets\Resources\Textures\mainMenu4x{1}.txt" />
+     <None Include="Assets\DemoAssets\Resources\displayTimeScore2.txt" />
+     <None Include="Assets\DemoAssets\Resources\backCredits.txt" />
+     <None Include="Assets\DemoAssets\Resources\mainMenu4x{2}.txt" />
+     <None Include="Assets\DemoAssets\Resources\Textures\sound.txt" />
+     <None Include="Assets\DemoAssets\Resources\gameButtonsFinal2.txt" />
+     <None Include="Assets\DemoAssets\Resources\colorPickerSheet.txt" />
+     <None Include="Assets\DemoAssets\Resources\mainMenu2x{2}.txt" />
+     <None Include="Assets\DemoAssets\Resources\Textures\gameOver.txt" />
+     <None Include="Assets\DemoAssets\Resources\Textures\textDemoSheet2x.txt" />
+     <None Include="Assets\DemoAssets\Resources\backCredits2x.txt" />
+     <None Include="Assets\DemoAssets\Resources\gameButtonsFinal1.txt" />
+     <None Include="Assets\Plugins\UIToolkit\Shaders\UIToolkit Premultiplied Alpha.shader" />
+     <None Include="Assets\DemoAssets\Resources\Textures\backCredits4x.txt" />
+     <None Include="Assets\DemoAssets\Resources\finalMenu1.txt" />
+     <None Include="Assets\TexturePackerSources\GameTexture\menu\4x\finalMenu.txt" />
+     <None Include="Assets\DemoAssets\Resources\mainMenu2x.txt" />
+     <None Include="Assets\DemoAssets\Resources\Textures\backCredits1x2.txt" />
+     <None Include="Assets\DemoAssets\Resources\finalMenu2.txt" />
+     <None Include="Assets\DemoAssets\Resources\displayTimeScore1.txt" />
+     <None Include="Assets\DemoAssets\Resources\menu.txt" />
+     <None Include="Assets\DemoAssets\Resources\Textures\colorPickerSheet.txt" />
+     <None Include="Assets\TexturePackerSources\GameTexture\menu\2x\finalMenu2.txt" />
+     <None Include="Assets\DemoAssets\Resources\Textures\mainMenu2x{2}.txt" />
+     <None Include="Assets\DemoAssets\Resources\Textures\mainMenu{2}.txt" />
+     <None Include="Assets\DemoAssets\Resources\gameStoreSlider.txt" />
+     <None Include="Assets\DemoAssets\Resources\Textures\menu.txt" />
+     <None Include="Assets\DemoAssets\Resources\prototype.txt" />
+     <None Include="Assets\DemoAssets\Resources\startGame.txt" />
+     <None Include="Assets\DemoAssets\Resources\buttons2.txt" />
+     <None Include="Assets\TexturePackerSources\prototype2x.txt" />
+     <None Include="Assets\DemoAssets\Resources\backCredits4x2.txt" />
+     <None Include="Assets\DemoAssets\Resources\Textures\backCredits.txt" />
+     <None Include="Assets\DemoAssets\Resources\menMeno1x.txt" />
+     <None Include="Assets\DemoAssets\Resources\Textures\mainMenu1x{1}.txt" />
+     <None Include="Assets\DemoAssets\Resources\backCredits1.txt" />
+     <None Include="Assets\TexturePackerSources\pp\pause2.txt" />
+     <None Include="Assets\DemoAssets\Resources\Textures\mainMenu1x{2}.txt" />
+     <None Include="Assets\contributors.txt" />
+     <None Include="Assets\DemoAssets\Resources\mainMenu.txt" />
+     <None Include="Assets\DemoAssets\Resources\kitchenSinkSheet.txt" />
+     <None Include="Assets\DemoAssets\Resources\Textures\startGame.txt" />
+     <None Include="Assets\DemoAssets\Resources\Textures\backCredits2.txt" />
+     <None Include="Assets\DemoAssets\Resources\sound.txt" />
+     <None Include="Assets\TexturePackerSources\GameTexture\fonts\displayTimeScore2.txt" />
+     <None Include="Assets\DemoAssets\Resources\menMeno4.txt" />
+     <None Include="Assets\DemoAssets\Resources\mainMenu2x{1}.txt" />
+     <None Include="Assets\DemoAssets\Resources\retryMenuBtn.txt" />
+     <None Include="Assets\TexturePackerSources\pp\pause1.txt" />
+     <None Include="Assets\DemoAssets\Resources\mainMenu1x{2}.txt" />
+     <None Include="Assets\DemoAssets\Resources\Textures\joystickSheet.txt" />
+     <None Include="Assets\TexturePackerSources\textDemoSheet.txt" />
+     <None Include="Assets\DemoAssets\Resources\mainMenu4x{1}.txt" />
+     <None Include="Assets\DemoAssets\Resources\backCredits2x1.txt" />
+     <None Include="Assets\DemoAssets\Resources\backCredits1x2.txt" />
+     <None Include="Assets\DemoAssets\Resources\Textures\mainMenu4x{2}.txt" />
+     <None Include="Assets\DemoAssets\Resources\Textures\mainMenu1x\mainMenu{1}.txt" />
+     <None Include="Assets\Plugins\UIToolkit\Shaders\UIToolkit Alpha Enabled (Default).shader" />
+     <None Include="Assets\DemoAssets\Resources\textDemoSheet2x.txt" />
+     <None Include="Assets\DemoAssets\Resources\displayTimeScore4.txt" />
+     <None Include="Assets\DemoAssets\Resources\levelSurvive.txt" />
+     <None Include="Assets\DemoAssets\Resources\backCredits4x.txt" />
+     <None Include="Assets\DemoAssets\Resources\mainMenu1x{1}.txt" />
+     <None Include="Assets\DemoAssets\Resources\Textures\gameStoreSlider.txt" />
+     <None Include="Assets\DemoAssets\Resources\Textures\mainMenu2x{1}.txt" />
+     <None Include="Assets\DemoAssets\Resources\Textures\pp.txt" />
+     <None Include="Assets\DemoAssets\Resources\pause.txt" />
+     <None Include="Assets\DemoAssets\Resources\soundToggle.txt" />
+     <None Include="Assets\DemoAssets\Resources\Textures\backCredits1.txt" />
+     <None Include="Assets\DemoAssets\Resources\Textures\backCredits2x2.txt" />
+     <None Include="Assets\DemoAssets\Resources\pp.txt" />
+     <None Include="Assets\DemoAssets\Resources\Textures\soundSetting.txt" />
+     <None Include="Assets\DemoAssets\Resources\gameOver.txt" />
+     <None Include="Assets\DemoAssets\Resources\backCredits4x1.txt" />
+     <None Include="Assets\TexturePackerSources\GameTexture\fonts\displayTimeScore1.txt" />
+     <None Include="Assets\TexturePackerSources\textDemoSheet2x.txt" />
+     <None Include="Assets\DemoAssets\Resources\backCredits2x2.txt" />
+     <None Include="Assets\DemoAssets\Resources\Textures\backCredits4x1.txt" />
+     <None Include="Assets\DemoAssets\Resources\gameButtonsFinal.txt" />
+     <None Include="Assets\DemoAssets\Resources\gameButtons.txt" />
+     <None Include="Assets\DemoAssets\Resources\joystickSheet.txt" />
+     <None Include="Assets\DemoAssets\Resources\Textures\kitchenSinkSheet.txt" />
+     <None Include="Assets\DemoAssets\Resources\Textures\backCredits2x1.txt" />
+     <None Include="Assets\DemoAssets\Resources\prototype2x.txt" />
+     <None Include="Assets\DemoAssets\Resources\Textures\soundToggle.txt" />
+     <None Include="Assets\TexturePackerSources\prototype.txt" />
+     <None Include="Assets\DemoAssets\Resources\Textures\backCredits2x.txt" />
+     <None Include="Assets\DemoAssets\Resources\Textures\backCredits4x2.txt" />
+     <None Include="Assets\DemoAssets\Resources\soundSetting.txt" />
+     <None Include="Assets\DemoAssets\Resources\backCredits1x.txt" />
+     <None Include="Assets\DemoAssets\Resources\Textures\mainMenu1x.txt" />
+     <None Include="Assets\DemoAssets\Resources\mainMenu1x.txt" />
+     <None Include="Assets\DemoAssets\Resources\Textures\joystickSheet2x.txt" />
+     <None Include="Assets\DemoAssets\Resources\Textures\buttons.txt" />
+     <None Include="Assets\Plugins\UIToolkit\Shaders\UIToolkit No Alpha.shader" />
+     <None Include="Assets\DemoAssets\Resources\mainMenu{2}.txt" />
+     <None Include="Assets\DemoAssets\Resources\Textures\textDemoSheet.txt" />
+     <None Include="Assets\DemoAssets\Resources\Textures\gameStore.txt" />
+     <None Include="Assets\TexturePackerSources\GameTexture\Buttons\1x\buttons1.txt" />
+     <None Include="Assets\DemoAssets\Resources\mainMenu1x\mainMenu{1}.txt" />
+     <None Include="Assets\DemoAssets\Resources\Textures\levelSurvive.txt" />
+     <None Include="Assets\DemoAssets\Resources\Textures\prototype.txt" />
+     <None Include="Assets\TexturePackerSources\displayTimeScore4.txt" />
+     <None Include="Assets\DemoAssets\Resources\Textures\kitchenSinkSheet2x.txt" />
+     <None Include="Assets\DemoAssets\Resources\joystickSheet2x.txt" />
+     <None Include="Assets\TexturePackerSources\GameTexture\Buttons\2x\buttons2.txt" />
+     <None Include="Assets\DemoAssets\Resources\gameStore.txt" />
+     <None Include="Assets\DemoAssets\Resources\Textures\prototype2x.txt" />
+     <None Include="Assets\TexturePackerSources\GameTexture\Buttons\4x\buttons.txt" />
+     <None Include="Assets\DemoAssets\Resources\Textures\backCredits1x.txt" />
+     <None Include="Assets\DemoAssets\Resources\Textures\retryMenuBtn.txt" />
+     <None Include="Assets\DemoAssets\Resources\menMeno2x.txt" />
+     <None Include="Assets\DemoAssets\Resources\buttons1.txt" />
+     <None Include="Assets\DemoAssets\Resources\menMeno.txt" />
+     <None Include="Assets\DemoAssets\Resources\Textures\mainMenu2x.txt" />
+     <None Include="Assets\DemoAssets\Resources\buttonsSheet2.txt" />
+     <None Include="Assets\TexturePackerSources\pp\pause.txt" />
+     <None Include="Assets\DemoAssets\Resources\Textures\mainMenu4x.txt" />
+     <None Include="Assets\DemoAssets\Resources\pause2.txt" />
+     <None Include="Assets\DemoAssets\Resources\backCredits1x1.txt" />
+     <None Include="Assets\DemoAssets\Resources\pause1.txt" />
+     <None Include="Assets\DemoAssets\Resources\finalMenu.txt" />
+     <None Include="Assets\DemoAssets\Resources\gameButtons1.txt" />
+     <None Include="Assets\DemoAssets\Resources\Textures\buttonsSheet2.txt" />
+     <None Include="Assets\DemoAssets\Resources\Textures\mainMenu.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="Assembly-CSharp-firstpass-vs.csproj">
+      <Project>{BA7B077C-C551-3A1D-1BEE-F520637CBC28}</Project>      <Name>Assembly-CSharp-firstpass-vs</Name>    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+	   Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  
+</Project>
