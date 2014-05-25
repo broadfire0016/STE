@@ -1,0 +1,16 @@
+Background 41.388, 6.284771, 0.05745438
+Background2 41.388, 6.284771, 18.86695
+basket 42.1841, 1.629084, 7.562492
+DartSpawner 30.62346, 2.569024, 0.03099492
+Floor 36.35328, -1.950881, 0.7071849
+Main Camera 24.04949, 6.109401, 0.09703565
+Pause Text 39.44949, 6.130424, 21.35275
+Ceiling 36.83565, 11.97737, 0.7071849
+wallleft 28.16557, 7.299586, 8.113777
+wallright 28.16557, 7.299586, -7.125557
+Directional Light 0.7181034, 14.10519, 0.5732157
+new posz cam 18.9112
+
+
+-remove component
+-different dimension in one script
