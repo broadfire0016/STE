@@ -88,7 +88,7 @@
      <None Include="Assets\GameAssets\Resources\gameButtons2x.txt" />
      <None Include="Assets\GameAssets\Resources\BtnTry4x.txt" />
      <None Include="Assets\GameAssets\Resources\MuseoSheet4x.txt" />
-     <None Include="Assets\GameAssets\Resources\AllButtons1x.txt" />
+     <None Include="Assets\GameAssets\Resources\AllButtons.txt" />
      <None Include="Assets\GameAssets\Resources\MuseoSheet.txt" />
      <None Include="Assets\GameAssets\Resources\VogueCyrBold_60_ffffff.txt" />
      <None Include="Assets\GameAssets\Resources\VougeLevelSheet.txt" />
@@ -101,7 +101,7 @@
      <None Include="Assets\GameAssets\Resources\gameButtons.txt" />
      <None Include="Assets\GameAssets\Resources\store1x.txt" />
      <None Include="Assets\GameAssets\Resources\VougeSheet2x.txt" />
-     <None Include="Assets\GameAssets\Resources\AllButtonsx.txt" />
+     <None Include="Assets\GameAssets\Resources\AllButtons4x.txt" />
      <None Include="Assets\Plugins\UIToolkit\Shaders\UIToolkit No Alpha.shader" />
      <None Include="Assets\GameAssets\Resources\VogueCyrBold_60_ffffff4x.txt" />
      <None Include="Assets\GameAssets\Resources\store2x.txt" />

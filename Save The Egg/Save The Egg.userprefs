@@ -1,15 +1,9 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Game play\ToyDartMotionScript.cs">
+  <MonoDevelop.Ide.Workspace />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\buttons\MenuScript.cs">
     <Files>
-      <File FileName="Assets\Scripts\Game play\BasketScript.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\buttons\MenuScript.cs" Line="16" Column="2" />
-      <File FileName="Assets\Scripts\Game play\Score.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\Game play\EggDisableScript.cs" Line="25" Column="45" />
-      <File FileName="Assets\Scripts\Game play\Spawner.cs" Line="66" Column="3" />
-      <File FileName="Assets\Scripts\Game play\ToyDartDisableScript.cs" Line="8" Column="25" />
-      <File FileName="Assets\Scripts\Game play\SpawnDart.cs" Line="15" Column="121" />
-      <File FileName="Assets\Scripts\Game play\ToyDartMotionScript.cs" Line="64" Column="47" />
+      <File FileName="Assets\Scripts\buttons\MenuScript.cs" Line="104" Column="50" />
+      <File FileName="Assets\Scripts\Game play\Controller.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
