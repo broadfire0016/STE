@@ -5,7 +5,7 @@ public class ToyDartDisableScript : MonoBehaviour {
 
 	// Use this for initialization
 	void OnCollisionEnter (Collision other) {
-		Invoke ("Destroy", 2f);
+		Invoke ("Destroy", 0.3f);
 	}
 
 	public void Destroy(){

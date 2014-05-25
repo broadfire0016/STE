@@ -12,7 +12,7 @@ public class SpawnDart : MonoBehaviour {
 	}
 
 	void OnTriggerExit(Collider dart){
-		if(dart.gameObject.name == "Body")
+		if(dart.gameObject.name == "Body"/* || dart.gameObject.name == "ToyDart" || dart.gameObject.name == "ToyDart(Clone)"*/)
 			Invoke ("callDart", 0.1f);
 	}
 	

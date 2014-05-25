@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 
+//This Script is in charge of the control of the ToyDarts
 public class Controller : MonoBehaviour {
 
 	public LayerMask touchInputMask;

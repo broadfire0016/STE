@@ -1,4 +1,7 @@
-﻿using UnityEngine;
+﻿// Main Controller of the Game, it sets up the target score and Time Limit for each Level
+// Author: Levi Joy Lim
+
+using UnityEngine;
 using System.Collections;
 
 public class Main : MonoBehaviour {
@@ -99,7 +102,6 @@ public class Main : MonoBehaviour {
 			score = basketObject.getScore();
 			Scores.setScore(score);
 			TargetScore = Scores.getTargetScore();
-			//print ("score "+score +"target score" + TargetScore);
 
 			if (mins == 0 && secs == 0){
 
@@ -119,9 +121,7 @@ public class Main : MonoBehaviour {
 			}
 		}
 	}
-
-
-
+	
 	public static int getLevel(){
 		return level;
 	}

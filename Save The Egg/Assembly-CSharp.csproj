@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+	<Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+	<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+	<ProductVersion>10.0.20506</ProductVersion>
+	<SchemaVersion>2.0</SchemaVersion>
+	<ProjectGuid>{5F31C610-263D-34AA-87E5-759EBA8AB626}</ProjectGuid>
+	<OutputType>Library</OutputType>
+	<AppDesignerFolder>Properties</AppDesignerFolder>
+	<RootNamespace></RootNamespace>
+	<AssemblyName>Assembly-CSharp</AssemblyName>
+	<TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+	<FileAlignment>512</FileAlignment>
+	<BaseDirectory>Assets</BaseDirectory>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+	<DebugSymbols>true</DebugSymbols>
+	<DebugType>full</DebugType>
+	<Optimize>false</Optimize>
+	<OutputPath>Temp\bin\Debug\</OutputPath>
+	<DefineConstants>DEBUG;TRACE;UNITY_IPHONE;ENABLE_MICROPHONE;ENABLE_TEXTUREID_MAP;ENABLE_AUDIO_FMOD;ENABLE_MONO;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_GENERICS;ENABLE_SUBSTANCE;INCLUDE_WP8SUPPORT;ENABLE_WWW;ENABLE_IMAGEEFFECTS;UNITY_IPHONE_API;ENABLE_WEBCAM;INCLUDE_METROSUPPORT;ENABLE_NETWORK;ENABLE_PHYSICS;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_2D_PHYSICS;ENABLE_GAMECENTER;UNITY_IOS;ENABLE_SHADOWS;ENABLE_AUDIO;ENABLE_NAVMESH_CARVING;ENABLE_SINGLE_INSTANCE_BUILD_SETTING;UNITY_4_3_4;UNITY_4_3;DEVELOPMENT_BUILD;ENABLE_PROFILER;UNITY_EDITOR;UNITY_EDITOR_WIN</DefineConstants>
+	<ErrorReport>prompt</ErrorReport>
+	<WarningLevel>4</WarningLevel>
+	<NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+	<DebugType>pdbonly</DebugType>
+	<Optimize>true</Optimize>
+	<OutputPath>Temp\bin\Release\</OutputPath>
+	<DefineConstants>TRACE</DefineConstants>
+	<ErrorReport>prompt</ErrorReport>
+	<WarningLevel>4</WarningLevel>
+	<NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+	<Reference Include="System" />
+    <Reference Include="System.XML" />
+	<Reference Include="System.Core" />
+	<Reference Include="System.Xml.Linq" />
+	<Reference Include="UnityEngine">
+	  <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine.dll</HintPath>
+	</Reference>
+	<Reference Include="UnityEditor">
+	  <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEditor.dll</HintPath>
+	</Reference>
+  </ItemGroup>
+  <ItemGroup>
+     <Compile Include="Assets\Scripts\Game play\BasketScript.cs" />
+     <Compile Include="Assets\Scripts\Game play\Controller.cs" />
+     <Compile Include="Assets\Scripts\Game play\EggDisableScript.cs" />
+     <Compile Include="Assets\Scripts\Game play\Main.cs" />
+     <Compile Include="Assets\Scripts\Game play\MovingObject.cs" />
+     <Compile Include="Assets\Scripts\Game play\ObjectPooler.cs" />
+     <Compile Include="Assets\Scripts\Game play\Score.cs" />
+     <Compile Include="Assets\Scripts\Game play\SpawnDart.cs" />
+     <Compile Include="Assets\Scripts\Game play\Spawner.cs" />
+     <Compile Include="Assets\Scripts\Game play\Timer.cs" />
+     <Compile Include="Assets\Scripts\Game play\ToyDartDisableScript.cs" />
+     <Compile Include="Assets\Scripts\Game play\ToyDartMotionScript.cs" />
+     <Compile Include="Assets\Scripts\Game play\pause.cs" />
+     <Compile Include="Assets\Scripts\buttons\DisplayButtons.cs" />
+     <Compile Include="Assets\Scripts\buttons\DisplayHighScore.cs" />
+     <Compile Include="Assets\Scripts\buttons\HighScore.cs" />
+     <Compile Include="Assets\Scripts\buttons\Level.cs" />
+     <Compile Include="Assets\Scripts\buttons\LevelCompleteBtn.cs" />
+     <Compile Include="Assets\Scripts\buttons\MenuScript.cs" />
+     <Compile Include="Assets\Scripts\buttons\ScaleFactor.cs" />
+     <Compile Include="Assets\Scripts\buttons\Settings.cs" />
+     <Compile Include="Assets\Scripts\buttons\collections.cs" />
+     <Compile Include="Assets\Scripts\buttons\credits.cs" />
+     <Compile Include="Assets\Scripts\buttons\gameOver.cs" />
+     <Compile Include="Assets\Scripts\buttons\gamePause.cs" />
+     <Compile Include="Assets\Scripts\buttons\gameStore.cs" />
+     <Compile Include="Assets\Scripts\buttons\loading.cs" />
+     <Compile Include="Assets\Scripts\buttons\store.cs" />
+     <Compile Include="Assets\Scripts\settings.cs" />
+     <None Include="Assets\GameAssets\Resources\BtnTry.txt" />
+     <None Include="Assets\GameAssets\Resources\gameButtons4x.txt" />
+     <None Include="Assets\GameAssets\Resources\VougeLevelSheet2x.txt" />
+     <None Include="Assets\GameAssets\Resources\MuseoSans500_32_ffffff.fnt" />
+     <None Include="Assets\GameAssets\Resources\VogueCyrBold_60_ffffff2x.txt" />
+     <None Include="Assets\Plugins\UIToolkit\Shaders\UIToolkit Premultiplied Alpha.shader" />
+     <None Include="Assets\GameAssets\Resources\VougeLevelSheet4x.txt" />
+     <None Include="Assets\GameAssets\Resources\BtnTry2x.txt" />
+     <None Include="Assets\GameAssets\Resources\MuseoSans500_32_ffffff4x.fnt" />
+     <None Include="Assets\contributors.txt" />
+     <None Include="Assets\GameAssets\Resources\gameButtons2x.txt" />
+     <None Include="Assets\GameAssets\Resources\BtnTry4x.txt" />
+     <None Include="Assets\GameAssets\Resources\MuseoSheet4x.txt" />
+     <None Include="Assets\GameAssets\Resources\AllButtons1x.txt" />
+     <None Include="Assets\GameAssets\Resources\MuseoSheet.txt" />
+     <None Include="Assets\GameAssets\Resources\VogueCyrBold_60_ffffff.txt" />
+     <None Include="Assets\GameAssets\Resources\VougeLevelSheet.txt" />
+     <None Include="Assets\GameAssets\Resources\AllButtons2x.txt" />
+     <None Include="Assets\Plugins\UIToolkit\Shaders\UIToolkit Alpha Enabled (Default).shader" />
+     <None Include="Assets\GameAssets\Resources\VougeSheet.txt" />
+     <None Include="Assets\GameAssets\Resources\storex.txt" />
+     <None Include="Assets\GameAssets\Resources\MuseoSans500_32_ffffff2x.fnt" />
+     <None Include="Assets\GameAssets\Resources\MuseoSheet2x.txt" />
+     <None Include="Assets\GameAssets\Resources\gameButtons.txt" />
+     <None Include="Assets\GameAssets\Resources\store1x.txt" />
+     <None Include="Assets\GameAssets\Resources\VougeSheet2x.txt" />
+     <None Include="Assets\GameAssets\Resources\AllButtonsx.txt" />
+     <None Include="Assets\Plugins\UIToolkit\Shaders\UIToolkit No Alpha.shader" />
+     <None Include="Assets\GameAssets\Resources\VogueCyrBold_60_ffffff4x.txt" />
+     <None Include="Assets\GameAssets\Resources\store2x.txt" />
+     <None Include="Assets\GameAssets\Resources\VougeSheet4x.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
+      <Project>{BA7B077C-C551-3A1D-1BEE-F520637CBC28}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+	   Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  
+</Project>

@@ -1,4 +1,7 @@
-﻿using UnityEngine;
+﻿// Script attached to Main Menu UI, incharged of the buttons and state of sound and music in the game.
+//Author: Aiza Aviso
+
+using UnityEngine;
 using System.Collections;
 
 public class MenuScript : MonoBehaviour {
@@ -10,8 +13,7 @@ public class MenuScript : MonoBehaviour {
  	public AudioClip Music;
  	public AudioClip Sound;
  	private UIButton playBtn, collectBtn, storeBtn, hsBtn, creditsBtn ;
-	
-	//public AudioSource Music;
+
 
 	// Use this for initialization
 	void Start () {
@@ -70,21 +72,11 @@ public class MenuScript : MonoBehaviour {
 		var creditButton = UIButton.create("CreditsBtn_normal.png","CreditsBtn_activel.png",0,0);
 		creditsBtn = creditButton;
 		creditButton.positionFromBottomLeft( 0.178f, 0.08f );
-		//creditButton.highlightedTouchOffsets = new UIEdgeOffsets(30);
 		creditButton.onTouchUpInside += sender => Application.LoadLevel("credits");
 		creditButton.touchDownSound = Click;
 		creditButton.setSize(creditButton.width/scaleFactor,creditButton.height/scaleFactor);
-		/*
-		//settings
-		var settingButton = UIButton.create("setting_normal.png","setting_activel.png",0,0);
-		settingButton.positionFromBottomRight( 0.001f, 0.001f );
-		settingButton.highlightedTouchOffsets = new UIEdgeOffsets(30);
-		settingButton.onTouchUpInside += sender => Application.LoadLevel("settings");;
-		settingButton.touchDownSound = Click;
-		settingButton.setSize(40f,40f);
-		*/
 
-	//sound
+		//sound
 		var sound = UIToggleButton.create( "sound_normal.png","sound_mute.png","sound_active.png",0,0 );
 		sound.positionFromBottomLeft( 0.002f, 0.024f );
 		sound.onToggle += (sender,selected) => toggleSound(sender);
@@ -104,75 +96,61 @@ public class MenuScript : MonoBehaviour {
 	}	
 
 	void Update(){
-  if (SoundSource.mute == true){
-   playBtn.touchDownSound = Click3;
-   collectBtn.touchDownSound = Click3;
-   storeBtn.touchDownSound = Click3;
-   hsBtn.touchDownSound = Click3;
-   creditsBtn.touchDownSound = Click3;
-  }
-  else{
-   playBtn.touchDownSound = Click;
-   collectBtn.touchDownSound = Click;
-   storeBtn.touchDownSound = Click;
-   hsBtn.touchDownSound = Click;
-   creditsBtn.touchDownSound = Click;
-  }
- }
 
- void toggleSound(UIToggleButton sender){
-  if (sender.selected){
-   SoundSource.mute = true;
+		  if (SoundSource.mute == true){
+		   playBtn.touchDownSound = Click3;
+		   collectBtn.touchDownSound = Click3;
+		   storeBtn.touchDownSound = Click3;
+		   hsBtn.touchDownSound = Click3;
+		   creditsBtn.touchDownSound = Click3;
+		  }
+		  else{
+		   playBtn.touchDownSound = Click;
+		   collectBtn.touchDownSound = Click;
+		   storeBtn.touchDownSound = Click;
+		   hsBtn.touchDownSound = Click;
+		   creditsBtn.touchDownSound = Click;
+		  }
+ 	}
 
-  }
-  else{
-   SoundSource.mute = false;
-  }
- }
+ 	void toggleSound(UIToggleButton sender){
+		if (sender.selected){
+		    SoundSource.mute = true;
+		}
+		else{
+		   SoundSource.mute = false;
+		}
+ 	}
 
- void toggleMusic(UIToggleButton sender){
-  if (sender.selected){
-   MusicSource.mute = true;
-  }
-  else{
-   MusicSource.mute = false;
-  }
- }
+ 	void toggleMusic(UIToggleButton sender){
+
+		if (sender.selected){
+			MusicSource.mute = true;
+		}
+		else{
+			MusicSource.mute = false;
+		}
+	}
  
 
-  AudioSource AddAudio(AudioClip clip, bool loop, bool playAwake, float volume){
-  AudioSource newAudio = gameObject.AddComponent <AudioSource>();
-  newAudio.clip = clip;
-  newAudio.loop = loop;
-  newAudio.playOnAwake = playAwake;
-  newAudio.volume = volume;
-  return newAudio;
- }
+	AudioSource AddAudio(AudioClip clip, bool loop, bool playAwake, float volume){
 
- void Awake(){
-  SoundSource = AddAudio (Sound, false, true, 1f);
-  MusicSource = AddAudio (Music, true, true, 1f);
-  SoundSource.mute = false;
-  MusicSource.mute = false;
-  //SoundSource.Play ();
-  MusicSource.Play();
- }
+		  AudioSource newAudio = gameObject.AddComponent <AudioSource>();
+		  newAudio.clip = clip;
+		  newAudio.loop = loop;
+		  newAudio.playOnAwake = playAwake;
+		  newAudio.volume = volume;
+		  return newAudio;
+  }
 
-	/*void OnButtonUp(UIButton post){
-		post.scale = new Vector3 (1.1f, 1.1f, 1.1f);
-	}
+	void Awake(){
 
-	void OnButtonDown(UIButton post){
-		post.scale = new Vector3 (1f, 1f, 1f);
-	}	
-
-	void OnButtonSelect(UIButton post){
-		post = post.userData;
-		switch (post){
-			case "post":
-		
-		break;
-	}
-}*/
-
+		  SoundSource = AddAudio (Sound, false, true, 1f);
+		  MusicSource = AddAudio (Music, true, true, 1f);
+		  SoundSource.mute = false;
+		  MusicSource.mute = false;
+		  //SoundSource.Play ();
+		  MusicSource.Play();
+	 }
+	
 }

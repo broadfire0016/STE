@@ -24,6 +24,7 @@ public class ToyDartMotionScript : MonoBehaviour
 		//print ("OnTouchStay " + touch);
 		IncreaseTime ();
 		startPosition = Input.mousePosition;
+
 	}
 
 	void OnTouchExit()
@@ -46,9 +47,9 @@ public class ToyDartMotionScript : MonoBehaviour
 				if (endPosition.x > 40)
 					endPosition.x = 40;
 
-				if (endPosition.y > 500)
+				if (endPosition.y > 300)
 				{
-					endPosition.y = 500;
+					endPosition.y = 300;
 					direction = new Vector3((endPosition.y - 200),(endPosition.y),(endPosition.x * -1));
 				}
 				else
@@ -59,7 +60,8 @@ public class ToyDartMotionScript : MonoBehaviour
 				gameObject.rigidbody.isKinematic = false;
 				//Quaternion rotate = Quaternion.LookRotation(direction);
 				gameObject.transform.Rotate(endPosition.y,0,endPosition.x * -1);
-				gameObject.rigidbody.AddForce(direction * 7f);
+				//gameObject.rigidbody.AddForce(direction * 7f);
+				gameObject.rigidbody.velocity = direction /(time*100f);
 				//gameObject.rigidbody.AddForce(new Vector3(rotate.y, rotate.y, rotate.x) * 7f);
 				//gameObject.rigidbody.velocity = direction/3f;
 				//print (endPosition);

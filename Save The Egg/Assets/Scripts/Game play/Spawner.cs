@@ -3,6 +3,7 @@ using System.Collections;
 
 public class Spawner : MonoBehaviour {
 	public float priority = 0.5f;
+	int eggExit = 0;
 
 	GameObject spawnWhiteEgg, spawnRottenEgg, spawnGoldEgg;
 
@@ -54,14 +55,14 @@ public class Spawner : MonoBehaviour {
 	}
 
 	void OnTriggerEnter(Collider egg){
-		if (egg.gameObject.name == "White Egg(Clone)" || egg.gameObject.name == "Rotten Egg(Clone)" || egg.gameObject.name == "Gold Egg(Clone)"){
-			CancelInvoke();
-		}
+		//if (egg.gameObject.name == "White Egg(Clone)" || egg.gameObject.name == "Rotten Egg(Clone)" || egg.gameObject.name == "Gold Egg(Clone)"){
+		//eggExit++;
+		//}
 	}
 
 	void OnTriggerExit(Collider egg){
 		if (egg.gameObject.name == "White Egg(Clone)" || egg.gameObject.name == "Rotten Egg(Clone)" || egg.gameObject.name == "Gold Egg(Clone)"){
-			Invoke("Start",priority);
+				Invoke("Start",priority);
 		}
 	}
 }
