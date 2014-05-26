@@ -120,11 +120,11 @@
      <None Include="Assets\GameAssets\Resources\AllButtons2x.txt" />
      <None Include="Assets\Plugins\UIToolkit\Shaders\UIToolkit Alpha Enabled (Default).shader" />
      <None Include="Assets\GameAssets\Resources\VougeSheet.txt" />
-     <None Include="Assets\GameAssets\Resources\storex.txt" />
+     <None Include="Assets\GameAssets\Resources\store4x.txt" />
      <None Include="Assets\GameAssets\Resources\MuseoSans500_32_ffffff2x.fnt" />
      <None Include="Assets\GameAssets\Resources\MuseoSheet2x.txt" />
      <None Include="Assets\GameAssets\Resources\gameButtons.txt" />
-     <None Include="Assets\GameAssets\Resources\store1x.txt" />
+     <None Include="Assets\GameAssets\Resources\store.txt" />
      <None Include="Assets\GameAssets\Resources\VougeSheet2x.txt" />
      <None Include="Assets\GameAssets\Resources\AllButtons4x.txt" />
      <None Include="Assets\Plugins\UIToolkit\Shaders\UIToolkit No Alpha.shader" />
