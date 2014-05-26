@@ -367,6 +367,6 @@
 	"format": "PVRTC4",
 	"size": {"w":2048,"h":2048},
 	"scale": "1",
-	"smartupdate": "$TexturePacker:SmartUpdate:ece4177ea7e5698ac6d5fcf43bc36205:1c18b2f65a4c6ad711905a0e29852150:b101ee4c8b290989ea775c474ce2a6ab$"
+	"smartupdate": "$TexturePacker:SmartUpdate:06f893f0497e0532ce455b6313a80075:1c18b2f65a4c6ad711905a0e29852150:b101ee4c8b290989ea775c474ce2a6ab$"
 }
 }
