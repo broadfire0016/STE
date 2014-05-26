@@ -46,6 +46,8 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Scripts\Game play\BallDisableScript.cs" />
+     <Compile Include="Assets\Scripts\Game play\BallMotionScript.cs" />
      <Compile Include="Assets\Scripts\Game play\BasketScript.cs" />
      <Compile Include="Assets\Scripts\Game play\Controller.cs" />
      <Compile Include="Assets\Scripts\Game play\EggDisableScript.cs" />
@@ -53,12 +55,11 @@
      <Compile Include="Assets\Scripts\Game play\MovingObject.cs" />
      <Compile Include="Assets\Scripts\Game play\ObjectPooler.cs" />
      <Compile Include="Assets\Scripts\Game play\Score.cs" />
-     <Compile Include="Assets\Scripts\Game play\SpawnDart.cs" />
+     <Compile Include="Assets\Scripts\Game play\SpawnBall.cs" />
      <Compile Include="Assets\Scripts\Game play\Spawner.cs" />
      <Compile Include="Assets\Scripts\Game play\Timer.cs" />
-     <Compile Include="Assets\Scripts\Game play\ToyDartDisableScript.cs" />
-     <Compile Include="Assets\Scripts\Game play\ToyDartMotionScript.cs" />
      <Compile Include="Assets\Scripts\Game play\pause.cs" />
+     <Compile Include="Assets\Scripts\buttons\AudioScript.cs" />
      <Compile Include="Assets\Scripts\buttons\DisplayButtons.cs" />
      <Compile Include="Assets\Scripts\buttons\DisplayHighScore.cs" />
      <Compile Include="Assets\Scripts\buttons\HighScore.cs" />

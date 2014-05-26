@@ -10,8 +10,6 @@ public class pause : MonoBehaviour {
 	public float newPosZ;
 	float currentPosX, currentPosY, currentPosZ;
 	public UIToolkit buttonsManager;
-	ToyDartDisableScript hideDart;
-	SpawnDart showDart;
 
 	// pause Button Function
 	void Start () {

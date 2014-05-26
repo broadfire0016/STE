@@ -11,7 +11,7 @@ public class EggDisableScript : MonoBehaviour {
 			gameObject.rigidbody.isKinematic = false;
 			Invoke ("Destroy", 0.5f);
 		}
-		if(other.gameObject.name == "ToyDart(Clone)" || other.gameObject.name == "ToyDart"){
+		if(other.gameObject.name == "Ball" || other.gameObject.name == "Ball(Clone)" ){
 			gameObject.rigidbody.isKinematic = false;
 			//gameObject.rigidbody.velocity = (new Vector3 (-0.5f, 0.5f, 0f) * 3f);
 			if (Application.loadedLevelName != "Level2")

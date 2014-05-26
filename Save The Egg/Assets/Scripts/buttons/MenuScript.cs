@@ -134,6 +134,8 @@ public class MenuScript : MonoBehaviour {
 			storeBtn.positionFromTopLeft( 0.67f, 0.17f );
 			hsBtn.positionFromTopLeft( 0.72f, 0.17f );
 			creditsBtn.positionFromTopLeft( 0.77f, 0.17f );
+			sound.positionFromBottomLeft( 0.015f, 0.024f );
+			music.positionFromBottomLeft( 0.015f, 0.25f );
 		}
 		if (Screen.width == 768 && Screen.height == 1024 || Screen.width == 1536 && Screen.height == 2048) {
 			post1.positionFromTopLeft (0.48f, 0.10f);
@@ -142,6 +144,8 @@ public class MenuScript : MonoBehaviour {
 			storeBtn.positionFromTopLeft( 0.695f, 0.17f );
 			hsBtn.positionFromTopLeft( 0.75f, 0.17f );
 			creditsBtn.positionFromTopLeft( 0.805f, 0.17f );
+			sound.positionFromBottomLeft( 0.015f, 0.024f );
+			music.positionFromBottomLeft( 0.015f, 0.25f );
 		}
 
 		if (Screen.width == 640 && Screen.height == 1136){
