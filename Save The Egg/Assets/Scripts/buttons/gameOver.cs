@@ -38,6 +38,20 @@ public class gameOver : MonoBehaviour {
 		}
 		#endif
 
+		#if UNITY_IOS
+		if (Screen.width == 640 && Screen.height == 960) {
+
+		}
+		if (Screen.width == 768 && Screen.height == 1024 || Screen.width == 1536 && Screen.height == 2048) {
+
+		}
+		
+		if (Screen.width == 640 && Screen.height == 1136){
+
+		}
+		
+		#endif
+
 
 	}
 }

@@ -13,6 +13,7 @@ public class pause : MonoBehaviour {
 
 	// pause Button Function
 	void Start () {
+		var scaleFactor = ScaleFactor.GetScaleFactor ();
 		var settingButton = UIToggleButton.create(buttonsManager,"pause_normal2.png", "pause_active2.png","pause_normal2.png",0,0);
 		settingButton.positionFromTopLeft( 0.28f, 0.9f );
 		currentPosX = camera.transform.position.x;
@@ -20,7 +21,7 @@ public class pause : MonoBehaviour {
 		currentPosZ = camera.transform.position.z;
 		settingButton.onToggle += (sender, selected) => check (sender);
 		settingButton.selected = false;
-		settingButton.setSize(50f,50f);
+		settingButton.setSize(settingButton.width/scaleFactor , settingButton.height / scaleFactor);
 	
 	}
 
