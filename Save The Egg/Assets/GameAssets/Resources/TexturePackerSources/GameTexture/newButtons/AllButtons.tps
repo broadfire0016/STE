@@ -6,7 +6,7 @@
         <key>texturePackerVersion</key>
         <string>3.3.4</string>
         <key>fileName</key>
-        <string>C:/Users/OJT/Music/Save The Egg_unity_05232014/Assets/TexturePackerSources/GameTexture/newButtons/AllButtons.tps</string>
+        <string>C:/Users/OJT/Music/STE/Save The Egg/Assets/GameAssets/Resources/TexturePackerSources/GameTexture/newButtons/AllButtons.tps</string>
         <key>autoSDSettings</key>
         <array>
             <struct type="AutoSDSettings">
@@ -72,7 +72,7 @@
         <key>dataFormat</key>
         <string>unity</string>
         <key>textureFileName</key>
-        <filename>../../../../../Save The Egg52314/Assets/DemoAssets/Resources/AllButtons{v}x.pvr</filename>
+        <filename>../../../AllButtons{v}x.pvr</filename>
         <key>flipPVR</key>
         <true/>
         <key>ditherType</key>
@@ -165,7 +165,7 @@
             <key>data</key>
             <struct type="DataFile">
                 <key>name</key>
-                <filename>../../../../../Save The Egg52314/Assets/DemoAssets/Resources/AllButtons{v}x.txt</filename>
+                <filename>../../../AllButtons{v}x.txt</filename>
             </struct>
         </map>
         <key>multiPack</key>
@@ -247,6 +247,10 @@
             <filename>resume_active.png</filename>
             <filename>resume_normal.png</filename>
             <filename>retry.png</filename>
+            <filename>store_normal.png</filename>
+            <filename>use_active.png</filename>
+            <filename>use_normal.png</filename>
+            <filename>store_active.png</filename>
         </array>
         <key>ignoreFileList</key>
         <array/>
