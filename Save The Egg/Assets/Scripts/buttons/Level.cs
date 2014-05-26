@@ -31,8 +31,21 @@ public class Level : MonoBehaviour {
 		if (Screen.width == 411 && Screen.height == 730){ //iphone 5
 			scoretext1.positionFromTopLeft(0.455f, 0.445f);
 		}
-		
 		#endif
+
+		#if UNITY_IOS
+		if (Screen.width == 640 && Screen.height == 960) {
+			scoretext1.positionFromTopLeft(0.455f, 0.455f);
+		}
+		if (Screen.width == 768 && Screen.height == 1024 || Screen.width == 1536 && Screen.height == 2048) {
+			scoretext1.positionFromTopLeft(0.455f, 0.455f);
+		}
+		
+		if (Screen.width == 640 && Screen.height == 1136){
+			scoretext1.positionFromTopLeft(0.455f, 0.445f);
+		}
+		#endif
+
 
 	}
 

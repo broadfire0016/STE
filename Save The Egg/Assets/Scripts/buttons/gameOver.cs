@@ -40,14 +40,17 @@ public class gameOver : MonoBehaviour {
 
 		#if UNITY_IOS
 		if (Screen.width == 640 && Screen.height == 960) {
-
+			menuButton.positionFromCenter( 0.25f, -0.09f );
+			retryButton.positionFromCenter( 0.25f, 0.07f );
 		}
 		if (Screen.width == 768 && Screen.height == 1024 || Screen.width == 1536 && Screen.height == 2048) {
-
+			menuButton.positionFromCenter( 0.23f, -0.10f );
+			retryButton.positionFromCenter( 0.23f, 0.07f );
 		}
 		
 		if (Screen.width == 640 && Screen.height == 1136){
-
+			menuButton.positionFromCenter( 0.22f, -0.10f );
+			retryButton.positionFromCenter( 0.22f, 0.07f );
 		}
 		
 		#endif
