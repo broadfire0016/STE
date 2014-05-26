@@ -93,30 +93,41 @@ public class MenuScript : MonoBehaviour {
 		//creditButton.touchDownSound = Click;
 
 #if UNITY_EDITOR
-		if (Screen.width == 427 && Screen.height == 640   || Screen.width == 360 && Screen.height == 640) {
+		if (Screen.width == 487 && Screen.height == 730) {
 			post1.positionFromTopLeft (0.48f, 0.10f);
 			playBtn.positionFromTopLeft (0.55f, 0.13f);
 			collectBtn.positionFromTopLeft( 0.62f, 0.17f );
 			storeBtn.positionFromTopLeft( 0.67f, 0.17f );
 			hsBtn.positionFromTopLeft( 0.72f, 0.17f );
 			creditsBtn.positionFromTopLeft( 0.77f, 0.17f );
-			sound.positionFromBottomLeft( 0.002f, 0.024f );
-			music.positionFromBottomLeft( 0.002f, 0.25f );
+			sound.positionFromBottomLeft( 0.015f, 0.024f );
+			music.positionFromBottomLeft( 0.015f, 0.25f );
 		}
-		if (Screen.width == 480 && Screen.height == 640) {
+		if (Screen.width == 548 && Screen.height == 730) {
 			post1.positionFromTopLeft (0.48f, 0.10f);
 			playBtn.positionFromTopLeft (0.56f, 0.13f);
 			collectBtn.positionFromTopLeft( 0.64f, 0.17f );
 			storeBtn.positionFromTopLeft( 0.695f, 0.17f );
 			hsBtn.positionFromTopLeft( 0.75f, 0.17f );
 			creditsBtn.positionFromTopLeft( 0.805f, 0.17f );
-			sound.positionFromBottomLeft( 0.002f, 0.024f );
-			music.positionFromBottomLeft( 0.002f, 0.25f );
+			sound.positionFromBottomLeft( 0.015f, 0.024f );
+			music.positionFromBottomLeft( 0.015f, 0.25f );
 		}
+		if (Screen.width == 411 && Screen.height == 730){
+			post1.positionFromTopLeft (0.48f, 0.08f);
+			playBtn.positionFromTopLeft (0.54f, 0.10f);
+			collectBtn.positionFromTopLeft( 0.60f, 0.14f );
+			storeBtn.positionFromTopLeft( 0.64f, 0.14f );
+			hsBtn.positionFromTopLeft( 0.68f, 0.14f );
+			creditsBtn.positionFromTopLeft( 0.72f, 0.14f );
+			sound.positionFromBottomLeft( 0.02f, 0.024f );
+			music.positionFromBottomLeft( 0.02f, 0.25f );
+		}
+
 #endif
 
 #if UNITY_IOS
-		if (Screen.width == 640 && Screen.height == 960 || Screen.width == 640 && Screen.height == 1136) {
+		if (Screen.width == 640 && Screen.height == 960) {
 			post1.positionFromTopLeft (0.48f, 0.10f);
 			playBtn.positionFromTopLeft (0.55f, 0.13f);
 			collectBtn.positionFromTopLeft( 0.62f, 0.17f );
@@ -131,6 +142,17 @@ public class MenuScript : MonoBehaviour {
 			storeBtn.positionFromTopLeft( 0.695f, 0.17f );
 			hsBtn.positionFromTopLeft( 0.75f, 0.17f );
 			creditsBtn.positionFromTopLeft( 0.805f, 0.17f );
+		}
+
+		if (Screen.width == 640 && Screen.height == 1136){
+			post1.positionFromTopLeft (0.48f, 0.08f);
+			playBtn.positionFromTopLeft (0.54f, 0.10f);
+			collectBtn.positionFromTopLeft( 0.60f, 0.14f );
+			storeBtn.positionFromTopLeft( 0.64f, 0.14f );
+			hsBtn.positionFromTopLeft( 0.68f, 0.14f );
+			creditsBtn.positionFromTopLeft( 0.72f, 0.14f );
+			sound.positionFromBottomLeft( 0.02f, 0.024f );
+			music.positionFromBottomLeft( 0.02f, 0.25f );
 		}
 
 #endif
