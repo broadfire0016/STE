@@ -6,8 +6,8 @@ using System.Collections;
 
 public class Main : MonoBehaviour {
 
-	public static int minutes = 3;
-	public static int seconds = 0;
+	public static int minutes = 1;
+	public static int seconds = 30;
 	private static int score;
 	private static int TargetScore;
 	private static int level;
@@ -23,61 +23,61 @@ public class Main : MonoBehaviour {
 		{
 		case "Level1":
 				level = 1;
-				Timer.SetTimer(3,00);
+				Timer.SetTimer(1,30);
 				Scores.SetTargetScore(15);
 				Scores.setScore(score);
 				break;
 		case "Level2":
 				level = 2;
-				Timer.SetTimer(3,0);
+				Timer.SetTimer(1,30);
 				Scores.SetTargetScore(30);
 				Scores.setScore(score);
 				break;
 		case "Level3":
 				level = 3;
-				Timer.SetTimer(3,0);
+				Timer.SetTimer(1,30);
 				Scores.SetTargetScore(45);
 				Scores.setScore(score);
 				break;
 		case "Level4":
 				level = 4;
-				Timer.SetTimer(3,0);
+				Timer.SetTimer(1,30);
 				Scores.SetTargetScore(60);
 				Scores.setScore(score);
 				break;
 		case "Level5":
 				level = 5;
-				Timer.SetTimer(3,0);
+				Timer.SetTimer(1,30);
 				Scores.SetTargetScore(75);
 				Scores.setScore(score);
 				break;
 		case "Level6":
 				level = 6;
-				Timer.SetTimer(3,0);
+				Timer.SetTimer(1,30);
 				Scores.SetTargetScore(90);
 				Scores.setScore(score);
 				break;
 		case "Level7":
 				level = 7;
-				Timer.SetTimer(3,0);
+				Timer.SetTimer(1,30);
 				Scores.SetTargetScore(105);
 				Scores.setScore(score);
 				break;
 		case "Level8":
 				level = 8;
-				Timer.SetTimer(3,0);
+				Timer.SetTimer(1,30);
 				Scores.SetTargetScore(120);
 				Scores.setScore(score);
 				break;
 		case "Level9":
 				level = 9;
-				Timer.SetTimer(3,0);
+				Timer.SetTimer(1,30);
 				Scores.SetTargetScore(135);
 				Scores.setScore(score);
 				break;
 		case "Level10":
 				level = 10;
-				Timer.SetTimer(3,0);
+				Timer.SetTimer(1,30);
 				Scores.SetTargetScore(150);
 				Scores.setScore(score);
 				break;

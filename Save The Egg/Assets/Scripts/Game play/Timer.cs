@@ -11,7 +11,7 @@ public class Timer : MonoBehaviour {
 
  public void Start(){
 		timeText = new UIText(textButtonManager,"VogueCyrBold_60_ffffff", "VogueCyrBold_60_ffffff.png");
-		timetext1 = timeText.addTextInstance(string.Format("{0} : 00" , minutes),0,0);
+		timetext1 = timeText.addTextInstance(string.Format("{0} : 30" , minutes),0,0);
 		timetext1.color = Color.black;
 		timetext1.positionFromTopLeft(0.16f, 0.45f);
 		InvokeRepeating("countDown",1,1);
