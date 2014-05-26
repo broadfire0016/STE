@@ -18,6 +18,7 @@ public class Main : MonoBehaviour {
 		//PlayerPrefs.SetInt("High Score", 0);
 		var Scores = gameObject.GetComponent<Score>();
 		Level record = gameObject.GetComponent<Level>();
+		Time.timeScale = 1;
 
 		switch (Application.loadedLevelName)
 		{

@@ -1,13 +1,14 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Game play\pause.cs">
     <Files>
-      <File FileName="Assets\Scripts\buttons\MenuScript.cs" Line="95" Column="1" />
+      <File FileName="Assets\Scripts\buttons\MenuScript.cs" Line="224" Column="2" />
       <File FileName="Assets\Scripts\buttons\AudioScript.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\buttons\Level.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\buttons\gameOver.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\Game play\pause.cs" Line="12" Column="34" />
+      <File FileName="Assets\Scripts\buttons\Level.cs" Line="24" Column="1" />
+      <File FileName="Assets\Scripts\Game play\pause.cs" Line="38" Column="76" />
       <File FileName="Assets\Scripts\Game play\SpawnBall.cs" Line="16" Column="21" />
+      <File FileName="Assets\Scripts\buttons\gameOver.cs" Line="14" Column="3" />
+      <File FileName="Assets\Scripts\Game play\Main.cs" Line="137" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

@@ -20,6 +20,7 @@ public class MenuScript : MonoBehaviour {
 		//Screen.SetResolution (1536, 2048, true, 60);
 		Click2 = Click;
 		var scaleFactor = ScaleFactor.GetScaleFactor ();
+		Time.timeScale = 1;
 
 		print ("Width " + Screen.width + " Height " + Screen.height);
 		//main menu
