@@ -14,10 +14,10 @@ public class Score : MonoBehaviour {
 		//Initialize Score
 		scoreText = new UIText(textButtonManager,"VogueCyrBold_60_ffffff", "VogueCyrBold_60_ffffff.png");
 		scoretext1 = scoreText.addTextInstance(string.Format("{0}", score), 0, 0 );
-		scoretext1.positionFromTopLeft(0.16f, -0.15f); //display for score
+		scoretext1.positionFromTopLeft(0.16f, 0.18f); //display for score
 		scoretext1.color = Color.black;
 		scoretext2 = scoreText.addTextInstance(string.Format("{0}", TargetScore), 0, 0 );
-		scoretext2.positionFromTopLeft(0.16f, 0.70f); //display for target score
+		scoretext2.positionFromTopLeft(0.16f, 0.78f); //display for target score
 		scoretext2.color = Color.black;
 	}
 
