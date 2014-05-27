@@ -6,6 +6,7 @@ using System.Collections;
 
 public class EggDisableScript : MonoBehaviour {
 
+
 	void OnCollisionEnter(Collision other) {
 		if(other.gameObject.name == "Floor" || other.gameObject.name == "Cart" || other.gameObject.name == "basketwall"){
 			gameObject.rigidbody.isKinematic = false;
@@ -18,9 +19,10 @@ public class EggDisableScript : MonoBehaviour {
 				gameObject.transform.Translate (new Vector3(-1f, 0f, 0f));
 			else
 				gameObject.transform.Translate (new Vector3(0f,0f,-1f));
-		}
-	}
 
+				
+	}
+}
 	void OnTriggerEnter(Collider other){
 		if (other.gameObject.name == "basketBody")
 			Invoke("Destroy",0.1f);
