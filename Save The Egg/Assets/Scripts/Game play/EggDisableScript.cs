@@ -6,11 +6,14 @@ using System.Collections;
 
 public class EggDisableScript : MonoBehaviour {
 
+	public GameObject brokenEgg;
 
 	void OnCollisionEnter(Collision other) {
 		if(other.gameObject.name == "Floor" || other.gameObject.name == "Cart" || other.gameObject.name == "basketwall"){
 			gameObject.rigidbody.isKinematic = false;
-			Invoke ("Destroy", 0.5f);
+			Invoke ("Destroy", 0.1f);
+			brokenEgg.gameObject.SetActive(true);
+			brokenEgg.transform.position = gameObject.transform.position;
 		}
 		if(other.gameObject.name == "Ball" || other.gameObject.name == "Ball(Clone)" ){
 			gameObject.rigidbody.isKinematic = false;
@@ -20,7 +23,7 @@ public class EggDisableScript : MonoBehaviour {
 			else
 				gameObject.transform.Translate (new Vector3(0f,0f,-1f));
 
-				
+			Invoke("RemoveBrokenEgg",0.5f);			
 	}
 }
 	void OnTriggerEnter(Collider other){
@@ -35,5 +38,9 @@ public class EggDisableScript : MonoBehaviour {
 	void OnDisable(){
 		gameObject.rigidbody.isKinematic = true;
 		CancelInvoke ();
+	}
+
+	void RemoveBrokenEgg(){
+		brokenEgg.gameObject.SetActive(false);
 	}
 }
