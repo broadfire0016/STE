@@ -5,7 +5,7 @@ public class Spawner : MonoBehaviour {
 	public float priority = 0.5f;
 	int eggExit = 0;
 
-	GameObject spawnWhiteEgg, spawnRottenEgg, spawnGoldEgg;
+	GameObject spawnWhiteEgg, spawnRottenEgg, spawnGoldEgg, spawnBlueEgg, spawnRedEgg;
 
 	void Start(){
 		Invoke ("callEgg", (priority));
@@ -46,11 +46,31 @@ public class Spawner : MonoBehaviour {
 			spawnGoldEgg.SetActive(true);
 			//spawnGoldEgg.rigidbody.isKinematic = false;
 			break;
+		case 4: 
+			ObjectPooler BlueEgg = GameObject.Find("Blue").GetComponent<ObjectPooler>();
+			spawnBlueEgg = BlueEgg.GetPooledObject();
+			//spawnGoldEgg.rigidbody.Sleep();
+			spawnBlueEgg.rigidbody.isKinematic = true;
+			spawnBlueEgg.transform.position = gameObject.transform.position;
+			spawnBlueEgg.transform.rotation = gameObject.transform.rotation;
+			spawnBlueEgg.SetActive(true);
+			//spawnGoldEgg.rigidbody.isKinematic = false;
+			break;
+		case 5: 
+			ObjectPooler RedEgg = GameObject.Find("Red").GetComponent<ObjectPooler>();
+			spawnRedEgg = RedEgg.GetPooledObject();
+			//spawnGoldEgg.rigidbody.Sleep();
+			spawnRedEgg.rigidbody.isKinematic = true;
+			spawnRedEgg.transform.position = gameObject.transform.position;
+			spawnRedEgg.transform.rotation = gameObject.transform.rotation;
+			spawnRedEgg.SetActive(true);
+			//spawnGoldEgg.rigidbody.isKinematic = false;
+			break;
 		}
 	}
 
 	public int spawnEgg () {
-		int randomEgg = Random.Range(1,4);
+		int randomEgg = Random.Range(1,6);
 		return randomEgg;
 	}
 
@@ -61,7 +81,8 @@ public class Spawner : MonoBehaviour {
 	}
 
 	void OnTriggerExit(Collider egg){
-		if (egg.gameObject.name == "White Egg(Clone)" || egg.gameObject.name == "Rotten Egg(Clone)" || egg.gameObject.name == "Gold Egg(Clone)"){
+		if (egg.gameObject.name == "White Egg(Clone)" || egg.gameObject.name == "Rotten Egg(Clone)" || egg.gameObject.name == "Gold Egg(Clone)" ||
+		    egg.gameObject.name == "Blue Egg(Clone)" || egg.gameObject.name == "Red Egg(Clone)" ){
 				Invoke("Start",priority);
 		}
 	}
