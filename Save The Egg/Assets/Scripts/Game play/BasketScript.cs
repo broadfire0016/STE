@@ -5,6 +5,7 @@ public class BasketScript : MonoBehaviour {
 	
 	private int score = 0;
 	public GameObject plus2, minus3, plus4;
+	MovingObject blue;
 	float time, seconds;
 
 	void Start(){
@@ -28,12 +29,9 @@ public class BasketScript : MonoBehaviour {
 			plus4.gameObject.SetActive(true);
 			Invoke("Start",1.2f);
 		}else if(egg.tag == "Blue Egg"){
-			MovingObject.MoveSlow();
+			blue = gameObject.GetComponent<MovingObject>();
+			blue.MoveSlow();
 			Invoke("reset", 5f);
-		
-			//score += 4;
-			//anim3.gameObject.SetActive(true);
-			//Invoke("Start",1.2f);
 		}
 		if (score < 0)
 			score = 0;
@@ -46,7 +44,8 @@ public class BasketScript : MonoBehaviour {
 	}
 								
 	public void reset(){
-		MovingObject.MoveNormal();
+		//MovingObject.MoveNormal();
+		blue.MoveNormal();
 	}
 		
 }

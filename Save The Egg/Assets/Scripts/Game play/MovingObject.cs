@@ -7,12 +7,14 @@ public class MovingObject : MonoBehaviour {
 	public float _distance1 = 100.0f;
 	public float _distance2 = 200.0f;
 	public Transform basket;
-	public static float _travel = 0f;
-	static float  slowSpeed = 0.01f , slowTravel = 0.001f;
+	public float _travel = 0f, _travelRate = 0f;
+	float  slowSpeed = 0.05f , slowTravel = 0.5f;
+	float normalSpeed = 0.1f, normalTravel = 1f;
 
 	// Use this for initialization
 	void Start () {
-		//InvokeRepeating("MoveRight" , 0.1f, 0.02f);
+		_objspeed = normalSpeed;
+		_travelRate = normalTravel;
 	}
 	
 	// Update is called once per frame
@@ -28,21 +30,21 @@ public class MovingObject : MonoBehaviour {
 
 	void MoveLeft(){
 		transform.Translate(new Vector3(_objspeed, 0, 0));
-			_travel += 1f;
+		_travel += _travelRate;
 	}
 
 	void MoveRight(){
 		transform.Translate(new Vector3(-_objspeed, 0, 0));
-			_travel += 1f;
+		_travel += _travelRate;
 	}
 
-	public static void MoveSlow(){
+	public void MoveSlow(){
 		_objspeed = slowSpeed;
-		_travel += 0.001f;
+		_travelRate = slowTravel;
 	}
 
-	public static void MoveNormal(){
-		_objspeed = 0.1f;
-		_travel += 1f;
+	public void MoveNormal(){
+		_objspeed = normalSpeed;
+		_travelRate = normalTravel;
 	}
 }
