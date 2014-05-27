@@ -62,7 +62,7 @@
             </struct>
         </array>
         <key>allowRotation</key>
-        <true/>
+        <false/>
         <key>premultiplyAlpha</key>
         <true/>
         <key>shapeDebug</key>
@@ -206,22 +206,36 @@
         </struct>
         <key>fileList</key>
         <array>
+            <filename>resume_active.png</filename>
+            <filename>resume_normal.png</filename>
+            <filename>retry.png</filename>
             <filename>retry_normal.png</filename>
             <filename>sound_active.png</filename>
             <filename>sound_mute.png</filename>
             <filename>sound_normal.png</filename>
+            <filename>store_active.png</filename>
+            <filename>store_normal.png</filename>
             <filename>StoreBtn_active.png</filename>
             <filename>StoreBtn_normal.png</filename>
+            <filename>use_active.png</filename>
+            <filename>use_normal.png</filename>
             <filename>_1.jpg</filename>
             <filename>_2.jpg</filename>
             <filename>_3.jpg</filename>
             <filename>_4.jpg</filename>
+            <filename>_5.jpg</filename>
+            <filename>_6.jpg</filename>
+            <filename>_7.jpg</filename>
+            <filename>_8.jpg</filename>
+            <filename>ArrowDown.png</filename>
+            <filename>ArrowUp.png</filename>
             <filename>back_active.png</filename>
             <filename>back_active2.png</filename>
             <filename>back_normal.png</filename>
             <filename>back_normal2.png</filename>
             <filename>buy_active.png</filename>
             <filename>buy_normal.png</filename>
+            <filename>CloseBtn.png</filename>
             <filename>CollectionBtn_active.png</filename>
             <filename>CollectionBtn_normal.png</filename>
             <filename>CreditsBtn_activel.png</filename>
@@ -236,21 +250,16 @@
             <filename>music_mute.png</filename>
             <filename>music_normal.png</filename>
             <filename>next.png</filename>
+            <filename>next_active.png</filename>
             <filename>next_normal.png</filename>
             <filename>pause_active2.png</filename>
             <filename>pause_normal2.png</filename>
             <filename>play_active.png</filename>
+            <filename>play_normal.png</filename>
             <filename>play_normal2.png</filename>
             <filename>PlayBtn_active.png</filename>
             <filename>PlayBtn_normal.png</filename>
             <filename>post.png</filename>
-            <filename>resume_active.png</filename>
-            <filename>resume_normal.png</filename>
-            <filename>retry.png</filename>
-            <filename>store_normal.png</filename>
-            <filename>use_active.png</filename>
-            <filename>use_normal.png</filename>
-            <filename>store_active.png</filename>
         </array>
         <key>ignoreFileList</key>
         <array/>

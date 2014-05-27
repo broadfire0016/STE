@@ -113,9 +113,9 @@
      <None Include="Assets\GameAssets\Resources\store.txt" />
      <None Include="Assets\contributors.txt" />
      <None Include="Assets\GameAssets\Resources\gameButtons2x.txt" />
+     <None Include="Assets\GameAssets\Resources\AllButtons4x.txt" />
      <None Include="Assets\GameAssets\Resources\BtnTry4x.txt" />
      <None Include="Assets\GameAssets\Resources\MuseoSheet4x.txt" />
-     <None Include="Assets\GameAssets\Resources\AllButtons.txt" />
      <None Include="Assets\GameAssets\Resources\MuseoSheet.txt" />
      <None Include="Assets\GameAssets\Resources\VogueCyrBold_60_ffffff.txt" />
      <None Include="Assets\GameAssets\Resources\VougeLevelSheet.txt" />
@@ -126,11 +126,12 @@
      <None Include="Assets\GameAssets\Resources\MuseoSheet2x.txt" />
      <None Include="Assets\GameAssets\Resources\gameButtons.txt" />
      <None Include="Assets\GameAssets\Resources\VougeSheet2x.txt" />
-     <None Include="Assets\GameAssets\Resources\AllButtons4x.txt" />
+     <None Include="Assets\GameAssets\Resources\AllButtons1x.txt" />
      <None Include="Assets\Plugins\UIToolkit\Shaders\UIToolkit No Alpha.shader" />
      <None Include="Assets\GameAssets\Resources\VogueCyrBold_60_ffffff4x.txt" />
      <None Include="Assets\GameAssets\Resources\store2x.txt" />
      <None Include="Assets\GameAssets\Resources\VougeSheet4x.txt" />
+     <None Include="Assets\GameAssets\Resources\AllButtonsx.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
