@@ -28,4 +28,12 @@ public class AudioScript : MonoBehaviour {
 		//SoundSource.Play ();
 		MusicSource.Play();
 	}
+
+	public static void setMusicMode(bool mode){
+		MusicSource.mute = mode;
+	}
+
+	public static void setSoundMode(bool mode){
+		SoundSource.mute = mode;
+	}
 }
