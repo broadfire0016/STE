@@ -32,7 +32,7 @@ public class BasketScript : MonoBehaviour {
 		}else if(egg.tag == "Blue Egg"){
 			blue = gameObject.GetComponent<MovingObject>();
 			blue.MoveSlow();
-			freeze.SetActive(false);
+			freeze.SetActive(true);
 			Invoke("reset", 5f);
 		}else if(egg.tag == "Red Egg"){
 			Timer.plusTenSeconds();
