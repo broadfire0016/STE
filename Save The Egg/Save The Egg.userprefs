@@ -1,8 +1,10 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Game play\MovingObject.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Game play\BasketScript.cs">
     <Files>
-      <File FileName="Assets\Scripts\Game play\MovingObject.cs" Line="16" Column="2" />
+      <File FileName="Assets\Scripts\Game play\BasketScript.cs" Line="35" Column="28" />
+      <File FileName="Assets\Scripts\Game play\MovingObject.cs" Line="11" Column="45" />
+      <File FileName="Assets\Scripts\Game play\Timer.cs" Line="53" Column="15" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
