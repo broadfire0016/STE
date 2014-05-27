@@ -4,7 +4,7 @@ using System.Collections;
 public class BasketScript : MonoBehaviour {
 	
 	private int score = 0;
-	public GameObject plus2, minus3, plus4;
+	public GameObject plus2, minus3, plus4, freeze;
 	MovingObject blue;
 	float time, seconds;
 
@@ -12,6 +12,7 @@ public class BasketScript : MonoBehaviour {
 		plus2.gameObject.SetActive(false);
 		minus3.gameObject.SetActive(false);
 		plus4.gameObject.SetActive(false);
+		freeze.gameObject.SetActive(false);
 	}
 
 	void OnTriggerEnter(Collider egg){
@@ -31,6 +32,7 @@ public class BasketScript : MonoBehaviour {
 		}else if(egg.tag == "Blue Egg"){
 			blue = gameObject.GetComponent<MovingObject>();
 			blue.MoveSlow();
+			freeze.SetActive(false);
 			Invoke("reset", 5f);
 		}else if(egg.tag == "Red Egg"){
 			Timer.plusTenSeconds();
