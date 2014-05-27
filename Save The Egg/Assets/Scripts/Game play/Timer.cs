@@ -29,6 +29,10 @@ public class Timer : MonoBehaviour {
  public static int GetSeconds(){
 		return seconds; 
  }
+
+ public static void plusTenSeconds(){
+		seconds += 10;
+ }
  
  private void countDown(){ // decreases the time
 
@@ -44,7 +48,10 @@ public class Timer : MonoBehaviour {
 				--minutes;
 				seconds = 59;
 			}
-			
+
+			if(seconds > 59)
+				++minutes;
+
 			if (seconds > 9)
 				timetext1.text = string.Format("{0} : {1}", minutes, seconds);
 			else

@@ -32,7 +32,11 @@ public class BasketScript : MonoBehaviour {
 			blue = gameObject.GetComponent<MovingObject>();
 			blue.MoveSlow();
 			Invoke("reset", 5f);
+		}else if(egg.tag == "Red Egg"){
+			Timer.plusTenSeconds();
+			Invoke("reset", 5f);
 		}
+
 		if (score < 0)
 			score = 0;
 
@@ -44,7 +48,6 @@ public class BasketScript : MonoBehaviour {
 	}
 								
 	public void reset(){
-		//MovingObject.MoveNormal();
 		blue.MoveNormal();
 	}
 		
