@@ -25,8 +25,18 @@ public class pause : MonoBehaviour {
 		settingButton.selected = false;
 		pauseDefaultx = settingButton.width/scaleFactor ;
 		pauseDefaultY = settingButton.height / scaleFactor;
+
+#if UNITY_EDITOR
 		settingButton.setSize(settingButton.width/scaleFactor , settingButton.height / scaleFactor);
-	
+#endif
+
+
+#if UNITY_IOS
+		if (Screen.width == 640 && Screen.height == 1136 || Screen.width == 640 && Screen.height == 960){
+			settingButton.setSize(settingButton.width/scaleFactor * 0.4f , settingButton.height / scaleFactor * 0.4f);
+		}
+#endif
+
 	}
 
 

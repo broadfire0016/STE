@@ -16,10 +16,10 @@ public class BallMotionScript : MonoBehaviour
 	
 	void IncreaseTime()
 	{
-		time += Time.deltaTime;
+		time += Time.deltaTime*10f;
 	}
 
-	void OnTouchStay() 
+	void OnTouchDown() 
 	{
 		touch = true;
 		//print ("OnTouchStay " + touch);
@@ -32,7 +32,7 @@ public class BallMotionScript : MonoBehaviour
 	{
 		currentPostion = Input.mousePosition;
 		endPosition = currentPostion - startPosition;
-		if (time < 0.1f && endPosition.y > 15) 
+		if (time > 0.1f || time < 0.2f && endPosition.y > 15) 
 		{
 			touch = false;
 
@@ -58,7 +58,7 @@ public class BallMotionScript : MonoBehaviour
 					direction = new Vector3((endPosition.y + 30),(endPosition.y),(endPosition.x * -1));
 				}
 				gameObject.rigidbody.isKinematic = false;
-				gameObject.rigidbody.velocity = direction / (time * 200f);
+				gameObject.rigidbody.velocity = direction / (time * 100f);
 			}
 		}
 		time = 0;
