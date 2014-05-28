@@ -11,12 +11,13 @@ public class Level : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+		print (score);
 		scoreText = new UIText(textManager, "VogueCyrBold_60_ffffff", "VogueCyrBold_60_ffffff.png");
-		scoretext1 = scoreText.addTextInstance(string.Format("{0}", score), 0, 0 );
+		scoretext1 = scoreText.addTextInstance(string.Format("{0}", Main.getScore()), 0, 0 );
 		scoretext1.color = Color.black;
 		scoretext1.textScale = 2f;
 		if (Application.loadedLevelName != "gameOver"){
-			scoretext2 = scoreText.addTextInstance(string.Format("{0}", TargetScore), 0, 0 );
+			scoretext2 = scoreText.addTextInstance(string.Format("{0}", Main.getTargetScore()), 0, 0 );
 			scoretext2.positionFromCenter(0.17f, 0.0f);
 			scoretext2.color = Color.black;
 		}
@@ -50,16 +51,9 @@ public class Level : MonoBehaviour {
 	}
 
 	void Update(){
-		scoretext1.text = string.Format("{0}", score);
-		scoretext2.text = string.Format("{0}", TargetScore);
+		scoretext1.text = string.Format("{0}", Main.getScore());
+		scoretext2.text = string.Format("{0}", Main.getTargetScore()+15);
 	}
 
-	public void SetTargetScore(int tScore){
-		TargetScore = tScore+15;
-	}
-	
-	public void setScore(int newScore){
-		score = newScore;
-	}
-	
+
 }

@@ -32,7 +32,7 @@ public class BallMotionScript : MonoBehaviour
 	{
 		currentPostion = Input.mousePosition;
 		endPosition = currentPostion - startPosition;
-		if (time < 1 || time > 0.5f && endPosition.y > 15) 
+		if (time < 0.1f && endPosition.y > 15) 
 		{
 			touch = false;
 
@@ -41,6 +41,7 @@ public class BallMotionScript : MonoBehaviour
 
 			if(touch == false)
 			{
+				print (time);
 				//direction of dart (left & right)
 				if(endPosition.x < -40)
 					endPosition.x = -40;
@@ -57,9 +58,8 @@ public class BallMotionScript : MonoBehaviour
 					direction = new Vector3((endPosition.y + 30),(endPosition.y),(endPosition.x * -1));
 				}
 				gameObject.rigidbody.isKinematic = false;
-				gameObject.rigidbody.velocity = direction / (time * 100f);
+				gameObject.rigidbody.velocity = direction / (time * 200f);
 			}
-
 		}
 		time = 0;
 

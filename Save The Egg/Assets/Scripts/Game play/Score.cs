@@ -4,7 +4,7 @@ using System.Collections;
 public class Score : MonoBehaviour {
 
 	public UIToolkit textButtonManager;
-	private int score;
+	private static int score;
 	private int TargetScore;
 	private UITextInstance scoretext1, scoretext2;
 	UIText scoreText;

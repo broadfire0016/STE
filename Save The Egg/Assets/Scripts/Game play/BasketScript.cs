@@ -16,7 +16,7 @@ public class BasketScript : MonoBehaviour {
 	public AudioClip goldE;
 
 
-	private static int score;
+	private static int score = 0;
 	public GameObject plus2, minus3, plus4, freeze, plus10sec;
 	MovingObject blue;
 	float time, seconds;
@@ -27,6 +27,11 @@ public class BasketScript : MonoBehaviour {
 		plus4.gameObject.SetActive(false);
 		freeze.gameObject.SetActive(false);
 		plus10sec.gameObject.SetActive(false);
+	}
+
+	void Update(){
+		if(Input.GetButtonUp("Fire2"))
+			score++;
 	}
 
 	void OnTriggerEnter(Collider egg){
@@ -73,7 +78,10 @@ public class BasketScript : MonoBehaviour {
 
 	}
 	
-		
+	public void resetScore(){
+		score = 0;
+	}
+
 	public int getScore(){
 		return score;
 	}

@@ -60,8 +60,6 @@
      <Compile Include="Assets\Scripts\Game play\SpawnDart.cs" />
      <Compile Include="Assets\Scripts\Game play\Spawner.cs" />
      <Compile Include="Assets\Scripts\Game play\Timer.cs" />
-     <Compile Include="Assets\Scripts\Game play\ToyDartDisableScript.cs" />
-     <Compile Include="Assets\Scripts\Game play\ToyDartMotionScript.cs" />
      <Compile Include="Assets\Scripts\Game play\pause.cs" />
      <Compile Include="Assets\Scripts\buttons\AudioScript.cs" />
      <Compile Include="Assets\Scripts\buttons\DisplayButtons.cs" />

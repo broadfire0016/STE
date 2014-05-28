@@ -8,23 +8,22 @@ public class Main : MonoBehaviour {
 
 	public static int minutes = 1;
 	public static int seconds = 30;
-	private static int score;
+	private static int score = 0;
 	private static int TargetScore;
 	private static int level;
 	private static int highScore = 0;
 
-
 	void Start () {
 		//PlayerPrefs.SetInt("High Score", 0);
 		var Scores = gameObject.GetComponent<Score>();
-		Level record = gameObject.GetComponent<Level>();
+		BasketScript basketObject = GameObject.Find("basketBody").GetComponent<BasketScript>();
 		Time.timeScale = 1;
-
 		switch (Application.loadedLevelName)
 		{
 		case "Level1":
+				basketObject.resetScore();
 				level = 1;
-				Timer.SetTimer(1,30);
+				Timer.SetTimer(0,5);
 				Scores.SetTargetScore(15);
 				Scores.setScore(score);
 				break;
@@ -82,20 +81,13 @@ public class Main : MonoBehaviour {
 				Scores.SetTargetScore(150);
 				Scores.setScore(score);
 				break;
-		case "levelComplete":
-				record.setScore(score);
-				record.SetTargetScore(TargetScore);
-				break;
-		case "gameOver":
-				record.setScore(score);
-				record.SetTargetScore(TargetScore);
-				break;
 		}
 		
 	}
 
 	void Update () {
-		if (Application.loadedLevelName != "levelComplete" && Application.loadedLevelName != "gameOver"){
+
+		if (Application.loadedLevelName != "levelComplete" || Application.loadedLevelName != "gameOver"){
 			var mins = Timer.GetMinutes();
 			var secs = Timer.GetSeconds();
 			var Scores = gameObject.GetComponent<Score>();
@@ -103,7 +95,7 @@ public class Main : MonoBehaviour {
 			score = basketObject.getScore();
 			Scores.setScore(score);
 			TargetScore = Scores.getTargetScore();
-
+			
 			if (mins == 0 && secs == 0){
 
 				if (score > highScore){
@@ -116,7 +108,6 @@ public class Main : MonoBehaviour {
 					Application.LoadLevel("levelComplete");
 				}
 				else{
-					level = 1;
 					Application.LoadLevel("gameOver");
 				}
 			}
@@ -132,5 +123,12 @@ public class Main : MonoBehaviour {
 		return highScore;
 	}
 
+	public static int getScore(){
+		return score;
+	}
+
+	public static int getTargetScore(){
+		return TargetScore;
+	}
 
 }
