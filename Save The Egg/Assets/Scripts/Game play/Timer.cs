@@ -49,8 +49,10 @@ public class Timer : MonoBehaviour {
 				seconds = 59;
 			}
 
-			if(seconds > 59)
+			if(seconds > 59){
 				++minutes;
+				seconds = 60 - seconds;
+			}
 
 			if (seconds > 9)
 				timetext1.text = string.Format("{0} : {1}", minutes, seconds);

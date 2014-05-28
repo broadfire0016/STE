@@ -16,7 +16,7 @@ public class BasketScript : MonoBehaviour {
 	public AudioClip goldE;
 
 
-	private int score = 0;
+	private static int score;
 	public GameObject plus2, minus3, plus4, freeze, plus10sec;
 	MovingObject blue;
 	float time, seconds;
