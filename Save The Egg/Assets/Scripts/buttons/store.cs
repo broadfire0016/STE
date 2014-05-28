@@ -21,11 +21,11 @@ public class store : MonoBehaviour
 
 		var scrollable = new UIScrollableVerticalLayout( 10 );
 		scrollable.alignMode = UIAbstractContainer.UIContainerAlignMode.Center;
-		scrollable.position = new Vector3( 35, -150, 0 );
+		
 		//var width = UI.scaleFactor * 20;
 		//var height = UI.scaleFactor * 50;
 		//scrollable.setSize(scrollable.width/ scaleFactor - 100f, scrollable.height / scaleFactor - 50f);
-		scrollable.setSize( Screen.width/1.1f, Screen.height / 1.7f );
+		
 
 /*
 		var dart1 = UIButton.create (storeManager, "4.png", "4.png", 0, 0);
@@ -37,6 +37,37 @@ public class store : MonoBehaviour
 		dart1.onTouchUpInside += OnButtonSelect;
 		dart1.parentUIObject = scrollable;
 		*/
+#if UNITY_EDITOR
+		if (Screen.width == 487 && Screen.height == 730) { // iphone 4
+			scrollable.position = new Vector3( 35, -150, 0 );
+			scrollable.setSize( Screen.width/1.1f, Screen.height / 1.7f );
+		}
+		if (Screen.width == 548 && Screen.height == 730) { //ipad
+			scrollable.position = new Vector3( 35, -150, 0 );
+			scrollable.setSize( Screen.width/1.1f, Screen.height / 1.7f );
+		}
+		if (Screen.width == 411 && Screen.height == 730){ //iphone 5
+			scrollable.position = new Vector3( 35, -150, 0 );
+			scrollable.setSize( Screen.width/1.1f, Screen.height / 1.7f );
+		}	
+		#endif
+		
+#if UNITY_IOS
+		if (Screen.width == 640 && Screen.height == 960) { // iphone4
+			scrollable.position = new Vector3( 35, -150, 0 );
+			scrollable.setSize( Screen.width/1.1f, Screen.height / 1.7f );
+		}
+		if (Screen.width == 768 && Screen.height == 1024 || Screen.width == 1536 && Screen.height == 2048) { //ipad
+			scrollable.position = new Vector3( 35, -150, 0 );
+			scrollable.setSize( Screen.width/1.1f, Screen.height / 1.7f );
+		}
+		
+		if (Screen.width == 640 && Screen.height == 1136){ //iphone 5
+			scrollable.position = new Vector3( 35, -150, 0 );
+			scrollable.setSize( Screen.width/1.1f, Screen.height / 1.7f );
+		}	
+#endif	
+
 
 		for( var i = 0; i < 15; i++ )
 		{
