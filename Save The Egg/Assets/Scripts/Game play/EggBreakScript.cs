@@ -3,21 +3,56 @@ using System.Collections;
 
 public class EggBreakScript : MonoBehaviour {
 	
-	GameObject spawnWhiteBrokenEgg, spawnGoldBrokenEgg;
+	GameObject spawnWhiteBrokenEgg, spawnGoldBrokenEgg, spawnRedBrokenEgg, spawnBlueBrokenEgg;
 	ObjectPooler whitebrokenEgg, goldbrokenEgg, redbrokenEgg, bluebrokenEgg;
 	public GameObject BreakEgg;
 
 	void OnCollisionEnter(Collision other) {
 		if(other.gameObject.name == "Floor" || other.gameObject.name == "Cart" || other.gameObject.name == "basketwall"){
-			whitebrokenEgg =  GameObject.Find("brokenEggPooler").GetComponent<ObjectPooler>();
-			spawnWhiteBrokenEgg = whitebrokenEgg.GetPooledObject();
-			spawnWhiteBrokenEgg.transform.position = new Vector3(BreakEgg.transform.position.x - 1, BreakEgg.transform.position.y, BreakEgg.transform.position.z);
-			spawnWhiteBrokenEgg.SetActive(true);
-			Invoke("RemoveBrokenEgg",5f);
+
+			if(BreakEgg.tag == "White Egg"){
+				whitebrokenEgg =  GameObject.Find("WhiteBroken").GetComponent<ObjectPooler>();
+				spawnWhiteBrokenEgg = whitebrokenEgg.GetPooledObject();
+				spawnWhiteBrokenEgg.transform.position = new Vector3(BreakEgg.transform.position.x - 1, BreakEgg.transform.position.y, BreakEgg.transform.position.z);
+				spawnWhiteBrokenEgg.SetActive(true);
+				Invoke("RemoveWhiteEgg",5f);
+			}
+			if(BreakEgg.tag == "Gold Egg"){
+				goldbrokenEgg =  GameObject.Find("GoldBroken").GetComponent<ObjectPooler>();
+				spawnGoldBrokenEgg = goldbrokenEgg.GetPooledObject();
+				spawnGoldBrokenEgg.transform.position = new Vector3(BreakEgg.transform.position.x - 1, BreakEgg.transform.position.y, BreakEgg.transform.position.z);
+				spawnGoldBrokenEgg.SetActive(true);
+				Invoke("RemoveGoldEgg",5f);
+			}
+			if(BreakEgg.tag == "Red Egg"){
+				redbrokenEgg =  GameObject.Find("RedBroken").GetComponent<ObjectPooler>();
+				spawnRedBrokenEgg = redbrokenEgg.GetPooledObject();
+				spawnRedBrokenEgg.transform.position = new Vector3(BreakEgg.transform.position.x - 1, BreakEgg.transform.position.y, BreakEgg.transform.position.z);
+				spawnRedBrokenEgg.SetActive(true);
+				Invoke("RemoveRedEgg",5f);
+			}
+			if(BreakEgg.tag == "Blue Egg"){
+				bluebrokenEgg =  GameObject.Find("BlueBroken").GetComponent<ObjectPooler>();
+				spawnBlueBrokenEgg = bluebrokenEgg.GetPooledObject();
+				spawnBlueBrokenEgg.transform.position = new Vector3(BreakEgg.transform.position.x - 1, BreakEgg.transform.position.y, BreakEgg.transform.position.z);
+				spawnBlueBrokenEgg.SetActive(true);
+				Invoke("RemoveBlueEgg",5f);
+			}
 		}
 	}
 
-	void RemoveBrokenEgg(){
+	void RemoveWhiteEgg(){
 		spawnWhiteBrokenEgg.SetActive(false);
+	}
+	void RemoveBlueEgg(){
+		spawnBlueBrokenEgg.SetActive(false);
+
+	}
+	void RemoveGoldEgg(){
+		spawnGoldBrokenEgg.SetActive(false);
+
+	}
+	void RemoveRedEgg(){
+		spawnRedBrokenEgg.SetActive(false);
 	}
 }
