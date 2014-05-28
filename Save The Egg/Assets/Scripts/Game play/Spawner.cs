@@ -4,11 +4,24 @@ using System.Collections;
 public class Spawner : MonoBehaviour {
 	public float priority = 0.5f;
 	int eggExit = 0;
+	bool nestSpawn = false;
 
-	GameObject spawnWhiteEgg, spawnRottenEgg, spawnGoldEgg, spawnBlueEgg, spawnRedEgg;
+	GameObject spawnWhiteEgg, spawnRottenEgg, spawnGoldEgg, spawnBlueEgg, spawnRedEgg, spawnNest;
 
 	void Start(){
 		Invoke ("callEgg", (priority));
+		Invoke ("callNest", (priority));
+
+	}
+
+	void callNest(){
+		if (nestSpawn == false){
+			ObjectPooler nest = GameObject.Find("nestPooler").GetComponent<ObjectPooler>();
+			spawnNest = nest.GetPooledObject();
+			spawnNest.transform.position = new Vector3(gameObject.transform.position.x - 0.5f, gameObject.transform.position.y + 0.2f, gameObject.transform.position.z - 0.3f);
+			spawnNest.SetActive(true);
+			nestSpawn = true;
+		}
 	}
 
 	void callEgg(){
