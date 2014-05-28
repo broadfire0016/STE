@@ -32,7 +32,7 @@ public class BallMotionScript : MonoBehaviour
 	{
 		currentPostion = Input.mousePosition;
 		endPosition = currentPostion - startPosition;
-		if (time < 1 && endPosition.y > 15) 
+		if (time < 1 || time > 0.5f && endPosition.y > 15) 
 		{
 			touch = false;
 

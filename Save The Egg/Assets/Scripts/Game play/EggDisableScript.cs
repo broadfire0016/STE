@@ -16,7 +16,7 @@ public class EggDisableScript : MonoBehaviour {
 		if(other.gameObject.name == "Ball" || other.gameObject.name == "Ball(Clone)" ){
 			gameObject.rigidbody.isKinematic = false;
 			//gameObject.rigidbody.velocity = (new Vector3 (-0.5f, 0.5f, 0f) * 3f);
-			if (Application.loadedLevelName != "Level2")
+			if (Application.loadedLevelName != "Level2" && Application.loadedLevelName != "Level3")
 				gameObject.transform.Translate (new Vector3(-1f, 0f, 0f));
 			else
 				gameObject.transform.Translate (new Vector3(0f,0f,-1f));
