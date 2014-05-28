@@ -23,7 +23,7 @@ public class Main : MonoBehaviour {
 		case "Level1":
 				basketObject.resetScore();
 				level = 1;
-				Timer.SetTimer(0,5);
+				Timer.SetTimer(1,30);
 				Scores.SetTargetScore(15);
 				Scores.setScore(score);
 				break;
