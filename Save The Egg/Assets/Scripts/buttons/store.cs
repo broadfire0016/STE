@@ -77,7 +77,7 @@ public class store : MonoBehaviour
 				touchable = UIButton.create(storeManager, "4.png", "4.png", 0, 0 );
 				touchable.setSize(touchable.width/ scaleFactor - 50f, touchable.height / scaleFactor - 20f);
 				touchable.userData = "Click";
-				touchable.onTouchUpInside += (sender) => Application.LoadLevel("shorcuts");
+				touchable.onTouchUpInside += (sender) => Application.LoadLevel("shortcuts");
 				touchable.onTouchUp += OnButtonUp;
 				touchable.onTouchDown += OnButtonDown;
 				touchable.onTouchUpInside += OnButtonSelect;
@@ -87,7 +87,7 @@ public class store : MonoBehaviour
 			{
 				touchable = UIButton.create( "3.png", "3.png", 0, 0 );
 				touchable.setSize(touchable.width/ scaleFactor - 50f, touchable.height / scaleFactor - 20f);
-				touchable.onTouchUpInside += (sender) => Application.LoadLevel("shorcuts");
+				touchable.onTouchUpInside += (sender) => Application.LoadLevel("shortcuts");
 				touchable.onTouchUp += OnButtonUp;
 				touchable.onTouchDown += OnButtonDown;
 				touchable.onTouchUpInside += OnButtonSelect;
@@ -97,7 +97,7 @@ public class store : MonoBehaviour
 			{
 				touchable = UIButton.create( "2.png", "2.png", 0, 0 );
 				touchable.setSize(touchable.width/ scaleFactor - 50f, touchable.height / scaleFactor - 20f);
-				touchable.onTouchUpInside += (sender) => Application.LoadLevel("shorcuts");
+				touchable.onTouchUpInside += (sender) => Application.LoadLevel("shortcuts");
 				touchable.onTouchUp += OnButtonUp;
 				touchable.onTouchDown += OnButtonDown;
 				touchable.onTouchUpInside += OnButtonSelect;
@@ -107,7 +107,7 @@ public class store : MonoBehaviour
 			{
 				touchable = UIButton.create( "1.png", "1.png", 0, 0 );
 				touchable.setSize(touchable.width/ scaleFactor - 50f, touchable.height / scaleFactor - 20f);
-				touchable.onTouchUpInside += (sender) => Application.LoadLevel("shorcuts");
+				touchable.onTouchUpInside += (sender) => Application.LoadLevel("shortcuts");
 				touchable.onTouchUp += OnButtonUp;
 				touchable.onTouchDown += OnButtonDown;
 				touchable.onTouchUpInside += OnButtonSelect;

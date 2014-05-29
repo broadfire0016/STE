@@ -3,6 +3,18 @@ using System.Collections;
 
 public class EggBreakScript : MonoBehaviour {
 	
+	public AudioClip fallEgg;
+	//public AudioClip fallWhite;
+	//public AudioClip fallRed;
+	//public AudioClip fallRotten;
+//	public AudioClip fallGold;
+
+//	public AudioSource fallingBlue;
+//	public AudioSource fallingWhite;
+//	public AudioSource fallingRed;
+//	public AudioSource fallingRotten;
+	public AudioSource fallingEggs;
+
 	GameObject spawnWhiteBrokenEgg, spawnGoldBrokenEgg, spawnRedBrokenEgg, spawnBlueBrokenEgg;
 	ObjectPooler whitebrokenEgg, goldbrokenEgg, redbrokenEgg, bluebrokenEgg;
 	public GameObject BreakEgg;
@@ -16,6 +28,8 @@ public class EggBreakScript : MonoBehaviour {
 				spawnWhiteBrokenEgg.transform.position = new Vector3(BreakEgg.transform.position.x - 1, BreakEgg.transform.position.y, BreakEgg.transform.position.z);
 				spawnWhiteBrokenEgg.SetActive(true);
 				Invoke("RemoveWhiteEgg",5f);
+				audio.clip = fallEgg;
+				audio.Play();
 			}
 			if(BreakEgg.tag == "Gold Egg"){
 				goldbrokenEgg =  GameObject.Find("GoldBroken").GetComponent<ObjectPooler>();
@@ -23,6 +37,8 @@ public class EggBreakScript : MonoBehaviour {
 				spawnGoldBrokenEgg.transform.position = new Vector3(BreakEgg.transform.position.x - 1, BreakEgg.transform.position.y, BreakEgg.transform.position.z);
 				spawnGoldBrokenEgg.SetActive(true);
 				Invoke("RemoveGoldEgg",5f);
+				audio.clip = fallEgg;
+				audio.Play();
 			}
 			if(BreakEgg.tag == "Red Egg"){
 				redbrokenEgg =  GameObject.Find("RedBroken").GetComponent<ObjectPooler>();
@@ -30,6 +46,8 @@ public class EggBreakScript : MonoBehaviour {
 				spawnRedBrokenEgg.transform.position = new Vector3(BreakEgg.transform.position.x - 1, BreakEgg.transform.position.y, BreakEgg.transform.position.z);
 				spawnRedBrokenEgg.SetActive(true);
 				Invoke("RemoveRedEgg",5f);
+				audio.clip = fallEgg;
+				audio.Play();
 			}
 			if(BreakEgg.tag == "Blue Egg"){
 				bluebrokenEgg =  GameObject.Find("BlueBroken").GetComponent<ObjectPooler>();
@@ -37,6 +55,8 @@ public class EggBreakScript : MonoBehaviour {
 				spawnBlueBrokenEgg.transform.position = new Vector3(BreakEgg.transform.position.x - 1, BreakEgg.transform.position.y, BreakEgg.transform.position.z);
 				spawnBlueBrokenEgg.SetActive(true);
 				Invoke("RemoveBlueEgg",5f);
+				audio.clip = fallEgg;
+				audio.Play();
 			}
 		}
 	}

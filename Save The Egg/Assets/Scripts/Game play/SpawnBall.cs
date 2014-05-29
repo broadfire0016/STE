@@ -13,7 +13,7 @@ public class SpawnBall : MonoBehaviour {
 
 	void OnTriggerExit(Collider dart){
 		if(dart.gameObject.name == "Ball" || dart.gameObject.name == "Ball(Clone)"/* || dart.gameObject.name == "ToyDart" */)
-			Invoke ("callBall", 1f);
+			Invoke ("callBall", 0.1f);
 	}
 	
 	void callBall()

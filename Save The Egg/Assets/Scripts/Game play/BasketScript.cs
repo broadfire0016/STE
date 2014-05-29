@@ -14,6 +14,7 @@ public class BasketScript : MonoBehaviour {
 	public AudioClip whiteE;
 	public AudioClip rottenE;
 	public AudioClip goldE;
+	
 
 
 	private static int score = 0;
@@ -73,10 +74,12 @@ public class BasketScript : MonoBehaviour {
 			audio.Play();
 		}
 
+
 		if (score < 0)
 			score = 0;
 
 	}
+
 	
 	public void resetScore(){
 		score = 0;

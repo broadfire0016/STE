@@ -15,10 +15,10 @@ public class Level : MonoBehaviour {
 		scoreText = new UIText(textManager, "VogueCyrBold_60_ffffff", "VogueCyrBold_60_ffffff.png");
 		scoretext1 = scoreText.addTextInstance(string.Format("{0}", Main.getScore()), 0, 0 );
 		scoretext1.color = Color.black;
-		scoretext1.textScale = 2f;
+		scoretext1.textScale = 3f;
 		if (Application.loadedLevelName != "gameOver"){
 			scoretext2 = scoreText.addTextInstance(string.Format("{0}", Main.getTargetScore()), 0, 0 );
-			scoretext2.positionFromCenter(0.17f, 0.0f);
+			scoretext2.positionFromCenter(0.17f, 0.06f);
 			scoretext2.color = Color.black;
 		}
 

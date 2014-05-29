@@ -63,6 +63,7 @@
      <Compile Include="Assets\Scripts\Game play\SwipeManager.cs" />
      <Compile Include="Assets\Scripts\Game play\Timer.cs" />
      <Compile Include="Assets\Scripts\Game play\pause.cs" />
+     <Compile Include="Assets\Scripts\Iphone5Positioning.cs" />
      <Compile Include="Assets\Scripts\IphonePositioning.cs" />
      <Compile Include="Assets\Scripts\buttons\AudioScript.cs" />
      <Compile Include="Assets\Scripts\buttons\DisplayButtons.cs" />
@@ -81,11 +82,14 @@
      <Compile Include="Assets\Scripts\buttons\loading.cs" />
      <Compile Include="Assets\Scripts\buttons\store.cs" />
      <Compile Include="Assets\Scripts\settings.cs" />
+     <Compile Include="Assets\chicken.cs" />
      <Compile Include="Assets\test.cs" />
      <Compile Include="Assets\test1.cs" />
+     <None Include="Assets\GameAssets\Resources\level_shortcutx.txt" />
      <None Include="Assets\GameAssets\Resources\VougeLevelSheet2x.txt" />
      <None Include="Assets\GameAssets\Resources\level_shortcut4x.txt" />
      <None Include="Assets\GameAssets\Resources\MuseoSans500_32_ffffff.fnt" />
+     <None Include="Assets\GameAssets\Resources\level_shortcut1x.txt" />
      <None Include="Assets\GameAssets\Resources\VogueCyrBold_60_ffffff2x.txt" />
      <None Include="Assets\Plugins\UIToolkit\Shaders\UIToolkit Premultiplied Alpha.shader" />
      <None Include="Assets\GameAssets\Resources\VougeLevelSheet4x.txt" />
