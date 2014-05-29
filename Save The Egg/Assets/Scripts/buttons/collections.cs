@@ -3,7 +3,7 @@ using System.Collections;
 
 public class collections : MonoBehaviour {
 public AudioClip Click;
-
+public GameObject background;
 	// Use this for initialization
 	void Start () {
 		print ("Width " + Screen.width + " Height " + Screen.height);
@@ -36,6 +36,9 @@ public AudioClip Click;
 			storeButton.setSize(storeButton.width / scaleFactor -15, storeButton.height / scaleFactor -8);
 			backButton.setSize(backButton.width / scaleFactor +3, backButton.height / scaleFactor + 7);
 			backButton.positionFromBottomLeft( 0.17f, 0.26f );
+			background.transform.localScale = new Vector3(0.4546752f,background.transform.localScale.y,background.transform.localScale.z);
+			//
+
 		}	
 #endif
 	
@@ -58,6 +61,8 @@ public AudioClip Click;
 			storeButton.setSize(storeButton.width / scaleFactor -15, storeButton.height / scaleFactor -8);
 			backButton.setSize(backButton.width / scaleFactor +3, backButton.height / scaleFactor + 7);
 			backButton.positionFromBottomLeft( 0.17f, 0.26f );
+			background.transform.localScale = new Vector3(0.4546752f,background.transform.localScale.y,background.transform.localScale.z);
+			//
 		}	
 #endif	
 	

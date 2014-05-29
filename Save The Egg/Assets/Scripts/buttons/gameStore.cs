@@ -4,6 +4,7 @@ using System.Collections;
 public class gameStore : MonoBehaviour {
 	public AudioClip Click;
 	public UIToolkit backManager;
+	public GameObject background;
 	
 	//game store
 	void Start () {
@@ -26,6 +27,8 @@ public class gameStore : MonoBehaviour {
 		if (Screen.width == 411 && Screen.height == 730){ //iphone 5
 			backButton.positionFromBottomLeft( 0.08f, 0.42f );
 			backButton.setSize(backButton.width / scaleFactor +20, backButton.height / scaleFactor +15);
+			background.transform.localScale = new Vector3(0.8375f,background.transform.localScale.y,background.transform.localScale.z);
+			background.transform.position = new Vector3(1.437335f,background.transform.position.y,background.transform.position.z);
 		}	
 		#endif
 		
@@ -42,6 +45,8 @@ public class gameStore : MonoBehaviour {
 		if (Screen.width == 640 && Screen.height == 1136){ //iphone 5
 			backButton.positionFromBottomLeft( 0.08f, 0.42f );
 			backButton.setSize(backButton.width / scaleFactor +20, backButton.height / scaleFactor +15);
+			background.transform.localScale = new Vector3(0.8375f,background.transform.localScale.y,background.transform.localScale.z);
+			background.transform.position = new Vector3(1.437335f,background.transform.position.y,background.transform.position.z);
 		}	
 #endif	
 
