@@ -60,6 +60,7 @@
      <Compile Include="Assets\Scripts\Game play\SpawnBall.cs" />
      <Compile Include="Assets\Scripts\Game play\SpawnDart.cs" />
      <Compile Include="Assets\Scripts\Game play\Spawner.cs" />
+     <Compile Include="Assets\Scripts\Game play\SwipeManager.cs" />
      <Compile Include="Assets\Scripts\Game play\Timer.cs" />
      <Compile Include="Assets\Scripts\Game play\pause.cs" />
      <Compile Include="Assets\Scripts\IphonePositioning.cs" />

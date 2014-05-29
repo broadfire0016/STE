@@ -3,12 +3,10 @@
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Game play\BallMotionScript.cs">
     <Files>
       <File FileName="Assets\Scripts\Game play\Controller.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\Game play\Main.cs" Line="1" Column="1" />
-      <File FileName="Assets\test1.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\buttons\MenuScript.cs" Line="1" Column="1" />
-      <File FileName="Assets\Levels_shortcut_btn.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\Game play\BallMotionScript.cs" Line="61" Column="59" />
-      <File FileName="Assets\Scripts\Game play\pause.cs" Line="87" Column="2" />
+      <File FileName="Assets\Scripts\buttons\AudioScript.cs" Line="35" Column="3" />
+      <File FileName="Assets\Scripts\buttons\MenuScript.cs" Line="196" Column="35" />
+      <File FileName="Assets\Scripts\Game play\Main.cs" Line="18" Column="3" />
+      <File FileName="Assets\Scripts\Game play\BallMotionScript.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
