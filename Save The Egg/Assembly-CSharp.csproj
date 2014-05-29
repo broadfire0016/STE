@@ -114,6 +114,7 @@
      <None Include="Assets\GameAssets\Resources\store1x.txt" />
      <None Include="Assets\GameAssets\Resources\VougeSheet2x.txt" />
      <None Include="Assets\GameAssets\Resources\AllButtons1x.txt" />
+     <None Include="Assets\GameAssets\Resources\AllButtonsx.txt" />
      <None Include="Assets\GameAssets\Resources\level_shortcut2x.txt" />
      <None Include="Assets\Plugins\UIToolkit\Shaders\UIToolkit No Alpha.shader" />
      <None Include="Assets\GameAssets\Resources\VogueCyrBold_60_ffffff4x.txt" />

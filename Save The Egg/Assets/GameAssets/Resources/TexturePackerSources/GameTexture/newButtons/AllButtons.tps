@@ -206,29 +206,6 @@
         </struct>
         <key>fileList</key>
         <array>
-            <filename>resume_active.png</filename>
-            <filename>resume_normal.png</filename>
-            <filename>retry.png</filename>
-            <filename>retry_normal.png</filename>
-            <filename>sound_active.png</filename>
-            <filename>sound_mute.png</filename>
-            <filename>sound_normal.png</filename>
-            <filename>store_active.png</filename>
-            <filename>store_normal.png</filename>
-            <filename>StoreBtn_active.png</filename>
-            <filename>StoreBtn_normal.png</filename>
-            <filename>use_active.png</filename>
-            <filename>use_normal.png</filename>
-            <filename>_1.jpg</filename>
-            <filename>_2.jpg</filename>
-            <filename>_3.jpg</filename>
-            <filename>_4.jpg</filename>
-            <filename>_5.jpg</filename>
-            <filename>_6.jpg</filename>
-            <filename>_7.jpg</filename>
-            <filename>_8.jpg</filename>
-            <filename>ArrowDown.png</filename>
-            <filename>ArrowUp.png</filename>
             <filename>back_active.png</filename>
             <filename>back_active2.png</filename>
             <filename>back_normal.png</filename>
@@ -260,6 +237,33 @@
             <filename>PlayBtn_active.png</filename>
             <filename>PlayBtn_normal.png</filename>
             <filename>post.png</filename>
+            <filename>resume_active.png</filename>
+            <filename>resume_normal.png</filename>
+            <filename>retry.png</filename>
+            <filename>retry_normal.png</filename>
+            <filename>sound_active.png</filename>
+            <filename>sound_mute.png</filename>
+            <filename>sound_normal.png</filename>
+            <filename>store_active.png</filename>
+            <filename>store_normal.png</filename>
+            <filename>StoreBtn_active.png</filename>
+            <filename>StoreBtn_normal.png</filename>
+            <filename>use_active.png</filename>
+            <filename>use_normal.png</filename>
+            <filename>_1.jpg</filename>
+            <filename>_2.jpg</filename>
+            <filename>_3.jpg</filename>
+            <filename>_4.jpg</filename>
+            <filename>_5.jpg</filename>
+            <filename>_6.jpg</filename>
+            <filename>_7.jpg</filename>
+            <filename>_8.jpg</filename>
+            <filename>aa.jpg</filename>
+            <filename>aaa.jpg</filename>
+            <filename>aaaa.jpg</filename>
+            <filename>aaaaa.jpg</filename>
+            <filename>ArrowDown.png</filename>
+            <filename>ArrowUp.png</filename>
         </array>
         <key>ignoreFileList</key>
         <array/>

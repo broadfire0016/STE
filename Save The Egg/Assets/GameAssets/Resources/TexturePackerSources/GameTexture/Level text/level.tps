@@ -210,16 +210,16 @@
             <filename>../store/_1.jpg</filename>
             <filename>../store/_2.jpg</filename>
             <filename>../store/_3.jpg</filename>
-            <filename>L10.png</filename>
-            <filename>L1.png</filename>
-            <filename>L2.png</filename>
-            <filename>L3.png</filename>
-            <filename>L4.png</filename>
-            <filename>L5.png</filename>
-            <filename>L6.png</filename>
-            <filename>L7.png</filename>
-            <filename>L8.png</filename>
-            <filename>L9.png</filename>
+            <filename>../../../../../../../../Maguid files/level/red/L9.png</filename>
+            <filename>../../../../../../../../Maguid files/level/red/L10.png</filename>
+            <filename>../../../../../../../../Maguid files/level/red/L1.png</filename>
+            <filename>../../../../../../../../Maguid files/level/red/L2.png</filename>
+            <filename>../../../../../../../../Maguid files/level/red/L3.png</filename>
+            <filename>../../../../../../../../Maguid files/level/red/L4.png</filename>
+            <filename>../../../../../../../../Maguid files/level/red/L5.png</filename>
+            <filename>../../../../../../../../Maguid files/level/red/L6.png</filename>
+            <filename>../../../../../../../../Maguid files/level/red/L7.png</filename>
+            <filename>../../../../../../../../Maguid files/level/red/L8.png</filename>
         </array>
         <key>ignoreFileList</key>
         <array/>
