@@ -4,6 +4,7 @@ using System.Collections;
 public class HighScore : MonoBehaviour {
 	public UIToolkit highscoreManager;
 	public AudioClip Click;
+	public GameObject background;
 	// Use this for initialization
 	void Start () {
 		var scaleFactor = ScaleFactor.GetScaleFactor ();
@@ -26,6 +27,8 @@ public class HighScore : MonoBehaviour {
 		if (Screen.width == 411 && Screen.height == 730){ //iphone 5
 			CloseBtn.positionFromBottomRight( 0.23f, 0.20f );
 			CloseBtn.setSize(CloseBtn.width / scaleFactor + 20, CloseBtn.height / scaleFactor + 15);
+			background.transform.localScale = new Vector3(0.7375f,background.transform.localScale.y,background.transform.localScale.z);
+			//
 		}	
 		#endif
 		
@@ -42,6 +45,7 @@ public class HighScore : MonoBehaviour {
 		if (Screen.width == 640 && Screen.height == 1136){ //iphone 5
 			CloseBtn.positionFromBottomRight( 0.23f, 0.074f );
 			CloseBtn.setSize(CloseBtn.width / scaleFactor, CloseBtn.height / scaleFactor);
+			background.transform.localScale = new Vector3(0.7375f,background.transform.localScale.y,background.transform.localScale.z);
 		}	
 #endif	
 	}

@@ -5,10 +5,10 @@
       <File FileName="Assets\Scripts\Game play\Controller.cs" Line="25" Column="4" />
       <File FileName="Assets\Scripts\buttons\AudioScript.cs" Line="35" Column="3" />
       <File FileName="Assets\Scripts\Game play\Main.cs" Line="18" Column="3" />
-      <File FileName="Assets\Scripts\Game play\BallMotionScript.cs" Line="143" Column="20" />
+      <File FileName="Assets\Scripts\Game play\BallMotionScript.cs" Line="1" Column="19" />
       <File FileName="Assets\Scripts\Game play\SwipeManager.cs" Line="20" Column="3" />
       <File FileName="Assets\Scripts\IphonePositioning.cs" Line="44" Column="3" />
-      <File FileName="Assets\Scripts\Game play\SpawnBall.cs" Line="16" Column="25" />
+      <File FileName="Assets\Scripts\Game play\SpawnBall.cs" Line="16" Column="10" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
