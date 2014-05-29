@@ -62,7 +62,7 @@
      <Compile Include="Assets\Scripts\Game play\Spawner.cs" />
      <Compile Include="Assets\Scripts\Game play\Timer.cs" />
      <Compile Include="Assets\Scripts\Game play\pause.cs" />
-     <Compile Include="Assets\Scripts\Iphone5Positioning.cs" />
+     <Compile Include="Assets\Scripts\IphonePositioning.cs" />
      <Compile Include="Assets\Scripts\buttons\AudioScript.cs" />
      <Compile Include="Assets\Scripts\buttons\DisplayButtons.cs" />
      <Compile Include="Assets\Scripts\buttons\DisplayHighScore.cs" />

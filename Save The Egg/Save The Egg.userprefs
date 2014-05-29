@@ -1,16 +1,14 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Iphone5Positioning.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Game play\BallMotionScript.cs">
     <Files>
       <File FileName="Assets\Scripts\Game play\Controller.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\Game play\Main.cs" Line="20" Column="21" />
-      <File FileName="Assets\Scripts\Game play\Controller.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Game play\Main.cs" Line="1" Column="1" />
       <File FileName="Assets\test1.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\buttons\MenuScript.cs" Line="131" Column="7" />
-      <File FileName="Assets\Levels_shortcut_btn.cs" Line="211" Column="1" />
-      <File FileName="Assets\Scripts\Iphone5Positioning.cs" Line="25" Column="59" />
+      <File FileName="Assets\Scripts\buttons\MenuScript.cs" Line="1" Column="1" />
+      <File FileName="Assets\Levels_shortcut_btn.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\Game play\BallMotionScript.cs" Line="61" Column="59" />
-      <File FileName="Assets\Scripts\Game play\pause.cs" Line="35" Column="7" />
+      <File FileName="Assets\Scripts\Game play\pause.cs" Line="87" Column="2" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

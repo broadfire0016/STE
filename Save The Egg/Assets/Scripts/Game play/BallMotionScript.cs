@@ -16,10 +16,10 @@ public class BallMotionScript : MonoBehaviour
 	
 	void IncreaseTime()
 	{
-		time += Time.deltaTime*10f;
+		time += Time.deltaTime*2f;
 	}
 
-	void OnTouchDown() 
+	void OnTouchStay() 
 	{
 		touch = true;
 		//print ("OnTouchStay " + touch);
@@ -32,7 +32,7 @@ public class BallMotionScript : MonoBehaviour
 	{
 		currentPostion = Input.mousePosition;
 		endPosition = currentPostion - startPosition;
-		if (time > 0.1f || time < 0.2f && endPosition.y > 15) 
+		if (time < 1f && endPosition.y > 15) 
 		{
 			touch = false;
 

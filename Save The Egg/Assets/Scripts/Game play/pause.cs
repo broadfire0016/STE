@@ -67,4 +67,20 @@ public class pause : MonoBehaviour {
 		}
 	}
 
+	void OnApplicationPause(){
+		replayButton = UIButton.create(buttonsManager,"resume_normal.png","resume_active.png",0,0);
+		replayButton.positionFromTopLeft(0.45f, 0.21f);
+		replayButton.setSize(replayButton.width/scaleFactor * 1.2f, replayButton.height/scaleFactor * 1.2f);
+		replayButton.onTouchUpInside += sender1 => Application.LoadLevel("Level1");
+		homeButton = UIButton.create(buttonsManager,"home_normal.png","home_active.png",0,0);
+		homeButton.positionFromTopLeft(0.45f, 0.67f);
+		homeButton.onTouchUpInside += sender1 => Application.LoadLevel("AGAIN");
+		homeButton.setSize(replayButton.width/scaleFactor * 1.3f, replayButton.height/scaleFactor * 1.3f);
+		settingBtn.positionFromTopLeft(0.45f,0.445f);
+		settingBtn.setSize(replayButton.width/scaleFactor * 1.3f, replayButton.height/scaleFactor * 1.3f);
+		Time.timeScale = 0;
+		camera.transform.position = new Vector3(currentPosX,currentPosY, newPosZ);
+		basket.SetActive(false);
+	}
+
 }
