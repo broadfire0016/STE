@@ -10,8 +10,6 @@ public class MenuScript : MonoBehaviour {
  	AudioClip Click2, Click3;
  	private AudioSource SoundSource;
  	private AudioSource MusicSource;
- 	public AudioClip Music;
- 	public AudioClip Sound;
  	private UIButton post1, playBtn, collectBtn, storeBtn, hsBtn, creditsBtn;
 	private UIToggleButton soundBtn, musicBtn; 
 
@@ -165,7 +163,7 @@ public class MenuScript : MonoBehaviour {
 
 	void Update(){
 
-		  if (SoundSource.mute == true){
+		if (AudioScript.getSoundMode()== true){
 		   playBtn.touchDownSound = Click3;
 		   collectBtn.touchDownSound = Click3;
 		   storeBtn.touchDownSound = Click3;
@@ -183,42 +181,28 @@ public class MenuScript : MonoBehaviour {
 
  	void toggleSound(UIToggleButton sender){
 		if (sender.selected){
-		    SoundSource.mute = true;
+			AudioScript.setSoundMode(true);
+
 		}
 		else{
-		   SoundSource.mute = false;
+			AudioScript.setSoundMode(false);
 		}
+
  	}
 
  	void toggleMusic(UIToggleButton sender){
 
 		if (sender.selected){
-			MusicSource.mute = true;
+			AudioScript.setMusicMode(true);
+
 		}
 		else{
-			MusicSource.mute = false;
+			AudioScript.setMusicMode(false);
 		}
+
 	}
  
 
-	AudioSource AddAudio(AudioClip clip, bool loop, bool playAwake, float volume){
 
-		  AudioSource newAudio = gameObject.AddComponent <AudioSource>();
-		  newAudio.clip = clip;
-		  newAudio.loop = loop;
-		  newAudio.playOnAwake = playAwake;
-		  newAudio.volume = volume;
-		  return newAudio;
-  }
-
-	void Awake(){
-
-		  SoundSource = AddAudio (Sound, false, true, 1f);
-		  MusicSource = AddAudio (Music, true, true, 1f);
-		  SoundSource.mute = false;
-		  MusicSource.mute = false;
-		  //SoundSource.Play ();
-		  MusicSource.Play();
-	 }
 	
 }

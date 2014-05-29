@@ -20,7 +20,7 @@ public class IphonePositioning : MonoBehaviour {
 			background.transform.localScale = new Vector3(0.83f,background.transform.localScale.y,background.transform.localScale.z);
 			background_pause.transform.localScale = new Vector3(0.83f,background.transform.localScale.y,background.transform.localScale.z);
 			leftChicken.transform.Translate(new Vector3(0f,0f, -1.8f));
-			rightChicken.transform.Translate(new Vector3(0f,0f, -1.8f));
+			rightChicken.transform.Translate(new Vector3(0f,0f, 1.8f));
 		}
 
 #endif
@@ -38,7 +38,7 @@ public class IphonePositioning : MonoBehaviour {
 			background.transform.localScale = new Vector3(0.83f,background.transform.localScale.y,background.transform.localScale.z);
 			background_pause.transform.localScale = new Vector3(0.83f,background.transform.localScale.y,background.transform.localScale.z);
 			leftChicken.transform.Translate(new Vector3(0f,0f, -1.8f));
-			rightChicken.transform.Translate(new Vector3(0f,0f,-1.8f));
+			rightChicken.transform.Translate(new Vector3(0f,0f,1.8f));
 		}
 #endif
 	}

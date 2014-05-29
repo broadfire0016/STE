@@ -33,7 +33,7 @@ public class pause : MonoBehaviour {
 
 #if UNITY_IOS
 		if (Screen.width == 640 && Screen.height == 1136 || Screen.width == 640 && Screen.height == 960){
-			settingButton.setSize(settingButton.width/scaleFactor * 0.4f , settingButton.height / scaleFactor * 0.4f);
+			settingButton.setSize(settingButton.width/scaleFactor * 2f , settingButton.height / scaleFactor * 2f);
 		}
 #endif
 
@@ -67,7 +67,7 @@ public class pause : MonoBehaviour {
 		}
 	}
 
-	void OnApplicationPause(){
+	/*void OnApplicationPause(){
 		replayButton = UIButton.create(buttonsManager,"resume_normal.png","resume_active.png",0,0);
 		replayButton.positionFromTopLeft(0.45f, 0.21f);
 		replayButton.setSize(replayButton.width/scaleFactor * 1.2f, replayButton.height/scaleFactor * 1.2f);
@@ -81,6 +81,6 @@ public class pause : MonoBehaviour {
 		Time.timeScale = 0;
 		camera.transform.position = new Vector3(currentPosX,currentPosY, newPosZ);
 		basket.SetActive(false);
-	}
+	}*/
 
 }
