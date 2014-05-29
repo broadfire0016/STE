@@ -63,7 +63,7 @@ public class EggBreakScript : MonoBehaviour {
 				spawnRottenBrokenEgg = rottenbrokenEgg.GetPooledObject();
 				spawnRottenBrokenEgg.transform.position = new Vector3(BreakEgg.transform.position.x - 1, BreakEgg.transform.position.y, BreakEgg.transform.position.z);
 				spawnRottenBrokenEgg.SetActive(true);
-				Invoke("RemoveBlueEgg",5f);
+				Invoke("RemoveRottenEgg",5f);
 				audio.clip = fallEgg;
 				audio.Play();
 			}
