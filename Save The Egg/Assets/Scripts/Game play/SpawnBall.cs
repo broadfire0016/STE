@@ -2,6 +2,9 @@
 using System.Collections;
 
 public class SpawnBall : MonoBehaviour {
+
+	public AudioClip ball;
+
 	// Use this for initialization
 	void Start () {
 		Invoke ("callBall", 1f);
@@ -12,8 +15,12 @@ public class SpawnBall : MonoBehaviour {
 	}
 
 	void OnTriggerExit(Collider dart){
-		if(dart.gameObject.name == "Ball" || dart.gameObject.name == "Ball(Clone)"/* || dart.gameObject.name == "ToyDart" */)
+		if (dart.gameObject.name == "Ball" || dart.gameObject.name == "Ball(Clone)") {
 			Invoke ("callBall", 1f);
+			audio.clip = ball;
+			audio.volume = 20f;
+			audio.Play();
+		}
 	}
 	
 	void callBall()

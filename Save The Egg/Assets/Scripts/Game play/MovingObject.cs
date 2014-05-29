@@ -7,7 +7,7 @@ public class MovingObject : MonoBehaviour {
 	public float _distance1 = 100.0f;
 	public float _distance2 = 200.0f;
 	public Transform basket;
-	public float _travel = 0f, _travelRate = 0f;
+	float _travel = 0f, _travelRate = 0f;
 	float  slowSpeed = 0.05f , slowTravel = 0.5f;
 	float normalSpeed = 0.1f, normalTravel = 1f;
 

@@ -6,7 +6,6 @@ public class gameOver : MonoBehaviour {
 	public UIToolkit buttonsManager;
 	// Use this for initialization
 	void Start () {
-		var Scores = gameObject.GetComponent<Score>();
 		var scaleFactor = ScaleFactor.GetScaleFactor ();
 		//home
 		var menuButton = UIButton.create(buttonsManager, "home_normal.png","home_active.png",0,0);

@@ -2,9 +2,7 @@
 using System.Collections;
 
 public class BallMotionScript : MonoBehaviour {
-	public	AudioClip dart;
-	public AudioSource SoundBG;
-
+	
 	float time = 0;
 	bool touch = true;
 	bool rayHit;
@@ -15,52 +13,7 @@ public class BallMotionScript : MonoBehaviour {
 		time += Time.deltaTime*2f;
 	}
 
-/*	void OnTouchStay() 
-	{
-		touch = true;
-		//print ("OnTouchStay " + touch);
-		IncreaseTime ();
-		startPosition = Input.mousePosition;
-
-	}
-
-	void OnTouchExit()
-	{
-		currentPostion = Input.mousePosition;
-		endPosition = currentPostion - startPosition;
-		if (time < 1f && endPosition.y > 15) 
-		{
-			touch = false;
-
-			audio.clip = dart;
-			audio.Play ();
-
-			if(touch == false)
-			{
-				print (time);
-				//direction of dart (left & right)
-				if(endPosition.x < -40)
-					endPosition.x = -40;
-				if (endPosition.x > 40)
-					endPosition.x = 40;
-
-				if (endPosition.y > 300)
-				{
-					endPosition.y = 300;
-					direction = new Vector3((endPosition.y - 200),(endPosition.y),(endPosition.x * -1));
-				}
-				else
-				{
-					direction = new Vector3((endPosition.y + 30),(endPosition.y),(endPosition.x * -1));
-				}
-				gameObject.rigidbody.isKinematic = false;
-				gameObject.rigidbody.velocity = direction / (time * 100f);
-			}
-		}
-		time = 0;
-
-	}*/
-
+	
 	void Update(){
 		gameObject.transform.Rotate(new Vector3(0,100f,0) * Time.deltaTime);
 		Swipe ();
@@ -92,12 +45,9 @@ public class BallMotionScript : MonoBehaviour {
 			if (time > 0.01f && rayHit == true && endPosition.y > 50f) 
 			{
 				touch = false;
-				audio.clip = dart;
-				audio.Play ();
-				
+		
 				if(touch == false)
 				{
-					print (time);
 					//direction of dart (left & right)
 					if(endPosition.x < -60)
 						endPosition.x = -60;
@@ -142,8 +92,6 @@ public class BallMotionScript : MonoBehaviour {
 			endPosition = currentPostion - startPosition;
 				if (time > 0.01f && rayHit == true && endPosition.y > 50f){
 				touch = false;
-				audio.clip = dart;
-				audio.Play ();
 				
 				if(touch == false)
 				{
@@ -162,7 +110,7 @@ public class BallMotionScript : MonoBehaviour {
 						direction = new Vector3((endPosition.y + 30),(endPosition.y),(endPosition.x * -1));
 					
 					gameObject.rigidbody.isKinematic = false;
-					gameObject.rigidbody.velocity = direction / (time * 300f);
+					gameObject.rigidbody.velocity = direction / (time * 250f);
 				}
 			}
 			time = 0;

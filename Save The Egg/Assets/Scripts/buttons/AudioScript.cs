@@ -11,12 +11,10 @@ public class AudioScript : MonoBehaviour {
 	public AudioClip LevelMusic;
 	public AudioClip Music;
 	public AudioClip Sound;
-
-
+	
 	void Start(){
 		if(status2 == true){
 			LevelMusicSource.mute = true;
-			//LevelMusicSource.Stop ();
 		}
 	}
 
@@ -35,7 +33,7 @@ public class AudioScript : MonoBehaviour {
 
 		SoundSource = AddAudio (Sound, false, true, 1f);
 		MusicSource = AddAudio (Music, false, true, 1f);
-		LevelMusicSource = AddAudio (LevelMusic, false, true, 1f);
+		LevelMusicSource = AddAudio (LevelMusic, false, true, 0.3f);
 		SoundSource.mute = false;
 		MusicSource.mute = false;
 		LevelMusicSource.mute = getLevelMusicMode();
