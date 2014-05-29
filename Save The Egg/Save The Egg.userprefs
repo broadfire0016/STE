@@ -1,14 +1,19 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Game play\BallMotionScript.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Game play\EggBreakScript.cs">
     <Files>
       <File FileName="Assets\Scripts\Game play\Controller.cs" Line="25" Column="4" />
-      <File FileName="Assets\Scripts\buttons\AudioScript.cs" Line="35" Column="3" />
-      <File FileName="Assets\Scripts\Game play\Main.cs" Line="18" Column="3" />
+      <File FileName="Assets\Scripts\buttons\AudioScript.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Game play\Main.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\Game play\BallMotionScript.cs" Line="1" Column="19" />
-      <File FileName="Assets\Scripts\Game play\SwipeManager.cs" Line="20" Column="3" />
-      <File FileName="Assets\Scripts\IphonePositioning.cs" Line="44" Column="3" />
-      <File FileName="Assets\Scripts\Game play\SpawnBall.cs" Line="16" Column="10" />
+      <File FileName="Assets\Scripts\Game play\SwipeManager.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\IphonePositioning.cs" Line="13" Column="4" />
+      <File FileName="Assets\Scripts\Game play\SpawnBall.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\buttons\credits.cs" Line="50" Column="1" />
+      <File FileName="Assets\Scripts\buttons\HighScore.cs" Line="30" Column="4" />
+      <File FileName="Assets\Scripts\buttons\collections.cs" Line="39" Column="130" />
+      <File FileName="Assets\Scripts\buttons\gameStore.cs" Line="31" Column="4" />
+      <File FileName="Assets\Scripts\Game play\EggBreakScript.cs" Line="88" Column="14" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
