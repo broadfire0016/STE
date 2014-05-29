@@ -17,7 +17,7 @@ public class pause : MonoBehaviour {
 		scaleFactor = ScaleFactor.GetScaleFactor ();
 		var settingButton = UIToggleButton.create(buttonsManager,"pause_normal2.png", "play_normal2.png","pause_normal2.png",0,0);
 		settingBtn = settingButton;
-		settingButton.positionFromTopLeft( 0.24f, 0.84f );
+		settingButton.positionFromTopLeft( 0.28f, 0.9f );
 		currentPosX = camera.transform.position.x;
 		currentPosY = camera.transform.position.y;
 		currentPosZ = camera.transform.position.z;
@@ -27,15 +27,13 @@ public class pause : MonoBehaviour {
 		pauseDefaultY = settingButton.height / scaleFactor;
 
 #if UNITY_EDITOR
-		settingButton.setSize(settingButton.width/scaleFactor + 12 , settingButton.height / scaleFactor +12);
+		settingButton.setSize(settingButton.width/scaleFactor , settingButton.height / scaleFactor);
 #endif
 
 
 #if UNITY_IOS
 		if (Screen.width == 640 && Screen.height == 1136 || Screen.width == 640 && Screen.height == 960){
 			settingButton.setSize(settingButton.width/scaleFactor * 2f , settingButton.height / scaleFactor * 2f);
-			replayButton.setSize(replayButton.width/scaleFactor * 1f, replayButton.height/scaleFactor * 1f);
-			homeButton.setSize(replayButton.width/scaleFactor * 1f, replayButton.height/scaleFactor * 1f);
 		}
 #endif
 
@@ -51,9 +49,9 @@ public class pause : MonoBehaviour {
 			homeButton = UIButton.create(buttonsManager,"home_normal.png","home_active.png",0,0);
 			homeButton.positionFromTopLeft(0.45f, 0.67f);
 			homeButton.onTouchUpInside += sender1 => Application.LoadLevel("AGAIN");
-			homeButton.setSize(replayButton.width/scaleFactor + 27, replayButton.height/scaleFactor + 29);
+			homeButton.setSize(replayButton.width/scaleFactor * 1.3f, replayButton.height/scaleFactor * 1.3f);
 			settingBtn.positionFromTopLeft(0.45f,0.445f);
-			settingBtn.setSize(replayButton.width/scaleFactor + 27, replayButton.height/scaleFactor +29);
+			settingBtn.setSize(replayButton.width/scaleFactor * 1.3f, replayButton.height/scaleFactor * 1.3f);
 			Time.timeScale = 0;
 			camera.transform.position = new Vector3(currentPosX,currentPosY, newPosZ);
 			basket.SetActive(false);
