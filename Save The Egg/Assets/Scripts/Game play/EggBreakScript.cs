@@ -15,8 +15,8 @@ public class EggBreakScript : MonoBehaviour {
 //	public AudioSource fallingRotten;
 	public AudioSource fallingEggs;
 
-	GameObject spawnWhiteBrokenEgg, spawnGoldBrokenEgg, spawnRedBrokenEgg, spawnBlueBrokenEgg;
-	ObjectPooler whitebrokenEgg, goldbrokenEgg, redbrokenEgg, bluebrokenEgg;
+	GameObject spawnWhiteBrokenEgg, spawnGoldBrokenEgg, spawnRedBrokenEgg, spawnBlueBrokenEgg, spawnRottenBrokenEgg;
+	ObjectPooler whitebrokenEgg, goldbrokenEgg, redbrokenEgg, bluebrokenEgg, rottenbrokenEgg;
 	public GameObject BreakEgg;
 
 	void OnCollisionEnter(Collision other) {
@@ -58,6 +58,15 @@ public class EggBreakScript : MonoBehaviour {
 				audio.clip = fallEgg;
 				audio.Play();
 			}
+			if(BreakEgg.tag == "Rotten Egg"){
+				rottenbrokenEgg =  GameObject.Find("RottenBroken").GetComponent<ObjectPooler>();
+				spawnRottenBrokenEgg = rottenbrokenEgg.GetPooledObject();
+				spawnRottenBrokenEgg.transform.position = new Vector3(BreakEgg.transform.position.x - 1, BreakEgg.transform.position.y, BreakEgg.transform.position.z);
+				spawnRottenBrokenEgg.SetActive(true);
+				Invoke("RemoveBlueEgg",5f);
+				audio.clip = fallEgg;
+				audio.Play();
+			}
 		}
 	}
 
@@ -74,5 +83,8 @@ public class EggBreakScript : MonoBehaviour {
 	}
 	void RemoveRedEgg(){
 		spawnRedBrokenEgg.SetActive(false);
+	}
+	void RemoveRottenEgg(){
+		spawnRottenBrokenEgg.SetActive(false);
 	}
 }
