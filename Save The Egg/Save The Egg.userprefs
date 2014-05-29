@@ -13,7 +13,7 @@
       <File FileName="Assets\Scripts\buttons\HighScore.cs" Line="30" Column="4" />
       <File FileName="Assets\Scripts\buttons\collections.cs" Line="39" Column="130" />
       <File FileName="Assets\Scripts\buttons\gameStore.cs" Line="31" Column="4" />
-      <File FileName="Assets\Scripts\Game play\EggBreakScript.cs" Line="88" Column="14" />
+      <File FileName="Assets\Scripts\Game play\EggBreakScript.cs" Line="82" Column="3" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

@@ -89,7 +89,7 @@ public class BallMotionScript : MonoBehaviour {
 			currentPostion = Input.mousePosition;
 			endPosition = currentPostion - startPosition;
 			print (currentPostion);
-			if (time > 0.01f && rayHit == true && endPosition.y > 100f) 
+			if (time > 0.01f && rayHit == true && endPosition.y > 50f) 
 			{
 				touch = false;
 				audio.clip = dart;
@@ -140,7 +140,7 @@ public class BallMotionScript : MonoBehaviour {
 		if(t.phase == TouchPhase.Ended){
 			currentPostion = t.position;
 			endPosition = currentPostion - startPosition;
-				if (time > 0.01f && rayHit == true && endPosition.y > 100f){
+				if (time > 0.01f && rayHit == true && endPosition.y > 50f){
 				touch = false;
 				audio.clip = dart;
 				audio.Play ();
