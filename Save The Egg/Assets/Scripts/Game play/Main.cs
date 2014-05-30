@@ -12,19 +12,19 @@ public class Main : MonoBehaviour {
 	private static int TargetScore;
 	private static int level;
 	private static int highScore = 0;
-
+	
 	void Start () {
 		//PlayerPrefs.SetInt("High Score", 0);
 		print ("Width " + Screen.width + " Height " + Screen.height);
 		var Scores = gameObject.GetComponent<Score>();
-		BasketScript basketObject = GameObject.Find("basketBody").GetComponent<BasketScript>();
+		Basket basketObject = GameObject.Find("basketBody").GetComponent<Basket>();
 		Time.timeScale = 1;
 		switch (Application.loadedLevelName)
 		{
 		case "Level1":
 				basketObject.resetScore();
 				level = 1;
-				Timer.SetTimer(1,30);
+				Timer.SetTimer(0,5);
 				Scores.SetTargetScore(15);
 				Scores.setScore(score);
 				break;
@@ -92,7 +92,7 @@ public class Main : MonoBehaviour {
 			var mins = Timer.GetMinutes();
 			var secs = Timer.GetSeconds();
 			var Scores = gameObject.GetComponent<Score>();
-			BasketScript basketObject = GameObject.Find("basketBody").GetComponent<BasketScript>();
+			Basket basketObject = GameObject.Find("basketBody").GetComponent<Basket>();
 			score = basketObject.getScore();
 			Scores.setScore(score);
 			TargetScore = Scores.getTargetScore();
