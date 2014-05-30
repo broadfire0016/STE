@@ -29,7 +29,13 @@ public GameObject background;
 			backButton.setSize(backButton.width / scaleFactor +3, backButton.height / scaleFactor + 7);
 			backButton.positionFromBottomLeft( 0.16f, 0.26f );
 		}
-		if (Screen.width == 548 && Screen.height == 730 || Screen.width == 480 && Screen.height == 640 || Screen.width == 768 && Screen.height == 1024 || Screen.width == 1536 && Screen.height == 2048) { //ipad
+		if (Screen.width == 548 && Screen.height == 730 || Screen.width == 480 && Screen.height == 640 || Screen.width == 768 && Screen.height == 1024) { //ipad2
+			storeButton.positionFromBottomLeft( 0.11f, 0.50f );
+			storeButton.setSize(storeButton.width / scaleFactor -15, storeButton.height / scaleFactor -8);
+			backButton.setSize(backButton.width / scaleFactor +3, backButton.height / scaleFactor + 7);
+			backButton.positionFromBottomLeft( 0.153f, 0.26f );
+		}
+		if (Screen.width == 1536 && Screen.height == 2048){ //Ipad4
 			storeButton.positionFromBottomLeft( 0.11f, 0.50f );
 			storeButton.setSize(storeButton.width / scaleFactor -15, storeButton.height / scaleFactor -8);
 			backButton.setSize(backButton.width / scaleFactor +3, backButton.height / scaleFactor + 7);

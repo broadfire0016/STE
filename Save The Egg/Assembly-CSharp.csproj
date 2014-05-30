@@ -47,20 +47,15 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Levels_shortcut_btn.cs" />
-     <Compile Include="Assets\Scripts\Game play\BallDisableScript.cs" />
-     <Compile Include="Assets\Scripts\Game play\BallMotionScript.cs" />
-     <Compile Include="Assets\Scripts\Game play\BasketScript.cs" />
-     <Compile Include="Assets\Scripts\Game play\Controller.cs" />
-     <Compile Include="Assets\Scripts\Game play\EggBreakScript.cs" />
-     <Compile Include="Assets\Scripts\Game play\EggDisableScript.cs" />
+     <Compile Include="Assets\Scripts\Game play\Ball.cs" />
+     <Compile Include="Assets\Scripts\Game play\Basket.cs" />
+     <Compile Include="Assets\Scripts\Game play\Egg.cs" />
+     <Compile Include="Assets\Scripts\Game play\Loader.cs" />
      <Compile Include="Assets\Scripts\Game play\Main.cs" />
-     <Compile Include="Assets\Scripts\Game play\MovingObject.cs" />
      <Compile Include="Assets\Scripts\Game play\ObjectPooler.cs" />
      <Compile Include="Assets\Scripts\Game play\Score.cs" />
      <Compile Include="Assets\Scripts\Game play\SpawnBall.cs" />
-     <Compile Include="Assets\Scripts\Game play\SpawnDart.cs" />
      <Compile Include="Assets\Scripts\Game play\Spawner.cs" />
-     <Compile Include="Assets\Scripts\Game play\SwipeManager.cs" />
      <Compile Include="Assets\Scripts\Game play\Timer.cs" />
      <Compile Include="Assets\Scripts\Game play\pause.cs" />
      <Compile Include="Assets\Scripts\IphonePositioning.cs" />
@@ -80,8 +75,7 @@
      <Compile Include="Assets\Scripts\buttons\gameStore.cs" />
      <Compile Include="Assets\Scripts\buttons\loading.cs" />
      <Compile Include="Assets\Scripts\buttons\store.cs" />
-     <Compile Include="Assets\Scripts\settings.cs" />
-     <Compile Include="Assets\chicken.cs" />
+     <Compile Include="Assets\Scripts\chicken.cs" />
      <Compile Include="Assets\test.cs" />
      <Compile Include="Assets\test1.cs" />
      <None Include="Assets\GameAssets\Resources\VougeLevelSheet2x.txt" />
