@@ -1,4 +1,6 @@
-﻿using UnityEngine;
+﻿//Shows Score for the level complete scene and game Over Scene
+
+using UnityEngine;
 using System.Collections;
 
 public class Level : MonoBehaviour {

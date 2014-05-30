@@ -1,4 +1,7 @@
-﻿using UnityEngine;
+﻿//Store Script. Show different menus
+//author: Aiza Aviso & Levi Lim
+
+using UnityEngine;
 using System.Collections;
 
 public class store : MonoBehaviour

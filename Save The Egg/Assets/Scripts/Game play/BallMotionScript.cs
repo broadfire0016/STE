@@ -1,4 +1,7 @@
-﻿using UnityEngine;
+﻿//Ball Motion Script. This Script mades the ball toss according to the direction of swipe.
+//author Levi Joy Lim
+
+using UnityEngine;
 using System.Collections;
 
 public class BallMotionScript : MonoBehaviour {
@@ -71,7 +74,7 @@ public class BallMotionScript : MonoBehaviour {
 #endif
 
 #if UNITY_IOS
-
+	//IOS Control
 	if(Input.touches.Length > 0){
 	
 		Touch t = Input.GetTouch(0);

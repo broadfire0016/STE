@@ -1,4 +1,7 @@
-﻿using UnityEngine;
+﻿//Game Over Scene
+//Author : Levi Lim & Aiza Aviso
+
+using UnityEngine;
 using System.Collections;
 
 public class gameOver : MonoBehaviour {

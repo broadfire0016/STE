@@ -1,4 +1,7 @@
-﻿using UnityEngine;
+﻿//loading script
+//author: levi
+
+using UnityEngine;
 using System.Collections;
 
 public class loading : MonoBehaviour {

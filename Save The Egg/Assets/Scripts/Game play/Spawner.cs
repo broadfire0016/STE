@@ -1,4 +1,7 @@
-﻿using UnityEngine;
+﻿//Attach to spawner Object. It spawns random egg generated from the Object Pooler.
+//Author Levi Joy Lim
+
+using UnityEngine;
 using System.Collections;
 
 public class Spawner : MonoBehaviour {

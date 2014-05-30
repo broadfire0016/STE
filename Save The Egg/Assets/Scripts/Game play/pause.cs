@@ -1,4 +1,7 @@
-﻿using UnityEngine;
+﻿//Pause Function Button
+//Author: Levi Joy Lim && Aiza Aviso
+
+using UnityEngine;
 using System.Collections;
 
 public class pause : MonoBehaviour {
@@ -12,7 +15,7 @@ public class pause : MonoBehaviour {
 	float pauseDefaultx, pauseDefaultY;
 	UIToggleButton settingButton;
 	UIButton replayButton, homeButton;
-	string activePng = "pause_active2.png";
+	string activePng = "play_active.png";
 	string normalPng = "pause_normal2.png";
 	// pause Button Function
 	
