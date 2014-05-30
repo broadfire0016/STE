@@ -84,7 +84,6 @@
      <Compile Include="Assets\chicken.cs" />
      <Compile Include="Assets\test.cs" />
      <Compile Include="Assets\test1.cs" />
-     <None Include="Assets\GameAssets\Resources\level_shortcutx.txt" />
      <None Include="Assets\GameAssets\Resources\VougeLevelSheet2x.txt" />
      <None Include="Assets\GameAssets\Resources\level_shortcut4x.txt" />
      <None Include="Assets\GameAssets\Resources\MuseoSans500_32_ffffff.fnt" />
@@ -93,9 +92,7 @@
      <None Include="Assets\Plugins\UIToolkit\Shaders\UIToolkit Premultiplied Alpha.shader" />
      <None Include="Assets\GameAssets\Resources\VougeLevelSheet4x.txt" />
      <None Include="Assets\GameAssets\Resources\MuseoSans500_32_ffffff4x.fnt" />
-     <None Include="Assets\GameAssets\Resources\store4x.txt" />
      <None Include="Assets\GameAssets\Resources\store.txt" />
-     <None Include="Assets\GameAssets\Resources\DemoAssets\Resources\store1x.txt" />
      <None Include="Assets\contributors.txt" />
      <None Include="Assets\GameAssets\Resources\level_shortcut.txt" />
      <None Include="Assets\GameAssets\Resources\MuseoSheet4x.txt" />
@@ -106,19 +103,16 @@
      <None Include="Assets\GameAssets\Resources\AllButtons2x.txt" />
      <None Include="Assets\Plugins\UIToolkit\Shaders\UIToolkit Alpha Enabled (Default).shader" />
      <None Include="Assets\GameAssets\Resources\VougeSheet.txt" />
-     <None Include="Assets\GameAssets\Resources\storex.txt" />
      <None Include="Assets\GameAssets\Resources\MuseoSans500_32_ffffff2x.fnt" />
      <None Include="Assets\GameAssets\Resources\MuseoSheet2x.txt" />
-     <None Include="Assets\GameAssets\Resources\store1x.txt" />
      <None Include="Assets\GameAssets\Resources\VougeSheet2x.txt" />
      <None Include="Assets\GameAssets\Resources\AllButtons4x.txt" />
      <None Include="Assets\GameAssets\Resources\level_shortcut2x.txt" />
      <None Include="Assets\Plugins\UIToolkit\Shaders\UIToolkit No Alpha.shader" />
      <None Include="Assets\GameAssets\Resources\VogueCyrBold_60_ffffff4x.txt" />
-     <None Include="Assets\GameAssets\Resources\store2x.txt" />
      <None Include="Assets\GameAssets\Resources\VougeSheet4x.txt" />
-     <None Include="Assets\GameAssets\Resources\DemoAssets\Resources\storex.txt" />
-     <None Include="Assets\GameAssets\Resources\DemoAssets\Resources\store2x.txt" />
+     <None Include="Assets\GameAssets\Resources\store4x.txt" />
+     <None Include="Assets\GameAssets\Resources\store2x.txt" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Assembly-CSharp-firstpass-vs.csproj">
