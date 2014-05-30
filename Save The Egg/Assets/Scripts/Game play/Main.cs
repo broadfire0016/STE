@@ -15,7 +15,7 @@ public class Main : MonoBehaviour {
 
 	void Start () {
 		//PlayerPrefs.SetInt("High Score", 0);
-
+		print ("Width " + Screen.width + " Height " + Screen.height);
 		var Scores = gameObject.GetComponent<Score>();
 		BasketScript basketObject = GameObject.Find("basketBody").GetComponent<BasketScript>();
 		Time.timeScale = 1;

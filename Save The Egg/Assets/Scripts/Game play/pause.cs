@@ -22,7 +22,6 @@ public class pause : MonoBehaviour {
 	void Start () {
 		scaleFactor = ScaleFactor.GetScaleFactor ();
 		settingButton = UIToggleButton.create(buttonsManager, normalPng, activePng ,normalPng,0,0);
-		settingButton.positionFromTopLeft( 0.24f, 0.9f );
 		currentPosX = objectCamera.transform.position.x;
 		currentPosY = objectCamera.transform.position.y;
 		currentPosZ = objectCamera.transform.position.z;
@@ -31,13 +30,25 @@ public class pause : MonoBehaviour {
 		pauseDefaultx = settingButton.width/scaleFactor + 12 ;
 		pauseDefaultY = settingButton.height / scaleFactor + 12;
 
-#if UNITY_EDITOR
-		settingButton.setSize(settingButton.width/scaleFactor + 12 , settingButton.height / scaleFactor +12);
-#endif
-
-
-#if UNITY_IOS
-		if (Screen.width == 640 && Screen.height == 1136 || Screen.width == 640 && Screen.height == 960){
+#if UNITY_EDITOR || UNITY_IOS
+		//settingButton.setSize(settingButton.width/scaleFactor + 12 , settingButton.height / scaleFactor +12);
+		//Iphone 4
+		if (Screen.width == 487 && Screen.height == 730 || Screen.width == 427 && Screen.height == 640 || Screen.width == 640 && Screen.height == 960) {
+			settingButton.positionFromTopLeft( 0.24f, 0.9f );
+			settingButton.setSize(settingButton.width/scaleFactor * 2f , settingButton.height / scaleFactor * 2f);
+			replayButton.setSize(replayButton.width/scaleFactor * 1f, replayButton.height/scaleFactor * 1f);
+			homeButton.setSize(replayButton.width/scaleFactor * 1f, replayButton.height/scaleFactor * 1f);
+		}
+		//Ipad2 and Ipad4
+		if (Screen.width == 548 && Screen.height == 730 || Screen.width == 480 && Screen.height == 640 || Screen.width == 768 && Screen.height == 1024 || Screen.width == 1536 && Screen.height == 2048) {
+			settingButton.positionFromTopLeft( 0.24f, 0.9f );
+			settingButton.setSize(settingButton.width/scaleFactor * 1f , settingButton.height / scaleFactor * 1f);
+			replayButton.setSize(replayButton.width/scaleFactor * 1f, replayButton.height/scaleFactor * 1f);
+			homeButton.setSize(replayButton.width/scaleFactor * 1f, replayButton.height/scaleFactor * 1f);
+		}
+		//Iphone 5
+		if (Screen.width == 411 && Screen.height == 730 ||Screen.width == 360 && Screen.height == 640 || Screen.width == 640 && Screen.height == 1136){
+			settingButton.positionFromTopLeft( 0.24f, 0.9f );
 			settingButton.setSize(settingButton.width/scaleFactor * 2f , settingButton.height / scaleFactor * 2f);
 			replayButton.setSize(replayButton.width/scaleFactor * 1f, replayButton.height/scaleFactor * 1f);
 			homeButton.setSize(replayButton.width/scaleFactor * 1f, replayButton.height/scaleFactor * 1f);
