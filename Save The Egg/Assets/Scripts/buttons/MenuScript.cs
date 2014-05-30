@@ -21,19 +21,26 @@ public class MenuScript : MonoBehaviour {
 		//main menu
 
 		//post
-		post = UIButton.create ("post.png", "post.png", 0, 0);
+		var post = UIButton.create (mainManager,"post.png", "post.png", 0, 0);
 		post.setSize (post.width / scaleFactor, post.height / scaleFactor);
+		post.positionFromBottomLeft (0f, 0.10f);
 		post.userData = "post";
-	
+
 		//play game
-		playButton = UIButton.create("PlayBtn_normal.png","PlayBtn_active.png",0,0);
+		var playButton = UIButton.create(mainManager,"PlayBtn_normal.png","PlayBtn_active.png",0,0);
 		playButton.touchDownSound = Click;
+		playButton.parentUIObject = post;
+		playButton.positionFromTopLeft (0.190f, 0.108f);
+		//playButton.pixelsFromRight( 0 );
 		playButton.setSize(playButton.width/ scaleFactor , playButton.height / scaleFactor);
 		playButton.onTouchUpInside += sender => Application.LoadLevel("Loading");
-		
+		//post.scale = new Vector3 (1.5f, 1.5f, 1.5f);
+
 		//view collections of toy darts
 		collectionButton = UIButton.create("CollectionBtn_normal.png","CollectionBtn_active.png",0,0);
 		//collectionButton.highlightedTouchOffsets = new UIEdgeOffsets(30);
+		collectionButton.positionFromTopLeft( 0.64f, 0.17f );
+		collectionButton.parentUIObject = post;
 		collectionButton.onTouchUpInside += sender => Application.LoadLevel("collections");
 		collectionButton.touchDownSound = Click;
 		collectionButton.setSize(collectionButton.width/scaleFactor, collectionButton.height/scaleFactor);
@@ -41,6 +48,8 @@ public class MenuScript : MonoBehaviour {
 		//store
 		storeButton = UIButton.create("StoreBtn_normal.png","StoreBtn_active.png",0,0);
 		//storeButton.highlightedTouchOffsets = new UIEdgeOffsets(30);
+		storeButton.positionFromTopLeft( 0.695f, 0.17f );
+		storeButton.parentUIObject = post;
 		storeButton.onTouchUpInside += sender => Application.LoadLevel("gameStore");
 		storeButton.touchDownSound = Click;
 		storeButton.setSize(storeButton.width/scaleFactor,storeButton.height/scaleFactor);
@@ -48,13 +57,17 @@ public class MenuScript : MonoBehaviour {
 		//high score
 		highScoreButton = UIButton.create("HighScoBtn_normal.png","HighScoBtn_active.png",0,0);
 		//highScoreButton.highlightedTouchOffsets = new UIEdgeOffsets(30);
+		highScoreButton.positionFromTopLeft( 0.75f, 0.17f );
+		highScoreButton.parentUIObject = post;
 		highScoreButton.onTouchUpInside += sender => Application.LoadLevel("HS");
 		highScoreButton.touchDownSound = Click;
 		highScoreButton.setSize(highScoreButton.width/scaleFactor,highScoreButton.height/scaleFactor);
 		
 		//credits
 		creditsButton = UIButton.create("CreditsBtn_normal.png","CreditsBtn_activel.png",0,0);
+		creditsButton.positionFromTopLeft( 0.805f, 0.17f );
 		creditsButton.onTouchUpInside += sender => Application.LoadLevel("credits");
+		creditsButton.parentUIObject = post;
 		creditsButton.touchDownSound = Click;
 		creditsButton.setSize(creditsButton.width/scaleFactor,creditsButton.height/scaleFactor);
 
@@ -69,42 +82,6 @@ public class MenuScript : MonoBehaviour {
 		music.onToggle += (sender,selected) => toggleMusic(sender);
 		music.selected = false;
 		music.setSize(music.width/ scaleFactor,music.height / scaleFactor);
-
-#if UNITY_EDITOR || UNITY_IOS
-		//Iphone 4
-		if (Screen.width == 487 && Screen.height == 730 || Screen.width == 427 && Screen.height == 640 || Screen.width == 640 && Screen.height == 960) {
-			post.positionFromTopLeft (0.48f, 0.10f);
-			playButton.positionFromTopLeft (0.55f, 0.13f);
-			collectionButton.positionFromTopLeft( 0.62f, 0.17f );
-			storeButton.positionFromTopLeft( 0.67f, 0.17f );
-			highScoreButton.positionFromTopLeft( 0.72f, 0.17f );
-			creditsButton.positionFromTopLeft( 0.77f, 0.17f );
-			sound.positionFromBottomLeft( 0.015f, 0.024f );
-			music.positionFromBottomLeft( 0.015f, 0.25f );
-		}
-		//Ipad2 and Ipad4
-		if (Screen.width == 548 && Screen.height == 730 || Screen.width == 480 && Screen.height == 640 || Screen.width == 768 && Screen.height == 1024 || Screen.width == 1536 && Screen.height == 2048) {
-			post.positionFromTopLeft (0.48f, 0.10f);
-			playButton.positionFromTopLeft (0.56f, 0.13f);
-			collectionButton.positionFromTopLeft( 0.64f, 0.17f );
-			storeButton.positionFromTopLeft( 0.695f, 0.17f );
-			highScoreButton.positionFromTopLeft( 0.75f, 0.17f );
-			creditsButton.positionFromTopLeft( 0.805f, 0.17f );
-			sound.positionFromBottomLeft( 0.015f, 0.024f );
-			music.positionFromBottomLeft( 0.015f, 0.25f );
-		}
-		//Iphone 5
-		if (Screen.width == 411 && Screen.height == 730 ||Screen.width == 360 && Screen.height == 640 || Screen.width == 640 && Screen.height == 1136){
-			post.positionFromTopLeft (0.48f, 0.08f);
-			playButton.positionFromTopLeft (0.54f, 0.10f);
-			collectionButton.positionFromTopLeft( 0.60f, 0.14f );
-			storeButton.positionFromTopLeft( 0.64f, 0.14f );
-			highScoreButton.positionFromTopLeft( 0.68f, 0.14f );
-			creditsButton.positionFromTopLeft( 0.72f, 0.14f );
-			sound.positionFromBottomLeft( 0.02f, 0.024f );
-			music.positionFromBottomLeft( 0.02f, 0.25f );
-		}
-#endif
 	}	
 
 	void Update(){

@@ -16,22 +16,9 @@ public class store : MonoBehaviour
 		var scaleFactor = ScaleFactor.GetScaleFactor ();
 		var scrollable = new UIScrollableVerticalLayout( 10 );
 		scrollable.alignMode = UIAbstractContainer.UIContainerAlignMode.Center;
-		
+		scrollable.position = new Vector3( 35, -150, 0 );
+		scrollable.setSize( Screen.width/1.1f, Screen.height / 1.7f );
 
-#if UNITY_EDITOR || UNITY_IOS
-		if (Screen.width == 487 && Screen.height == 730 || Screen.width == 427 && Screen.height == 640 || Screen.width == 640 && Screen.height == 960) { // iphone 4
-			scrollable.position = new Vector3( 35, -150, 0 );
-			scrollable.setSize( Screen.width/1.1f, Screen.height / 1.7f );
-		}
-		if (Screen.width == 548 && Screen.height == 730 || Screen.width == 480 && Screen.height == 640 || Screen.width == 768 && Screen.height == 1024 || Screen.width == 1536 && Screen.height == 2048) { //ipad
-			scrollable.position = new Vector3( 35, -150, 0 );
-			scrollable.setSize( Screen.width/1.1f, Screen.height / 1.7f );
-		}
-		if (Screen.width == 411 && Screen.height == 730 ||Screen.width == 360 && Screen.height == 640 || Screen.width == 640 && Screen.height == 1136){ //iphone 5
-			scrollable.position = new Vector3( 35, -150, 0 );
-			scrollable.setSize( Screen.width/1.1f, Screen.height / 1.7f );
-		}	
-#endif
 
 		for( var i = 0; i < 15; i++ )
 		{
@@ -46,6 +33,7 @@ public class store : MonoBehaviour
 				touchable.onTouchDown += OnButtonDown;
 				touchable.onTouchUpInside += OnButtonSelect;
 				touchable.parentUIObject = scrollable;
+
 			}
 			else if( i % 3 == 0 )
 			{
