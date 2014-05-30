@@ -6,7 +6,7 @@
         <key>texturePackerVersion</key>
         <string>3.3.4</string>
         <key>fileName</key>
-        <string>C:/Users/OJT/Music/Save The Egg_unity_05232014/Assets/TexturePackerSources/GameTexture/store/store.tps</string>
+        <string>C:/Users/OJT/Music/STE/Save The Egg/Assets/GameAssets/Resources/TexturePackerSources/GameTexture/store/store.tps</string>
         <key>autoSDSettings</key>
         <array>
             <struct type="AutoSDSettings">
@@ -206,11 +206,11 @@
         </struct>
         <key>fileList</key>
         <array>
-            <filename>4.png</filename>
             <filename>_1.jpg</filename>
             <filename>_2.jpg</filename>
             <filename>_3.jpg</filename>
             <filename>_4.jpg</filename>
+            <filename>4.png</filename>
             <filename>1.png</filename>
             <filename>2.png</filename>
             <filename>3.png</filename>
