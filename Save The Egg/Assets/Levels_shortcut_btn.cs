@@ -88,6 +88,8 @@ public class Levels_shortcut_btn : MonoBehaviour {
 			L10.onTouchDown += OnButtonDown;
 			L10.onTouchUpInside += OnButtonSelect;
 
+			var back = UIButton.create("back_normal2.png","back_active2.png",0,0);
+			back.onTouchUpInside += sender => Application.LoadLevel("Level8");
 
 		
 	
@@ -113,6 +115,8 @@ public class Levels_shortcut_btn : MonoBehaviour {
 			L9.setSize(L9.width/ scaleFactor, L9.height / scaleFactor * 0.7f);
 			L10.positionFromTopLeft (0.73f, 0.30f);
 			L10.setSize(L10.width/ scaleFactor, L10.height / scaleFactor * 0.7f);
+			back.positionFromTopLeft (0.785f, 0.40f);
+			back.setSize(back.width/ scaleFactor, back.height / scaleFactor + 25);
 		}
 		if (Screen.width == 548 && Screen.height == 730 || Screen.width == 480 && Screen.height == 640) {
 			L1.positionFromTopLeft (0.10f, 0.30f);
@@ -135,6 +139,8 @@ public class Levels_shortcut_btn : MonoBehaviour {
 			L9.setSize(L9.width/ scaleFactor, L9.height / scaleFactor * 0.7f);
 			L10.positionFromTopLeft (0.73f, 0.30f);
 			L10.setSize(L10.width/ scaleFactor, L10.height / scaleFactor * 0.7f);
+			back.positionFromTopLeft (0.85f, 0.40f);
+			back.setSize(back.width/ scaleFactor, back.height / scaleFactor + 25);
 
 		}
 		if (Screen.width == 411 && Screen.height == 730 || Screen.width == 360 && Screen.height == 640){
@@ -158,6 +164,8 @@ public class Levels_shortcut_btn : MonoBehaviour {
 			L9.setSize(L9.width/ scaleFactor, L9.height / scaleFactor * 0.7f);
 			L10.positionFromTopLeft (0.73f, 0.30f);
 			L10.setSize(L10.width/ scaleFactor, L10.height / scaleFactor * 0.7f);
+			back.positionFromTopLeft (0.85f, 0.40f);
+			back.setSize(back.width/ scaleFactor, back.height / scaleFactor + 25);
 		}
 
 #endif
@@ -184,6 +192,8 @@ public class Levels_shortcut_btn : MonoBehaviour {
 			L9.setSize(L9.width/ scaleFactor, L9.height / scaleFactor * 0.7f);
 			L10.positionFromTopLeft (0.73f, 0.30f);
 			L10.setSize(L10.width/ scaleFactor, L10.height / scaleFactor * 0.7f);
+			back.positionFromTopLeft (0.85f, 0.40f);
+			back.setSize(back.width/ scaleFactor, back.height / scaleFactor + 25);
 		}
 		if (Screen.width == 768 && Screen.height == 1024 || Screen.width == 1536 && Screen.height == 2048) {
 			L1.positionFromTopLeft (0.10f, 0.30f);
@@ -206,6 +216,8 @@ public class Levels_shortcut_btn : MonoBehaviour {
 			L9.setSize(L9.width/ scaleFactor, L9.height / scaleFactor * 0.7f);
 			L10.positionFromTopLeft (0.73f, 0.30f);
 			L10.setSize(L10.width/ scaleFactor, L10.height / scaleFactor * 0.7f);
+			back.positionFromTopLeft (0.85f, 0.40f);
+			back.setSize(back.width/ scaleFactor, back.height / scaleFactor + 25);
 			
 		}
 		if (Screen.width == 640 && Screen.height == 1136){
@@ -229,6 +241,8 @@ public class Levels_shortcut_btn : MonoBehaviour {
 			L9.setSize(L9.width/ scaleFactor, L9.height / scaleFactor * 0.7f);
 			L10.positionFromTopLeft (0.73f, 0.30f);
 			L10.setSize(L10.width/ scaleFactor, L10.height / scaleFactor * 0.7f);
+			back.positionFromTopLeft (0.85f, 0.40f);
+			back.setSize(back.width/ scaleFactor, back.height / scaleFactor + 25);
 		}
 
 #endif	
