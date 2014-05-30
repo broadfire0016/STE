@@ -63,6 +63,7 @@ public class BasketScript : MonoBehaviour {
 			blue = gameObject.GetComponent<MovingObject>();
 			blue.MoveSlow();
 			freeze.SetActive(true);
+			Invoke("Start",1.2f);
 			Invoke("reset", 5f);
 
 			audio.clip = blueE;

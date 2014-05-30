@@ -39,8 +39,8 @@ public class AudioScript : MonoBehaviour {
 	void Awake(){
 		Invoke("Start",0.001f);
 		SoundSource = AddAudio (Sound, false, true, 1f);
-		MusicSource = AddAudio (Music, false, true, 1f);
-		LevelMusicSource = AddAudio (LevelMusic, false, true, 0.3f);
+		MusicSource = AddAudio (Music, true, true, 1f);
+		LevelMusicSource = AddAudio (LevelMusic, true, true, 0.3f);
 		LevelSoundSource = AddAudio (LevelSound, false, true, 0.3f);
 		SoundSource.mute = false;
 		MusicSource.mute = false;
