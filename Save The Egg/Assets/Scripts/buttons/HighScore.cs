@@ -17,7 +17,7 @@ public class HighScore : MonoBehaviour {
 		CloseBtn.highlightedTouchOffsets = new UIEdgeOffsets(30);
 		CloseBtn.onTouchUpInside += sender => Application.LoadLevel("AGAIN");
 		CloseBtn.touchDownSound = Click;
-		CloseBtn.positionFromBottomLefy( 0.23f, 0.3f );
+		CloseBtn.positionFromBottomLeft( 0.23f, 0.3f );
 		CloseBtn.setSize(CloseBtn.width / scaleFactor, CloseBtn.height / scaleFactor);
 
 	}

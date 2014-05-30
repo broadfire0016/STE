@@ -16,7 +16,7 @@ public class LevelCompleteBtn : MonoBehaviour {
 		var menuButton = UIButton.create(buttonsManager, "menu_normal.png","menu.png",0,0);
 		//menuButton.positionFromCenter( 0.29f, -0.12f );
 		menuButton.positionFromBottomLeft( 0.29f, -0.12f );
-		nextButton.setSize(nextButton.width/ scaleFactor + 10, nextButton.height / scaleFactor + 15);
+		menuButton.setSize(menuButton.width/ scaleFactor + 10, menuButton.height / scaleFactor + 15);
 		menuButton.highlightedTouchOffsets = new UIEdgeOffsets(30);
 		menuButton.onTouchUpInside += sender => Application.LoadLevel("AGAIN");
 

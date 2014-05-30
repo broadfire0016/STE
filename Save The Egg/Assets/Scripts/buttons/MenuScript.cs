@@ -15,19 +15,19 @@ public class MenuScript : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		var scaleFactor = ScaleFactor.GetScaleFactor ();
+
 		Time.timeScale = 1;
 		print ("Width " + Screen.width + " Height " + Screen.height);
-
 		//main menu
 
 		//post
-		var post = UIButton.create (mainManager,"post.png", "post.png", 0, 0);
+		post = UIButton.create ("post.png", "post.png", 0, 0);
 		post.setSize (post.width / scaleFactor, post.height / scaleFactor);
 		post.positionFromBottomLeft (0f, 0.10f);
 		post.userData = "post";
 
 		//play game
-		var playButton = UIButton.create(mainManager,"PlayBtn_normal.png","PlayBtn_active.png",0,0);
+		playButton = UIButton.create("PlayBtn_normal.png","PlayBtn_active.png",0,0);
 		playButton.touchDownSound = Click;
 		playButton.parentUIObject = post;
 		playButton.positionFromTopLeft (0.190f, 0.108f);

@@ -11,7 +11,7 @@ public class credits : MonoBehaviour {
 	public GameObject background;
 	// Use this for initialization
 	void Start () {
-		var scaleFactor = ScaleFactor.GetScaleFactor ();
+		//var scaleFactor = ScaleFactor.GetScaleFactor ();
 		//home
 		var CloseBtn = UIButton.create(creditsManager,"back_normal2.png","back_active2.png",0,0);
 		CloseBtn.userData = "Click";
