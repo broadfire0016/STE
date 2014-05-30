@@ -16,16 +16,6 @@ public class AudioScript : MonoBehaviour {
 	public AudioClip Sound;
 	
 	// check the sound mode every scene
-	void Start(){ 
-		if(status2 == true){
-			LevelMusicSource.mute = true;
-			MusicSource.mute = true;
-		}
-		if(status4 == true){
-			LevelSoundSource.mute = true;
-			SoundSource.mute = true;
-		}
-	}
 	
 	AudioSource AddAudio(AudioClip clip, bool loop, bool playAwake, float volume){
 		AudioSource newAudio = gameObject.AddComponent <AudioSource>();
@@ -37,7 +27,7 @@ public class AudioScript : MonoBehaviour {
 	}
 	
 	void Awake(){
-		Invoke("Start",0.001f);
+
 		SoundSource = AddAudio (Sound, false, true, 1f);
 		MusicSource = AddAudio (Music, true, true, 1f);
 		LevelMusicSource = AddAudio (LevelMusic, true, true, 0.3f);
@@ -57,25 +47,16 @@ public class AudioScript : MonoBehaviour {
 		}
 
 	}
-	
-	 void Update(){
-		if(Application.loadedLevelName == "AGAIN" || Application.loadedLevelName == "collections" || Application.loadedLevelName == "credits" 
-		   || Application.loadedLevelName != "gameStore" || Application.loadedLevelName != "HS" || Application.loadedLevelName != "shortcuts"){
-			status2 = status1;
-			status4 = status3;
-		}
-	}
+
 
 	public static void setMusicMode(bool mode){
 		MusicSource.mute = mode;
 		LevelMusicSource.mute = MusicSource.mute;
-		status1 = mode;
 	}
 
 	public static void setSoundMode(bool mode){
 		SoundSource.mute = mode;
 		LevelSoundSource.mute = mode;
-		status3 = mode;
 	}
 
 	public static bool getMusicMode(){
