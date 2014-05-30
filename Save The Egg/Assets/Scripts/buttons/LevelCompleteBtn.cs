@@ -1,4 +1,7 @@
-﻿using UnityEngine;
+﻿//Buttons in level Complete Scene
+//Author: Levi
+
+using UnityEngine;
 using System.Collections;
 
 public class LevelCompleteBtn : MonoBehaviour {

@@ -1,4 +1,7 @@
-﻿using UnityEngine;
+﻿//Collections Scene Script
+//author Aiza
+
+using UnityEngine;
 using System.Collections;
 
 public class collections : MonoBehaviour {

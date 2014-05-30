@@ -1,4 +1,7 @@
-﻿using UnityEngine;
+﻿//Display buttong Script on level Complete Scene
+//Author: Levi
+
+using UnityEngine;
 using System.Collections;
 
 public class DisplayButtons : MonoBehaviour {

@@ -1,4 +1,7 @@
-﻿using UnityEngine;
+﻿//Credits Scene Script
+//author: Aiza
+
+using UnityEngine;
 using System.Collections;
 
 public class credits : MonoBehaviour {

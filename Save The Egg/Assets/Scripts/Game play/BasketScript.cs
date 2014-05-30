@@ -1,4 +1,7 @@
-﻿using UnityEngine;
+﻿//This Script in charge of the scoring when the basket catches the egg.
+//author: Levi
+
+using UnityEngine;
 using System.Collections;
 
 public class BasketScript : MonoBehaviour {

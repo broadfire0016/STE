@@ -1,4 +1,5 @@
 ﻿//Shows Score for the level complete scene and game Over Scene
+//Author Levi
 
 using UnityEngine;
 using System.Collections;

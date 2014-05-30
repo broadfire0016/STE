@@ -1,4 +1,7 @@
-﻿using UnityEngine;
+﻿//Store Button Script
+//author - Aiza
+
+using UnityEngine;
 using System.Collections;
 
 public class gameStore : MonoBehaviour {

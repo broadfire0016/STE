@@ -1,4 +1,7 @@
-﻿using UnityEngine;
+﻿//Display High Score Script
+//Author Levi
+
+using UnityEngine;
 using System.Collections;
 
 public class DisplayHighScore : MonoBehaviour {

@@ -1,4 +1,7 @@
-﻿using UnityEngine;
+﻿//Score Display Script
+//Author: Levi
+
+using UnityEngine;
 using System.Collections;
 
 public class Score : MonoBehaviour {

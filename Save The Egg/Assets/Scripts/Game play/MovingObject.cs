@@ -1,4 +1,7 @@
-﻿using UnityEngine;
+﻿//This Script makes the object moves to left and right
+//Author: Levi
+
+using UnityEngine;
 using System.Collections;
 
 public class MovingObject : MonoBehaviour {

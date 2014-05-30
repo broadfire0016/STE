@@ -1,4 +1,7 @@
-﻿using UnityEngine;
+﻿//pause menu script
+//author Levi
+
+using UnityEngine;
 using System.Collections;
 
 public class gamePause : MonoBehaviour {

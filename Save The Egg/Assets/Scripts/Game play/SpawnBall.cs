@@ -1,4 +1,7 @@
-﻿using UnityEngine;
+﻿//Ball Spawner Script. Spawns ball from the pooler after ball was swipe by the player.
+//Author: Levi
+
+using UnityEngine;
 using System.Collections;
 
 public class SpawnBall : MonoBehaviour {

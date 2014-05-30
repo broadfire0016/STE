@@ -1,4 +1,7 @@
-﻿using UnityEngine;
+﻿//High Score Button Script
+//author: Levi
+
+using UnityEngine;
 using System.Collections;
 
 public class HighScore : MonoBehaviour {

@@ -1,4 +1,7 @@
-﻿using UnityEngine;
+﻿//Timer in the Game
+//Author: Levi
+
+using UnityEngine;
 using System.Collections;
 
 public class Timer : MonoBehaviour {

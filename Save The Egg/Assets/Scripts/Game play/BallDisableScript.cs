@@ -1,4 +1,7 @@
-﻿using UnityEngine;
+﻿//Set the Ball to inactive after Collisions
+//author: Levi
+
+using UnityEngine;
 using System.Collections;
 
 public class BallDisableScript : MonoBehaviour {

@@ -1,3 +1,6 @@
+//Object Pooler
+//from: Unity 3D Live Seminar Video
+
 using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;

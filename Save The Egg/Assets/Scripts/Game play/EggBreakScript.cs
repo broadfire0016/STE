@@ -1,4 +1,7 @@
-﻿using UnityEngine;
+﻿//Script when the egg Falls in the floor to make it break;
+//Author Levi
+
+using UnityEngine;
 using System.Collections;
 
 public class EggBreakScript : MonoBehaviour {
