@@ -11,9 +11,15 @@ public class MenuScript : MonoBehaviour {
  	private AudioSource MusicSource;
 	private UIButton post, playButton, collectionButton, storeButton, highScoreButton, creditsButton;
 	private UIToggleButton sound, music; 
+	AudioScript audioplay;
 
 	// Use this for initialization
 	void Start () {
+		audioplay = GameObject.FindGameObjectWithTag("SoundLoader").GetComponent<AudioScript>();
+
+		if(AudioScript.status == false)
+			audioplay.PlayMenuMusic();
+
 		var scaleFactor = ScaleFactor.GetScaleFactor ();
 
 		Time.timeScale = 1;
@@ -28,7 +34,7 @@ public class MenuScript : MonoBehaviour {
 
 		//play game
 		playButton = UIButton.create("PlayBtn_normal.png","PlayBtn_active.png",0,0);
-		playButton.touchDownSound = Click;
+		//playButton.touchDownSound = Click;
 		playButton.parentUIObject = post;
 		playButton.positionFromTopLeft (0.190f, 0.108f);
 		//playButton.pixelsFromRight( 0 );
@@ -42,7 +48,7 @@ public class MenuScript : MonoBehaviour {
 		collectionButton.positionFromTopLeft( 0.64f, 0.17f );
 		collectionButton.parentUIObject = post;
 		collectionButton.onTouchUpInside += sender => Application.LoadLevel("collections");
-		collectionButton.touchDownSound = Click;
+		//collectionButton.touchDownSound = Click;
 		collectionButton.setSize(collectionButton.width/scaleFactor, collectionButton.height/scaleFactor);
 		
 		//store
@@ -51,7 +57,7 @@ public class MenuScript : MonoBehaviour {
 		storeButton.positionFromTopLeft( 0.695f, 0.17f );
 		storeButton.parentUIObject = post;
 		storeButton.onTouchUpInside += sender => Application.LoadLevel("gameStore");
-		storeButton.touchDownSound = Click;
+		//storeButton.touchDownSound = Click;
 		storeButton.setSize(storeButton.width/scaleFactor,storeButton.height/scaleFactor);
 		
 		//high score
@@ -60,7 +66,7 @@ public class MenuScript : MonoBehaviour {
 		highScoreButton.positionFromTopLeft( 0.75f, 0.17f );
 		highScoreButton.parentUIObject = post;
 		highScoreButton.onTouchUpInside += sender => Application.LoadLevel("HS");
-		highScoreButton.touchDownSound = Click;
+		//highScoreButton.touchDownSound = Click;
 		highScoreButton.setSize(highScoreButton.width/scaleFactor,highScoreButton.height/scaleFactor);
 		
 		//credits
@@ -68,7 +74,7 @@ public class MenuScript : MonoBehaviour {
 		creditsButton.positionFromTopLeft( 0.805f, 0.17f );
 		creditsButton.onTouchUpInside += sender => Application.LoadLevel("credits");
 		creditsButton.parentUIObject = post;
-		creditsButton.touchDownSound = Click;
+		//creditsButton.touchDownSound = Click;
 		creditsButton.setSize(creditsButton.width/scaleFactor,creditsButton.height/scaleFactor);
 
 		//sound
@@ -85,37 +91,28 @@ public class MenuScript : MonoBehaviour {
 	}	
 
 	void Update(){
-		if (AudioScript.getSoundMode()== true){
-		   	playButton.touchDownSound = null;
-		   	collectionButton.touchDownSound = null;
-			storeButton.touchDownSound = null;
-			highScoreButton.touchDownSound = null;
-			creditsButton.touchDownSound = null;
-		 }
-		 else{
-			playButton.touchDownSound = Click;
-			collectionButton.touchDownSound = Click;
-			storeButton.touchDownSound = Click;
-			highScoreButton.touchDownSound = Click;
-			creditsButton.touchDownSound = Click;
-		 }
- 	}
+		playButton.touchDownSound = audioplay.getSoundClip();
+		collectionButton.touchDownSound = audioplay.getSoundClip();
+		storeButton.touchDownSound = audioplay.getSoundClip();
+		highScoreButton.touchDownSound = audioplay.getSoundClip();
+		creditsButton.touchDownSound = audioplay.getSoundClip();
+	}
 
  	void toggleSound(UIToggleButton sender){
 		if (sender.selected){
-			AudioScript.setSoundMode(true);
+			audioplay.setSoundMode(true);
 		}
 		else{
-			AudioScript.setSoundMode(false);
+			audioplay.setSoundMode(false);
 		}
  	}
 
  	void toggleMusic(UIToggleButton sender){
 		if (sender.selected){
-			AudioScript.setMusicMode(true);
+			audioplay.setMusicMode(true);
 		}
 		else{
-			AudioScript.setMusicMode(false);
+			audioplay.setMusicMode(false);
 		}
 	}
 }

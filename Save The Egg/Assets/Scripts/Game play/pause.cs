@@ -50,6 +50,7 @@ public class pause : MonoBehaviour {
 			homeButton.positionFromTopLeft(0.45f, 0.67f);
 			resumeButton.positionFromTopLeft(0.45f,0.445f);
 			objectCamera.transform.position = new Vector3(currentPosX,currentPosY, newPosZ);
+			AudioScript.status = false;
 		}
 		else if(Time.timeScale == 1){
 			pauseButton.positionFromTopLeft( 0.24f, 0.9f );
@@ -58,6 +59,7 @@ public class pause : MonoBehaviour {
 			replayButton.positionFromTopLeft(2f, 2f);
 			homeButton.positionFromTopLeft(2f, 2f);
 			resumeButton.positionFromTopLeft(2f,2f);
+			AudioScript.status = true;
 		}
 	}
 

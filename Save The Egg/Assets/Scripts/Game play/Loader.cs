@@ -6,15 +6,13 @@ public class Loader : MonoBehaviour {
 	private static Loader instance;
 	
 	void Awake(){
-		if (instance != null && instance != this && Application.loadedLevelName != "levelComplete"){
-			Destroy(this.gameObject);
-			return;
+		if (Loader.instance == null){
+			Loader.instance = this;
+			GameObject.DontDestroyOnLoad(this.gameObject);
 		}
 		else{
-			instance = this;
+			Destroy(this.gameObject);
 		}
-		DontDestroyOnLoad(this.gameObject);
 	}
-	
 
 }

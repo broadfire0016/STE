@@ -11,6 +11,7 @@ public class gameStore : MonoBehaviour {
 	
 	//game store
 	void Start () {
+		AudioScript.status = true;
 		var scaleFactor = ScaleFactor.GetScaleFactor ();
 		var backButton = UIButton.create(backManager, "back_normal2.png","back_active2.png",0,0);
 		backButton.highlightedTouchOffsets = new UIEdgeOffsets(30);

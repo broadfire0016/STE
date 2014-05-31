@@ -6,14 +6,14 @@ using System.Collections;
 
 public class AudioScript : MonoBehaviour {
 
-	private static AudioSource SoundSource;
-	private static AudioSource MusicSource;
-	private static AudioSource LevelMusicSource;
-	private static AudioSource LevelSoundSource;
-	private static bool status1, status2, status3, status4;
+	private AudioSource SoundSource, MusicSource, LevelMusicSource, LevelSoundSource;
+	private static AudioSource soundsource, musicsource, levelmusicsource, levelsoundsource;
 	public AudioClip LevelMusic, LevelSound;
-	public AudioClip Music;
-	public AudioClip Sound;
+	public AudioClip Music, Sound;
+	private AudioClip sound;
+	private static AudioScript instance;
+	public static bool status;
+
 	
 	// check the sound mode every scene
 	
@@ -28,50 +28,81 @@ public class AudioScript : MonoBehaviour {
 	
 	void Awake(){
 
+		if (AudioScript.instance == null){
+			AudioScript.instance = this;
+			GameObject.DontDestroyOnLoad(this.gameObject);
+		}
+		else{
+			Destroy(this.gameObject);
+		}
+
 		SoundSource = AddAudio (Sound, false, true, 1f);
 		MusicSource = AddAudio (Music, true, true, 1f);
 		LevelMusicSource = AddAudio (LevelMusic, true, true, 0.3f);
 		LevelSoundSource = AddAudio (LevelSound, false, true, 0.3f);
 		SoundSource.mute = false;
 		MusicSource.mute = false;
-		LevelMusicSource.mute = getLevelMusicMode();
-		LevelSoundSource.mute = getLevelSoundMode();
+		LevelMusicSource.mute = false;
+		LevelSoundSource.mute = false;
+		sound = Sound;
+		soundsource = SoundSource;
+		musicsource = MusicSource;
+		levelmusicsource = LevelMusicSource;
+		levelsoundsource = LevelSoundSource;
 		//SoundSource.Play ();
-		MusicSource.Play();
-
-		if(Application.loadedLevelName != "AGAIN" && Application.loadedLevelName != "collections" && Application.loadedLevelName != "credits" 
-		   && Application.loadedLevelName != "gameOver" && Application.loadedLevelName != "gameStore" && Application.loadedLevelName != "HS" 
-		   && Application.loadedLevelName != "levelComplete" && Application.loadedLevelName != "Loading" && Application.loadedLevelName != "shortcuts"){
-				LevelMusicSource.Play();
-				MusicSource.Stop();
-		}
+		//MusicSource.Play();
 
 	}
 
+	public AudioClip getSoundClip(){
+		//print (SoundSource.mute);
+		if (SoundSource.mute == false)
+			return sound;
+		else
+			return null;
+	}
 
-	public static void setMusicMode(bool mode){
+	public void setMusicMode(bool mode){
 		MusicSource.mute = mode;
 		LevelMusicSource.mute = MusicSource.mute;
 	}
 
-	public static void setSoundMode(bool mode){
+	public void PlayGameMusic(){
+		status = false;
+		MusicSource.Stop ();
+		LevelMusicSource.Play ();
+	}
+
+	public void PlayMenuMusic(){
+		LevelMusicSource.Stop ();
+		MusicSource.Play ();
+		status = true;
+	}
+
+	public void StopMusic(){
+		LevelMusicSource.Stop ();
+		MusicSource.Stop ();
+		status = true;
+	}
+
+	public void setSoundMode(bool mode){
 		SoundSource.mute = mode;
 		LevelSoundSource.mute = mode;
 	}
 
-	public static bool getMusicMode(){
-		return MusicSource.mute;
+	public bool getMusicMode(){
+		return musicsource.mute;
 	}
 
-	public static bool getSoundMode(){
-		return SoundSource.mute;
+	public bool getSoundMode(){
+		return soundsource.mute;
 	}
 
-	public static bool getLevelMusicMode(){
-		return LevelMusicSource.mute;
+	public bool getLevelMusicMode(){
+		return levelmusicsource.mute;
 	}
 
-	public static bool getLevelSoundMode(){
-		return LevelSoundSource.mute;
+	public bool getLevelSoundMode(){
+		return levelsoundsource.mute;
 	}
 }
