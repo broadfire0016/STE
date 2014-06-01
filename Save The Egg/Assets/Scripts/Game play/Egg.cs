@@ -1,19 +1,22 @@
-﻿//Script when the egg Falls in the floor to make it break;
+﻿ //Script when the egg Falls in the floor to make it break;
 //Author Levi
 
 using UnityEngine;
 using System.Collections;
 
 public class Egg : MonoBehaviour {
-	
-	public AudioClip fallEgg;
-	public AudioSource fallingEggs;
+
 	public GameObject BreakEgg;
 	GameObject spawnWhiteBrokenEgg, spawnGoldBrokenEgg, spawnRedBrokenEgg, spawnBlueBrokenEgg, spawnRottenBrokenEgg;
 	ObjectPooler whitebrokenEgg, goldbrokenEgg, redbrokenEgg, bluebrokenEgg, rottenbrokenEgg;
+	AudioScript audioplay;
 	
+	void Awake(){
+		audioplay = GameObject.FindGameObjectWithTag("SoundLoader").GetComponent<AudioScript>();
+	}
+
 	void Start(){
-		fallingEggs.volume = 5f;
+
 	}
 
 	void OnCollisionEnter(Collision other) {
@@ -37,8 +40,7 @@ public class Egg : MonoBehaviour {
 				spawnWhiteBrokenEgg.transform.position = new Vector3(BreakEgg.transform.position.x - 1, BreakEgg.transform.position.y, BreakEgg.transform.position.z);
 				spawnWhiteBrokenEgg.SetActive(true);
 				Invoke("RemoveWhiteEgg",1f);
-				audio.clip = fallEgg;
-				audio.Play();audio.Play();audio.Play();audio.Play();audio.Play();
+				audioplay.PlayBreakEgg();
 			}
 			if(gameObject.tag== "Gold Egg"){
 				goldbrokenEgg =  GameObject.Find("GoldBroken").GetComponent<ObjectPooler>();
@@ -46,8 +48,7 @@ public class Egg : MonoBehaviour {
 				spawnGoldBrokenEgg.transform.position = new Vector3(BreakEgg.transform.position.x - 1, BreakEgg.transform.position.y, BreakEgg.transform.position.z);
 				spawnGoldBrokenEgg.SetActive(true);
 				Invoke("RemoveGoldEgg",1f);
-				audio.clip = fallEgg;
-				audio.Play();audio.Play();audio.Play();audio.Play();audio.Play();
+				audioplay.PlayBreakEgg();
 			}
 			if(gameObject.tag == "Red Egg"){
 				redbrokenEgg =  GameObject.Find("RedBroken").GetComponent<ObjectPooler>();
@@ -55,8 +56,7 @@ public class Egg : MonoBehaviour {
 				spawnRedBrokenEgg.transform.position = new Vector3(BreakEgg.transform.position.x - 1, BreakEgg.transform.position.y, BreakEgg.transform.position.z);
 				spawnRedBrokenEgg.SetActive(true);
 				Invoke("RemoveRedEgg",1f);
-				audio.clip = fallEgg;
-				audio.Play();audio.Play();audio.Play();audio.Play();audio.Play();
+				audioplay.PlayBreakEgg();
 			}
 			if(gameObject.tag == "Blue Egg"){
 				bluebrokenEgg =  GameObject.Find("BlueBroken").GetComponent<ObjectPooler>();
@@ -64,8 +64,7 @@ public class Egg : MonoBehaviour {
 				spawnBlueBrokenEgg.transform.position = new Vector3(BreakEgg.transform.position.x - 1, BreakEgg.transform.position.y, BreakEgg.transform.position.z);
 				spawnBlueBrokenEgg.SetActive(true);
 				Invoke("RemoveBlueEgg",1f);
-				audio.clip = fallEgg;
-				audio.Play();audio.Play();audio.Play();audio.Play();audio.Play();
+				audioplay.PlayBreakEgg();
 			}
 			if(gameObject.tag == "Rotten Egg"){
 				rottenbrokenEgg =  GameObject.Find("RottenBroken").GetComponent<ObjectPooler>();
@@ -73,8 +72,7 @@ public class Egg : MonoBehaviour {
 				spawnRottenBrokenEgg.transform.position = new Vector3(BreakEgg.transform.position.x - 1, BreakEgg.transform.position.y, BreakEgg.transform.position.z);
 				spawnRottenBrokenEgg.SetActive(true);
 				Invoke("RemoveRottenEgg",1f);
-				audio.clip = fallEgg;
-				audio.Play();audio.Play();audio.Play();audio.Play();audio.Play();
+				audioplay.PlayBreakEgg();
 			}
 
 		}

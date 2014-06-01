@@ -6,23 +6,23 @@ using System.Collections;
 
 public class SpawnBall : MonoBehaviour {
 
-	public AudioClip ball;
+	//public AudioClip ball;
+	AudioScript audioplay;
 
 	// Use this for initialization
 	void Start () {
+		audioplay = GameObject.FindGameObjectWithTag("SoundLoader").GetComponent<AudioScript>();
 		Invoke ("callBall", 1f);
 	}
 
 	void OnTriggerEnter(Collider dart){
-	
+
 	}
 
 	void OnTriggerExit(Collider dart){
 		if (dart.gameObject.name == "Ball" || dart.gameObject.name == "Ball(Clone)") {
 			Invoke ("callBall", 1f);
-			audio.clip = ball;
-			audio.volume = 20f;
-			audio.Play();
+			audioplay.PlayGameSound();
 		}
 	}
 	
@@ -35,4 +35,5 @@ public class SpawnBall : MonoBehaviour {
 		spawnToyDart.transform.rotation = gameObject.transform.rotation;
 		spawnToyDart.transform.position = gameObject.transform.position;
 	}
+	
 }

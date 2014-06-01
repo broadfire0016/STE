@@ -7,16 +7,11 @@ using System.Collections.Generic;
 
 public class ObjectPooler : MonoBehaviour {
 
-	public static ObjectPooler current;
 	public GameObject pooledObject;
 	public int pooledAmount = 20;
 	public bool willGrow = true;
 	 
 	List<GameObject> pooledObjects;
-
-	void Awake(){
-		current = this;
-	}
 
 	void Start(){
 		pooledObjects = new List<GameObject> ();

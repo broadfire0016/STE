@@ -10,7 +10,10 @@ public class Spawner : MonoBehaviour {
 
 	GameObject spawnWhiteEgg, spawnRottenEgg, spawnGoldEgg, spawnBlueEgg, spawnRedEgg, spawnNest;
 
+	AudioScript audioplay;
+	
 	void Start(){
+
 		Invoke ("callEgg", (priority));
 		Invoke ("callNest", (priority));
 

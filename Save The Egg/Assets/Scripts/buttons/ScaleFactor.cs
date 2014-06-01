@@ -14,7 +14,7 @@ public class ScaleFactor : MonoBehaviour {
 		if (scaleFactor == 0) {
 			int normalWidth = 384;
 			int normalHeight = 512;
-			
+
 			var tempWidth = normalWidth * UI.scaleFactor;
 			var tempHeight = normalHeight * UI.scaleFactor;
 			float factorX = tempWidth / (float)Screen.width;

@@ -27,23 +27,21 @@ public class Ball : MonoBehaviour {
 		RaycastHit hit;
 
 #if UNITY_EDITOR
-
+		Input.multiTouchEnabled = false;
 		if(Physics.Raycast(ray,out hit)){
 			if(hit.collider.tag == "Ball"){
 				rayHit = true;
 				if(Input.GetMouseButtonDown(0)){
 					touch = true;
 					IncreaseTime ();
-					//print ("OnTouchStay " + touch);
 					startPosition = Input.mousePosition;
 				}
 			}
 		}
 		if(Input.GetMouseButtonUp(0)){
-
 			currentPostion = Input.mousePosition;
 			endPosition = currentPostion - startPosition;
-			print (currentPostion);
+	
 			if (time > 0.01f && rayHit == true && endPosition.y > 50f) 
 			{
 				touch = false;
@@ -58,7 +56,7 @@ public class Ball : MonoBehaviour {
 					
 					if (endPosition.y > 300){
 						endPosition.y = 300;
-						direction = new Vector3((endPosition.y),(endPosition.y - 50f),(endPosition.x * -1));
+						direction = new Vector3((endPosition.y - 50),(endPosition.y - 50f),(endPosition.x * -1));
 					}
 					else
 						direction = new Vector3((endPosition.y + 30),(endPosition.y),(endPosition.x * -1));
@@ -75,7 +73,7 @@ public class Ball : MonoBehaviour {
 #if UNITY_IOS
 	//IOS Control
 	if(Input.touches.Length > 0){
-	
+		Input.multiTouchEnabled = false;
 		Touch t = Input.GetTouch(0);
 		
 		if(Physics.Raycast(ray,out hit)){
@@ -97,7 +95,7 @@ public class Ball : MonoBehaviour {
 				
 				if(touch == false)
 				{
-					print (time);
+					
 					//direction of dart (left & right)
 					if(endPosition.x < -60)
 						endPosition.x = -60;
@@ -123,7 +121,7 @@ public class Ball : MonoBehaviour {
 	
 	}
 	void OnCollisionEnter (Collision other) {
-		Invoke ("Destroy", 0.3f);
+		Invoke ("Destroy", 0.1f);
 	}
 	
 	public void Destroy(){

@@ -27,14 +27,14 @@ public class Main : MonoBehaviour {
 		AudioScript.status = true;
 		print ("Width " + Screen.width + " Height " + Screen.height);
 		var Scores = gameObject.GetComponent<Score>();
-		Basket basketObject = GameObject.Find("basketBody").GetComponent<Basket>();
 		Time.timeScale = 1;
 		switch (Application.loadedLevelName)
 		{
 		case "Level1":
+				Basket basketObject = GameObject.Find("basketBody").GetComponent<Basket>();
 				basketObject.resetScore();
 				level = 1;
-				Timer.SetTimer(0,5);
+				Timer.SetTimer(0,15);
 				Scores.SetTargetScore(15);
 				Scores.setScore(score);
 				break;
@@ -98,7 +98,7 @@ public class Main : MonoBehaviour {
 
 	void Update () {
 
-		if (Application.loadedLevelName != "levelComplete" || Application.loadedLevelName != "gameOver"){
+		if (Application.loadedLevelName != "levelComplete" && Application.loadedLevelName != "gameOver"){
 			var mins = Timer.GetMinutes();
 			var secs = Timer.GetSeconds();
 			var Scores = gameObject.GetComponent<Score>();

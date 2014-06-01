@@ -16,7 +16,7 @@ public class DisplayHighScore : MonoBehaviour {
 		highScoreText = new UIText(textManager, "VogueCyrBold_60_ffffff", "VogueCyrBold_60_ffffff.png");
 		highscoretext = highScoreText.addTextInstance(string.Format("{0}", highScore), 0, 0 );
 		highscoretext.textScale = 2f;
-		highscoretext.positionFromTopLeft(0.47f, 0.465f);
+		highscoretext.positionFromCenter(0.47f, 0.465f);
 		highscoretext.color = Color.black;
 	}
 	
