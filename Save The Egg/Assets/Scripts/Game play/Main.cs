@@ -20,7 +20,7 @@ public class Main : MonoBehaviour {
 
 
 	void Start () {
-		//PlayerPrefs.SetInt("High Score", 0);
+		PlayerPrefs.SetInt("High Score", 0);
 
 		if (score > highScore){
 			highScore = score;
@@ -40,61 +40,61 @@ public class Main : MonoBehaviour {
 				Basket basketObject = GameObject.Find("basketBody").GetComponent<Basket>();
 				basketObject.resetScore();
 				level = 1;
-				Timer.SetTimer(0,15);
+				Timer.SetTimer(1,30);
 				Scores.SetTargetScore(15);
 				Scores.setScore(score);
 				break;
 		case "Level2":
 				level = 2;
-				Timer.SetTimer(0,5);
+				Timer.SetTimer(1,30);
 				Scores.SetTargetScore(30);
 				Scores.setScore(score);
 				break;
 		case "Level3":
 				level = 3;
-				Timer.SetTimer(0,5);
+				Timer.SetTimer(1,30);
 				Scores.SetTargetScore(45);
 				Scores.setScore(score);
 				break;
 		case "Level4":
 				level = 4;
-				Timer.SetTimer(0,5);
+				Timer.SetTimer(1,30);
 				Scores.SetTargetScore(60);
 				Scores.setScore(score);
 				break;
 		case "Level5":
 				level = 5;
-				Timer.SetTimer(0,5);
+				Timer.SetTimer(1,30);
 				Scores.SetTargetScore(75);
 				Scores.setScore(score);
 				break;
 		case "Level6":
 				level = 6;
-				Timer.SetTimer(0,5);
+				Timer.SetTimer(1,30);
 				Scores.SetTargetScore(90);
 				Scores.setScore(score);
 				break;
 		case "Level7":
 				level = 7;
-				Timer.SetTimer(0,5);
+				Timer.SetTimer(1,30);
 				Scores.SetTargetScore(105);
 				Scores.setScore(score);
 				break;
 		case "Level8":
 				level = 8;
-				Timer.SetTimer(0,5);
+				Timer.SetTimer(1,30);
 				Scores.SetTargetScore(120);
 				Scores.setScore(score);
 				break;
 		case "Level9":
 				level = 9;
-				Timer.SetTimer(0,5);
+				Timer.SetTimer(1,30);
 				Scores.SetTargetScore(135);
 				Scores.setScore(score);
 				break;
 		case "Level10":
 				level = 10;
-				Timer.SetTimer(0,5);
+				Timer.SetTimer(1,30);
 				Scores.SetTargetScore(150);
 				Scores.setScore(score);
 				break;

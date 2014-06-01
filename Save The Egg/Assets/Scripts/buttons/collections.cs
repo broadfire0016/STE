@@ -5,7 +5,6 @@ using UnityEngine;
 using System.Collections;
 
 public class collections : MonoBehaviour {
-public GameObject background;
 AudioScript audioplay;
 	
 	void Awake(){
