@@ -33,10 +33,10 @@ public class HighScore : MonoBehaviour {
 		highScore = Main.getHighScore();
 		highScoreText = new UIText(textManager, "VogueCyrBold_60_ffffff", "VogueCyrBold_60_ffffff.png");
 		highscoretext = highScoreText.addTextInstance(string.Format("{0}", highScore), 0, 0 );
-		highscoretext.textScale = 2f;
+		highscoretext.textScale /= scaleFactor * 0.4f;
 		highscoretext.positionFromCenter(0.0f, 0.01f);
 		highscoretext.color = Color.black;
-		
+
 	}
 	
 }

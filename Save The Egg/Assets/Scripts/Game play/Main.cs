@@ -22,6 +22,12 @@ public class Main : MonoBehaviour {
 	void Start () {
 		//PlayerPrefs.SetInt("High Score", 0);
 
+		if (score > highScore){
+			highScore = score;
+			PlayerPrefs.SetInt("High Score", highScore);
+			
+		}
+
 		if (audioplay != null && AudioScript.status == true)
 			audioplay.PlayGameMusic ();
 		AudioScript.status = true;
@@ -109,11 +115,6 @@ public class Main : MonoBehaviour {
 			
 			if (mins == 0 && secs == 0){
 
-				if (score > highScore){
-					highScore = score;
-					PlayerPrefs.SetInt("High Score", highScore);
-					
-				}
 				if (score >= TargetScore){
 					level++;
 					audioplay.StopMusic();
