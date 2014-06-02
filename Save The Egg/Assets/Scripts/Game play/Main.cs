@@ -20,7 +20,7 @@ public class Main : MonoBehaviour {
 
 
 	void Start () {
-		PlayerPrefs.SetInt("High Score", 0);
+		//PlayerPrefs.SetInt("High Score", 0);
 
 		if (score > highScore){
 			highScore = score;

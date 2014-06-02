@@ -70,7 +70,7 @@ public class MenuScript : MonoBehaviour {
 		music.setSize(music.width/ scaleFactor,music.height / scaleFactor);
 
 		help = UIButton.create("HelpBtn.png","HelpBtn.png",0,0);
-		help.positionFromTopRight( 0f, -0.15f );
+		help.positionFromBottomRight( -0.01f, 0.26f );
 		help.onTouchUpInside += sender => x++;
 		help.onTouchUpInside += sender => showTutorial();
 		help.setSize(help.width/scaleFactor,help.height/scaleFactor);

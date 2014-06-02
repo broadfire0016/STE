@@ -14,6 +14,7 @@ public class Basket : MonoBehaviour {
 	public Color runningOut;
 	bool isfrozen;
 	float duration = 3f;
+	float lerp;
 	float time, seconds;
 	float _objspeed = 0.1f;
 	float _distance1 = 100.0f;
@@ -41,7 +42,7 @@ public class Basket : MonoBehaviour {
 	}
 
 	void Update(){
-		float lerp = Mathf.PingPong (Time.time, duration) / duration;
+
 
 		if(Input.GetButtonUp("Fire2"))
 			score++;
@@ -53,12 +54,11 @@ public class Basket : MonoBehaviour {
 		if (_travel >= _distance2)
 			_travel = 0;
 
-		if (isfrozen) 
+		if (isfrozen) {
+			lerp = Mathf.PingPong (Time.time, duration) / duration;
 			freezeBG.renderer.material.color = Color.Lerp (normal, froze, lerp);
-		else
-			freezeBG.renderer.material.color = normal;
-
-		if (Timer.GetMinutes () == 0 && Timer.GetSeconds () <= 9){
+		}
+		else if (Timer.GetMinutes () == 0 && Timer.GetSeconds () <= 9){
 			lerp = Mathf.PingPong (Time.time, 1f) / 1f;
 			freezeBG.renderer.material.color = Color.Lerp (normal, runningOut, lerp);
 		}
