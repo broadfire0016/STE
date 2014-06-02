@@ -70,7 +70,6 @@ public class MenuScript : MonoBehaviour {
 		music.setSize(music.width/ scaleFactor,music.height / scaleFactor);
 
 		help = UIButton.create("HelpBtn.png","HelpBtn.png",0,0);
-		help.positionFromBottomRight( -0.01f, 0.26f );
 		help.onTouchUpInside += sender => x++;
 		help.onTouchUpInside += sender => showTutorial();
 		help.setSize(help.width/scaleFactor,help.height/scaleFactor);
@@ -82,6 +81,8 @@ public class MenuScript : MonoBehaviour {
 		music.positionFromBottomLeft (0.01f, 0.03f);
 		sound.parentUIObject = music;
 		sound.positionFromBottomLeft (0f,1.5f);
+		help.parentUIObject = music;
+		help.positionFromBottomLeft( 0.0f, 2.65f );
 		playButton.parentUIObject = music;
 		playButton.positionFromBottomLeft (9.35f, 0.6f);
 		collectionButton.parentUIObject = playButton;
@@ -100,6 +101,8 @@ public class MenuScript : MonoBehaviour {
 		music.positionFromBottomLeft (9f, 9f);
 		sound.parentUIObject = music;
 		sound.positionFromBottomLeft (9f,9f);
+		help.parentUIObject = null;
+		help.positionFromBottomLeft( 0.0f, 0.0f );
 		playButton.parentUIObject = music;
 		playButton.positionFromBottomLeft (9f, 9f);
 		collectionButton.parentUIObject = playButton;
