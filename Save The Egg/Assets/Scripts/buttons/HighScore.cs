@@ -27,8 +27,8 @@ public class HighScore : MonoBehaviour {
 		CloseBtn.highlightedTouchOffsets = new UIEdgeOffsets(30);
 		CloseBtn.onTouchUpInside += sender => Application.LoadLevel("AGAIN");
 		CloseBtn.touchDownSound = audioplay.getSoundClip();
-		CloseBtn.positionFromBottomLeft( 0.23f, 0.35f );
-		CloseBtn.setSize(CloseBtn.width / scaleFactor +50, CloseBtn.height / scaleFactor + 25);
+		CloseBtn.positionFromCenter( 0.2f, 0.09f );
+		CloseBtn.setSize(CloseBtn.width / scaleFactor * 1f, CloseBtn.height / scaleFactor * 1f);
 
 		highScore = Main.getHighScore();
 		highScoreText = new UIText(textManager, "VogueCyrBold_60_ffffff", "VogueCyrBold_60_ffffff.png");

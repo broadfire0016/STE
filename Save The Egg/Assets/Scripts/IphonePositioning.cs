@@ -7,7 +7,7 @@ public class IphonePositioning : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-	
+#if UNITY_EDITOR || UNITY_IOS	
 		if (Screen.width == 487 && Screen.height == 730 || Screen.width == 640 && Screen.height == 960) {
 			background.transform.localScale = new Vector3(14.60647f,21.85281f,background.transform.localScale.z);
 			background_pause.transform.localScale = new Vector3(0.8611252f,1.056228f,background.transform.localScale.z);
@@ -21,6 +21,7 @@ public class IphonePositioning : MonoBehaviour {
 			leftChicken.transform.Translate(new Vector3(0f,0f, -1.8f));
 			rightChicken.transform.Translate(new Vector3(0f,0f, 1.8f));
 		}
+#endif
 	}
 
 }

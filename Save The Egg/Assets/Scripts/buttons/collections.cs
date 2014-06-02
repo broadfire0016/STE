@@ -28,7 +28,7 @@ AudioScript audioplay;
 		storeButton.setSize(storeButton.width / scaleFactor, storeButton.height / scaleFactor *0.98f );
 		storeButton.onTouchUpInside += sender => Application.LoadLevel("gameStore");	
 
-		backButton.positionFromBottomLeft( 0.155f, 0.23f );
+		backButton.positionFromCenter( 0.305f, -0.15f );
 		storeButton.parentUIObject = backButton;
 		storeButton.positionFromBottomLeft( 0f, 1.3f);
 	}	

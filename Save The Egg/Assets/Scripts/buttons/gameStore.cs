@@ -22,8 +22,8 @@ public class gameStore : MonoBehaviour {
 		backButton.highlightedTouchOffsets = new UIEdgeOffsets(30);
 		backButton.touchDownSound = audioplay.getSoundClip();
 		backButton.onTouchUpInside += sender => Application.LoadLevel("AGAIN");
-		backButton.positionFromBottomLeft( 0.02f, 0.42f );
-		backButton.setSize(backButton.width / scaleFactor +20, backButton.height / scaleFactor +15);
+		backButton.positionFromCenter( 0.43f, 0.05f );
+		backButton.setSize(backButton.width / scaleFactor * 1f, backButton.height / scaleFactor * 1f);
 
 	}
 }
