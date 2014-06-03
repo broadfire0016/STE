@@ -216,6 +216,38 @@
 	"spriteSourceSize": {"x":0,"y":0,"w":307,"h":295},
 	"sourceSize": {"w":307,"h":295}
 },
+"aa.jpg":
+{
+	"frame": {"x":2,"y":1092,"w":309,"h":296},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":309,"h":296},
+	"sourceSize": {"w":309,"h":296}
+},
+"aaa.jpg":
+{
+	"frame": {"x":1256,"y":795,"w":309,"h":293},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":309,"h":293},
+	"sourceSize": {"w":309,"h":293}
+},
+"aaaa.jpg":
+{
+	"frame": {"x":313,"y":1092,"w":308,"h":298},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":308,"h":298},
+	"sourceSize": {"w":308,"h":298}
+},
+"aaaaa.jpg":
+{
+	"frame": {"x":1567,"y":795,"w":307,"h":295},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":307,"h":295},
+	"sourceSize": {"w":307,"h":295}
+},
 "back_active.png":
 {
 	"frame": {"x":1135,"y":334,"w":329,"h":122},
@@ -487,6 +519,6 @@
 	"format": "PVRTC4",
 	"size": {"w":2048,"h":2048},
 	"scale": "1",
-	"smartupdate": "$TexturePacker:SmartUpdate:9ba62732351912442454e5c231c1e2e6:bc5e76648eafc926e7dc1009244ad0f7:b101ee4c8b290989ea775c474ce2a6ab$"
+	"smartupdate": "$TexturePacker:SmartUpdate:f7829f813fc08a1084156d7683e3fdf1:ecfe497ef8147cecdc459fa65b9b5a6e:b101ee4c8b290989ea775c474ce2a6ab$"
 }
 }

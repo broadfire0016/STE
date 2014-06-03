@@ -4,9 +4,9 @@
         <key>fileFormatVersion</key>
         <int>3</int>
         <key>texturePackerVersion</key>
-        <string>3.3.4</string>
+        <string>3.3.3</string>
         <key>fileName</key>
-        <string>C:/Users/OJT/Music/STE/Save The Egg/Assets/GameAssets/Resources/TexturePackerSources/GameTexture/newButtons/AllButtons.tps</string>
+        <string>C:/Users/OJT/Desktop/BADLY/STE/GameTexture/newButtons/AllButtons.tps</string>
         <key>autoSDSettings</key>
         <array>
             <struct type="AutoSDSettings">
@@ -206,10 +206,6 @@
         </struct>
         <key>fileList</key>
         <array>
-            <filename>back_active.png</filename>
-            <filename>back_active2.png</filename>
-            <filename>back_normal.png</filename>
-            <filename>back_normal2.png</filename>
             <filename>buy_active.png</filename>
             <filename>buy_normal.png</filename>
             <filename>CloseBtn.png</filename>
@@ -217,6 +213,8 @@
             <filename>CollectionBtn_normal.png</filename>
             <filename>CreditsBtn_activel.png</filename>
             <filename>CreditsBtn_normal.png</filename>
+            <filename>DebugBtn_sun.png</filename>
+            <filename>HelpBtn.png</filename>
             <filename>HighScoBtn_active.png</filename>
             <filename>HighScoBtn_normal.png</filename>
             <filename>home_active.png</filename>
@@ -258,12 +256,20 @@
             <filename>_6.jpg</filename>
             <filename>_7.jpg</filename>
             <filename>_8.jpg</filename>
+            <filename>1.png</filename>
+            <filename>2.png</filename>
+            <filename>3.png</filename>
+            <filename>4.png</filename>
             <filename>aa.jpg</filename>
             <filename>aaa.jpg</filename>
             <filename>aaaa.jpg</filename>
             <filename>aaaaa.jpg</filename>
             <filename>ArrowDown.png</filename>
             <filename>ArrowUp.png</filename>
+            <filename>back_active.png</filename>
+            <filename>back_active2.png</filename>
+            <filename>back_normal.png</filename>
+            <filename>back_normal2.png</filename>
         </array>
         <key>ignoreFileList</key>
         <array/>

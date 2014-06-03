@@ -83,10 +83,23 @@ public class LevelShortcuts : MonoBehaviour {
 		Level8.touchDownSound = audioplay.getSoundClip ();
 		Level9.touchDownSound = audioplay.getSoundClip ();
 		Level10.touchDownSound = audioplay.getSoundClip ();
+
+
 	}
 	
-	// Update is called once per frame
-	void Update () {
-	
+	void OnButtonDown(UIButton obj){
+		obj.scale = new Vector3 (1.1f, 1.1f, 1.1f);
+	}
+
+	void OnButtonUp(UIButton obj){
+		obj.scale = new Vector3 (1f, 1f, 1f);
+	}	
+
+	void OnButtonSelect(UIButton obj){
+		string btn = (string)obj.userData;
+		switch (btn){
+			case "Click":
+			break;
+		}
 	}
 }

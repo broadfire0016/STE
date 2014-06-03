@@ -4,16 +4,16 @@
         <key>fileFormatVersion</key>
         <int>3</int>
         <key>texturePackerVersion</key>
-        <string>3.3.4</string>
+        <string>3.3.3</string>
         <key>fileName</key>
-        <string>C:/Users/OJT/Music/STE/Save The Egg/Assets/GameAssets/Resources/TexturePackerSources/GameTexture/store/store.tps</string>
+        <string>C:/Users/OJT/Desktop/BADLY/STE/GameTexture/level_blue/store.tps</string>
         <key>autoSDSettings</key>
         <array>
             <struct type="AutoSDSettings">
                 <key>scale</key>
                 <double>1</double>
                 <key>extension</key>
-                <string></string>
+                <string>4</string>
                 <key>spriteFilter</key>
                 <string></string>
                 <key>acceptFractionalValues</key>
@@ -21,9 +21,9 @@
                 <key>maxTextureSize</key>
                 <QSize>
                     <key>width</key>
-                    <int>-1</int>
+                    <int>4096</int>
                     <key>height</key>
-                    <int>-1</int>
+                    <int>4096</int>
                 </QSize>
             </struct>
             <struct type="AutoSDSettings">
@@ -72,7 +72,7 @@
         <key>dataFormat</key>
         <string>unity</string>
         <key>textureFileName</key>
-        <filename>../../../DemoAssets/Resources/store{v}x.pvr</filename>
+        <filename>../../store{v}x.pvr</filename>
         <key>flipPVR</key>
         <true/>
         <key>ditherType</key>
@@ -106,9 +106,9 @@
         <key>maxTextureSize</key>
         <QSize>
             <key>width</key>
-            <int>2048</int>
+            <int>4096</int>
             <key>height</key>
-            <int>2048</int>
+            <int>4096</int>
         </QSize>
         <key>fixedTextureSize</key>
         <QSize>
@@ -165,7 +165,7 @@
             <key>data</key>
             <struct type="DataFile">
                 <key>name</key>
-                <filename>../../../DemoAssets/Resources/store{v}x.txt</filename>
+                <filename>../../store{v}x.txt</filename>
             </struct>
         </map>
         <key>multiPack</key>
@@ -206,14 +206,10 @@
         </struct>
         <key>fileList</key>
         <array>
-            <filename>_1.jpg</filename>
-            <filename>_2.jpg</filename>
-            <filename>_3.jpg</filename>
-            <filename>_4.jpg</filename>
-            <filename>4.png</filename>
-            <filename>1.png</filename>
-            <filename>2.png</filename>
-            <filename>3.png</filename>
+            <filename>../store/3.png</filename>
+            <filename>../store/4.png</filename>
+            <filename>../store/1.png</filename>
+            <filename>../store/2.png</filename>
         </array>
         <key>ignoreFileList</key>
         <array/>
