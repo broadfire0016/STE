@@ -4,7 +4,7 @@ using System.Collections;
 public class LevelShortcuts : MonoBehaviour {
 
 	private UIButton Level1, Level2, Level3, Level4, Level5, Level6, Level7, Level8, Level9, Level10;
-	public UIToolkit buttonsManager;
+	public UIToolkit buttonsManager , buttonsManager2;
 	AudioScript audioplay;
 
 	// Use this for initialization
@@ -12,6 +12,12 @@ public class LevelShortcuts : MonoBehaviour {
 		audioplay = GameObject.FindGameObjectWithTag("SoundLoader").GetComponent<AudioScript>();
 
 		var scaleFactor = ScaleFactor.GetScaleFactor ();
+
+		var backButton = UIButton.create(buttonsManager2, "CloseBtn.png","CloseBtn.png",0,0);
+		backButton.onTouchUpInside += sender => Application.LoadLevel("AGAIN");
+		backButton.positionFromCenter( -0.42f, 0.355f );
+		backButton.setSize(backButton.width / scaleFactor * 1f, backButton.height / scaleFactor * 1f);
+		
 
 		Level1 = UIButton.create(buttonsManager,"L1.png","L1.png",0,0);
 		Level1.setSize(Level1.width / scaleFactor  , Level1.height / scaleFactor);
@@ -83,23 +89,9 @@ public class LevelShortcuts : MonoBehaviour {
 		Level8.touchDownSound = audioplay.getSoundClip ();
 		Level9.touchDownSound = audioplay.getSoundClip ();
 		Level10.touchDownSound = audioplay.getSoundClip ();
+		backButton.touchDownSound = audioplay.getSoundClip();
 
 
 	}
 	
-	void OnButtonDown(UIButton obj){
-		obj.scale = new Vector3 (1.1f, 1.1f, 1.1f);
-	}
-
-	void OnButtonUp(UIButton obj){
-		obj.scale = new Vector3 (1f, 1f, 1f);
-	}	
-
-	void OnButtonSelect(UIButton obj){
-		string btn = (string)obj.userData;
-		switch (btn){
-			case "Click":
-			break;
-		}
-	}
 }

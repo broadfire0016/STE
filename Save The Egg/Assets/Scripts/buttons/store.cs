@@ -16,7 +16,8 @@ public class store : MonoBehaviour
 		var scaleFactor = ScaleFactor.GetScaleFactor ();
 		var scrollable = new UIScrollableVerticalLayout( 10 );
 		scrollable.alignMode = UIAbstractContainer.UIContainerAlignMode.Center;
-		scrollable.position = new Vector3( 35, -150, 0 );
+		//scrollable.position = new Vector3( 35, -150, 0 );
+		scrollable.positionFromCenter( -0.3f, -0.43f );
 		scrollable.setSize( Screen.width/1.1f, Screen.height / 1.7f );
 
 

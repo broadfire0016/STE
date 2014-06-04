@@ -70,7 +70,7 @@ public class Ball : MonoBehaviour {
 		}
 #endif
 
-#if UNITY_IOS
+#if UNITY_IOS || UNITY_ANDROID
 	//IOS Control
 	if(Input.touches.Length > 0){
 		Input.multiTouchEnabled = false;
